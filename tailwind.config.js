@@ -1,7 +1,8 @@
 module.exports = {
   theme: {
-    extend: {},
-  },
-  variants: {},
-  plugins: [],
+    fontFamily: {
+      'title': 'Libre Baskerville, serif',
+      'body': 'Open Sans, sans-serif'
+    }
+  }
 }

@@ -30,6 +30,16 @@ module.exports = {
     {
       resolve: 'gatsby-source-contentful',
       options: contentfulConfig,
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Libre Baskerville\:400,400i,700`,
+          `Open Sans\:300,400,400i,700` // you can also specify font weights and styles
+        ],
+        display: 'swap'
+      }
     }
   ],
 }
