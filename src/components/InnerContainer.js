@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default ({ children }) => (
-  <div className="h-full m-5 bg-red-200">
+  <div className="max-w-screen-xl mx-auto">
       {children}
   </div>
 )

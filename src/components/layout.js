@@ -1,8 +1,8 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import base from './base.css'
-import Container from './container'
-import Navigation from './navigation'
+import React from 'react';
+import { Link } from 'gatsby';
+import Container from './Container';
+import InnerContainer from './InnerContainer';
+import Navigation from './navigation';
 
 class Template extends React.Component {
   render() {
@@ -16,11 +16,13 @@ class Template extends React.Component {
 
     return (
       <Container>
-        <Navigation />
-        {children}
+        <InnerContainer>
+          <Navigation />
+          {children}
+        </InnerContainer>
       </Container>
     )
   }
 }
 
-export default Template
+export default Template;
