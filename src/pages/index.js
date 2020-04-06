@@ -2,8 +2,8 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
-import Hero from '../components/hero'
-import Layout from '../components/shared/Layout/layout';
+// import Hero from '../components/hero'
+import Layout from '../components/Layout/layout';
 import ArticlePreview from '../components/article-preview'
 import '../styles/style.css';
 
@@ -21,21 +21,6 @@ class RootIndex extends React.Component {
 				<div className="wrapper">
 					
 					<h2 className="section-headline">Recent articles</h2>
-
-          <div className="max-w-sm rounded overflow-hidden shadow-lg mb-8">
-            <img className="w-full" src="https://tailwindcss.com/img/card-top.jpg" alt="Sunset in the mountains" />
-            <div className="px-6 py-4">
-              <div className="font-body text-lg mb-2">The Coldest Sunset</div>
-              <p className="text-gray-700 text-base">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-              </p>
-            </div>
-            <div className="px-6 py-4">
-              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#photography</span>
-              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#travel</span>
-              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#winter</span>
-            </div>
-          </div>
 					
 					<ul className="article-list">
 						

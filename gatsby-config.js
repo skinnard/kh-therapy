@@ -26,8 +26,8 @@ module.exports = {
     'gatsby-transformer-remark',
     'gatsby-transformer-sharp',
     'gatsby-plugin-react-helmet',
-	'gatsby-plugin-sharp',
-	'gatsby-plugin-postcss',
+	  'gatsby-plugin-sharp',
+	  'gatsby-plugin-postcss',
     {
       resolve: 'gatsby-source-contentful',
       options: contentfulConfig,
@@ -37,7 +37,7 @@ module.exports = {
       options: {
         fonts: [
           `Libre Baskerville\:400,400i,700`,
-          `Open Sans\:300,400,400i,700` // you can also specify font weights and styles
+          `Quattrocento Sans\:400,400i,700,700i` // you can also specify font weights and styles
         ],
         display: 'swap'
       }
