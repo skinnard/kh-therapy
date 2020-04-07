@@ -29,10 +29,6 @@ module.exports = {
 	  'gatsby-plugin-sharp',
 	  'gatsby-plugin-postcss',
     {
-      resolve: 'gatsby-source-contentful',
-      options: contentfulConfig,
-    },
-    {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
