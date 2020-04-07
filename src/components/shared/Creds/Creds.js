@@ -2,6 +2,6 @@ import React from 'react';
 
 export default () => (
     <div className="creds">
-        <p>MDIV | RP | RMFT</p>
+        <p style={{margin: '0', fontSize: '12px'}}>MDIV | RP | RMFT</p>
     </div>
 )

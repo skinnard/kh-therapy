@@ -37,7 +37,7 @@ module.exports = {
       options: {
         fonts: [
           `Libre Baskerville\:400,400i,700`,
-          `Quattrocento Sans\:400,400i,700,700i` // you can also specify font weights and styles
+          `Open Sans\:300,400,400i,600,700,700i,800` // you can also specify font weights and styles
         ],
         display: 'swap'
       }

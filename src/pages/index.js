@@ -3,9 +3,11 @@ import { graphql } from 'gatsby'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 // import Hero from '../components/hero'
-import Layout from '../components/Layout/layout';
-import ArticlePreview from '../components/article-preview'
-import '../styles/style.css';
+import Layout from '../components/shared/Layout/layout';
+import Navigation from '../components/modules/Navigation/Navigation';
+import "normalize.css"
+import Container from '../components/shared/Container/Container';
+import Hero from '../components/modules/Hero/Hero';
 
 class RootIndex extends React.Component {
   render() {
@@ -14,26 +16,14 @@ class RootIndex extends React.Component {
     const [author] = get(this, 'props.data.allContentfulPerson.edges')
 
     return (
-      <Layout location={this.props.location} >
-        <div style={{ background: '#fff' }}>
+      <Layout location={this.props.location}>
+       <Container>
           <Helmet title={siteTitle} />
           {/* <Hero data={author.node} /> */}
-				<div className="wrapper">
-					
-					<h2 className="section-headline">Recent articles</h2>
-					
-					<ul className="article-list">
-						
-              {posts.map(({ node }) => {
-                return (
-                  <li key={node.slug}>
-                    <ArticlePreview article={node} />
-                  </li>
-                )
-              })}
-            </ul>
-          </div>
-        </div>
+
+          <Navigation />
+          <Hero />
+        </Container>
       </Layout>
     )
   }
