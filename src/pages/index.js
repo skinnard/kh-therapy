@@ -7,6 +7,7 @@ import Navigation from '../components/modules/Navigation/Navigation';
 import Container from '../components/shared/Container/Container';
 import Hero from '../components/modules/Hero/Hero';
 import Info from '../components/modules/Info/Info';
+import Help from '../components/modules/Help/Help';
 
 class RootIndex extends React.Component {
   render() {
@@ -19,6 +20,7 @@ class RootIndex extends React.Component {
           <Navigation />
           <Hero />
           <Info />
+          <Help />
         </Container>
       </Layout>
     )
