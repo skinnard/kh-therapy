@@ -27,10 +27,14 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-react-helmet',
 	  'gatsby-plugin-sharp',
-	  'gatsby-plugin-postcss',
+    'gatsby-plugin-postcss',
     {
-      resolve: 'gatsby-source-contentful',
-      options: contentfulConfig,
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /svg/
+        }
+      }
     },
     {
       resolve: `gatsby-plugin-google-fonts`,

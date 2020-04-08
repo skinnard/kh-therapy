@@ -6,7 +6,7 @@ import style from './logo.module.scss';
 export default () => (
   <div className={style.logo}>
     <Link to="/">
-      <img src={LogoImg} alt="logo" />
+      <LogoImg />
     </Link>
   </div>
 )
