@@ -1,7 +1,6 @@
 import React from 'react';
 import style from './hero.module.scss';
 import InnerContainer from '../../shared/InnerContainer/InnerContainer';
-import "../../../styles/bulma.scss";
 import Arrow from '../../../svg/long-arrow.svg';
 
 export default () => (

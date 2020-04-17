@@ -4,7 +4,6 @@ import Logo from '../../shared/Logo/Logo';
 import Creds from '../../shared/Creds/Creds';
 import style from './Navigation.module.scss';
 import InnerContainer from '../../shared/InnerContainer/InnerContainer';
-// import PropTypes from 'prop-types';
 
 class Navigation extends Component {
 
