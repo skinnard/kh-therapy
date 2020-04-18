@@ -3,6 +3,7 @@
 * {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-family: $body-font;
 }
 
 // Headings
@@ -12,21 +13,12 @@ h3,
 h4,
 h5,
 h6 {
-    // color: $hb-black;
     font-weight: 500;
     margin-bottom: 0.5em;
     margin-top: 0;
     font-family: $title-font;
-    color: #0E1A45;
-}
-
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
     font-weight: 300;
+    color: $blue;
 }
 
 h1,
@@ -232,6 +224,11 @@ blockquote {
     font-size: 13px;
 }
 
+ul {
+    list-style: none;
+    
+}
+
 .body-sup {
     vertical-align: 5px;
     font-size: 10px;
@@ -253,4 +250,8 @@ a {
     &:hover {
         color: $blue;
     }
+}
+
+p.pre-title {
+    color: $rust;
 }

@@ -1,8 +1,8 @@
 import React from 'react'
 import style from './help.module.scss'
 import InnerContainer from '../../shared/InnerContainer/InnerContainer'
-import '../../../styles/bulma.scss'
 import ArrowRight from '../../../svg/arrow-right.svg';
+import '../../../styles/style.scss';
 
 export default () => (
   <section id="help" className={style.helpWrapper}>
