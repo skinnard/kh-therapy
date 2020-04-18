@@ -18,5 +18,12 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        .navLink {
+            font-weight: 400;
+            padding-left: 50px;
+            text-transform: uppercase;
+            @include font-size(14);
+        }
     }
 }

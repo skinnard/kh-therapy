@@ -1,6 +1,6 @@
 import React from 'react'
 import ArrowWhite from '../../../svg/arrow-right-white.svg'
-import ArrowBlue from '../../../svg/arrow-right.svg'
+import ArrowBlue from '../../../svg/arrow-right-blue.svg'
 
 function Arrow(props) {
   let divStyle = {
@@ -10,7 +10,7 @@ function Arrow(props) {
 
   return (
     <div className="arrow-icon" style={divStyle}>
-      {props.arrowColor == 'blue' ? <ArrowBlue /> : <ArrowWhite />}
+      {props.arrowColor === 'blue' ? <ArrowBlue /> : <ArrowWhite />}
     </div>
   )
 }

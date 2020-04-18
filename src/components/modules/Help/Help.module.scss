@@ -5,6 +5,11 @@
   width: 100%;
   height: 100%;
   background-size: cover;
+  background-position: bottom center;
+
+  .title {
+    margin-bottom: 50px;
+  }
 
   .gridWrapper {
     display: grid;
@@ -19,7 +24,7 @@
       margin: 0 auto;
 
       .title {
-        color: $blue;
+        
       }
     }
   }

@@ -24,7 +24,7 @@ h6 {
 
 h1,
 .h1 {
-    @include font-size(60);
+    @include font-size(48);
     line-height: 1.2;
     
     @include mq(small, max) {
@@ -37,7 +37,7 @@ h1,
 
 h2,
 .h2 {
-    @include font-size(45);
+    @include font-size(42);
     line-height: 1.2;
 
     @include mq(small, max) {
@@ -50,7 +50,7 @@ h2,
 }
 
 .cta-h2 {
-    @include font-size(45);
+    @include font-size(42);
     line-height: 1.2;
 
     @include mq(med, max) {
@@ -78,18 +78,18 @@ h4,
 
 h5,
 .h5 {
-    @include font-size(28);
+    @include font-size(24);
 
     @include mq(med, max) {
-        @include font-size(24);
-    }
-
-    @include mq(small, max) {
         @include font-size(22);
     }
 
-    @include mq(xsmall, max) {
+    @include mq(small, max) {
         @include font-size(20);
+    }
+
+    @include mq(xsmall, max) {
+        @include font-size(18);
     }
 }
 
@@ -97,7 +97,7 @@ h6,
 .h6 {
     @include font-size(22);
     line-height: 1.6;
-    font-family: $body-font;
+    font-family: $title-font;
     color: $blue;
 
     @include mq(xsmall, max) {

@@ -1,7 +1,21 @@
-import React from 'react';
+import React from 'react'
 
-export default () => (
-    <div className="creds">
-        <p style={{margin: '0', fontSize: '12px'}}>MDIV | RP | RMFT</p>
+function Creds({ fontSize, color, marginBottom }) {
+  let pStyle = {
+    margin: '0',
+    fontSize: fontSize,
+    color: color,
+  }
+
+  let divStyle = {
+    marginBottom: marginBottom
+  }
+
+  return (
+    <div className="creds" style={divStyle}>
+      <p style={pStyle}>MDIV | RP | RMFT</p>
     </div>
-)
+  )
+}
+
+export default Creds

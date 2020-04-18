@@ -14,6 +14,7 @@ function Logo(props) {
 
   let divStyle = {
     width: props.width,
+    height: props.height
   }
 
   return (
