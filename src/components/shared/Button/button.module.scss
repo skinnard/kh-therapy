@@ -1,0 +1,10 @@
+@import '../../../styles/style.scss';
+
+.btnWrapper {
+  .button {
+    padding: 10px 20px;
+    border: 2px solid $blue;
+    font-weight: 600;
+    @include font-size(14);
+  }
+}

@@ -1,12 +1,22 @@
-import React from 'react';
-import { Link } from 'gatsby';
-import LogoImg from '../../../svg/logo.svg';
-import style from './logo.module.scss';
+import React from 'react'
+import { Link } from 'gatsby'
+import LogoBlue from '../../../svg/logo-blue.svg'
+import LogoWhite from '../../../svg/logo-white.svg'
+import style from './logo.module.scss'
 
-export default () => (
-  <div className={style.logo}>
-    <Link to="/">
-      <LogoImg />
-    </Link>
-  </div>
-)
+function Logo(props) {
+  let logo
+  if (props.color === 'blue') {
+    logo = <LogoBlue />
+  } else {
+    logo = <LogoWhite />
+  }
+
+  return (
+    <div className={style.logo}>
+      <Link to="/">{logo}</Link>
+    </div>
+  )
+}
+
+export default Logo

@@ -31,7 +31,7 @@ class Navigation extends Component {
     <InnerContainer>
       <div className={style.wrapper}>
         <div className="logo-wrapper">
-          <Logo />
+          <Logo color={'blue'} />
           <Creds />
         </div>
         <div className="flex">
