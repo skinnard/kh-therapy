@@ -12,8 +12,12 @@ function Logo(props) {
     logo = <LogoWhite />
   }
 
+  let divStyle = {
+    width: props.width,
+  }
+
   return (
-    <div className={style.logo}>
+    <div className={style.logo} style={divStyle}>
       <Link to="/">{logo}</Link>
     </div>
   )

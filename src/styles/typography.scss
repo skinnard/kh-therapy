@@ -251,4 +251,7 @@ a {
 
 p.pre-title {
     color: $rust;
+    @include font-size(14);
+    font-weight: 400;
+    text-transform: uppercase;
 }
