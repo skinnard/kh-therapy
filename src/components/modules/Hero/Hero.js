@@ -1,20 +1,36 @@
-import React from 'react';
-import style from './hero.module.scss';
-import InnerContainer from '../../shared/InnerContainer/InnerContainer';
-import Arrow from '../../../svg/long-arrow.svg';
+import React from 'react'
+import style from './hero.module.scss'
+import InnerContainer from '../../shared/InnerContainer/InnerContainer'
+import Arrow from '../../../svg/long-arrow.svg'
+import Button from '../../shared/Button/Button'
 
 export default () => (
-    <section id="hero" className={style.heroWrapper}>
-        <InnerContainer>
-            <div className="columns">
-                <div class="column">
-                    <h1>Nurture Your Emotional Health</h1>
-                    <Arrow />
-                </div>
-                <div class="column">
-                    <img src={'/images/leaf-and-books.png'} alt="A stack of books" />
-                </div>
-            </div>
-        </InnerContainer>
-    </section>
+  <section id="hero" className={style.heroWrapper}>
+    <InnerContainer>
+      <div className={`columns ${style.columns}`}>
+        <div className={`column text-center ${style.column}`}>
+          <h1 className={style.title}>Nurture Your Emotional Health</h1>
+          <p className={style.bodyText}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget
+            finibus nisl. Vestibulum vulputate.
+          </p>
+          <Button
+          borderColor={'#0F4C81'}
+          textColor={'#0F4C81'}
+          backgroundColor={'transparent'}
+          arrowColor={'blue'}
+          arrowPadding={'10px'}
+        />
+          {/* <Arrow /> */}
+        </div>
+        <div className={`column text-center ${style.column}`}>
+          <img
+            className={style.img}
+            src={'/images/leaf-and-books.png'}
+            alt="A stack of books"
+          />
+        </div>
+      </div>
+    </InnerContainer>
+  </section>
 )

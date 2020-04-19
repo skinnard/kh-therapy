@@ -5,12 +5,12 @@ import InnerContainer from '../../shared/InnerContainer/InnerContainer'
 import Button from '../../shared/Button/Button';
 
 export default () => (
-  <section id="info-section" className="sectionPadding">
+  <section id="info-section" className={`sectionPadding-sm ${style.infoSection}`}>
     <InnerContainer>
-      <div class="column text-center">
-        <h2>Trust is earned in the smallest of moments.</h2>
+      <div className={style.contentWrapper}>
+        <h2 className={style.title}>Trust is earned in the smallest of moments.</h2>
         <Divider />
-        <p>
+        <p className={style.bodyText}>
           It is earned not through heroic deeds, or even highly visible actions,
           but through paying attention, listening, and gestures of genuine care
           and connection.

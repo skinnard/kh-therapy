@@ -24,7 +24,7 @@ h6 {
 
 h1,
 .h1 {
-    @include font-size(48);
+    @include font-size(46);
     line-height: 1.2;
     
     @include mq(small, max) {
