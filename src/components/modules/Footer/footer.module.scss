@@ -1,6 +1,43 @@
 @import '../../../styles/style.scss';
 
 .footer {
-    background: $blue;
-    padding: 100px 0;
+  background: $blue;
+
+  .midCol {
+      border: 3px solid red;
+  }
+
+  .menuWrapper {
+    display: flex;
+    flex-direction: column;
+    padding-left: 120px;
+
+    a {
+      color: #fff;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+      font-weight: 600;
+      @include font-size(14);
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  .contactWrapper {
+    display: flex;
+    flex-direction: column;
+    padding-left: 80px;
+
+    .phone,
+    .address {
+      display: block;
+      color: #fff;
+      font-weight: 600;
+      @include font-size(14);
+      text-transform: uppercase;
+      margin-bottom: 25px;
+    }
+  }
 }

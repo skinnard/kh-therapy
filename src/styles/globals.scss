@@ -14,10 +14,10 @@
     text-align: center;
 }
 
-.columns {
+.flex {
     display: flex;
 
-    .column {
+    .flex-item {
         flex: 1;
     }
 }

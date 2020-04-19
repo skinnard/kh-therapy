@@ -7,8 +7,8 @@ import Button from '../../shared/Button/Button'
 export default () => (
   <section id="hero" className={style.heroWrapper}>
     <InnerContainer>
-      <div className={`columns ${style.columns}`}>
-        <div className={`column text-center ${style.column}`}>
+      <div className={`flex ${style.columns}`}>
+        <div className={`flex-item text-center ${style.column}`}>
           <h1 className={style.title}>Nurture Your Emotional Health</h1>
           <p className={style.bodyText}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget

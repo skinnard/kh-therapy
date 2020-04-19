@@ -6,7 +6,7 @@ import InnerContainer from '../../shared/InnerContainer/InnerContainer';
 
 export default () => (
     <section id="info-section" className="sectionPadding">
-        <InnerContainer>
+        <InnerContainer size={'small'}>
             <div className="text-center">
                 <h2>Trust is earned in the smallest of moments.</h2>
                 <Rings />

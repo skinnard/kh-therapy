@@ -6,7 +6,7 @@ import Button from '../../shared/Button/Button';
 
 export default () => (
   <section id="info-section" className={`sectionPadding-sm ${style.infoSection}`}>
-    <InnerContainer>
+    <InnerContainer size={'small'}>
       <div className={style.contentWrapper}>
         <h2 className={style.title}>Trust is earned in the smallest of moments.</h2>
         <Divider />
