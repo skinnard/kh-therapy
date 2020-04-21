@@ -12,10 +12,15 @@
 
     .columns {
         align-items: center;
+        flex-wrap: wrap;
 
         .column {
             padding: 20px;
             width: 50%;
+
+            @include mq(custom, max, 800) {
+                width: 100%;
+            }
 
             .title {
                 @include mq(custom, max, 1000) {
@@ -29,6 +34,12 @@
 
             .img {
                 width: 100%;
+            }
+        }
+
+        .imgWrapper {
+            @include mq(custom, max, 1000) {
+                display: none;
             }
         }
     }

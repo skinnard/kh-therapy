@@ -15,15 +15,14 @@ export default () => (
             finibus nisl. Vestibulum vulputate.
           </p>
           <Button
-          borderColor={'#0F4C81'}
-          textColor={'#0F4C81'}
-          backgroundColor={'transparent'}
-          arrowColor={'blue'}
-          arrowPadding={'10px'}
-        />
-          {/* <Arrow /> */}
+            borderColor={'#0F4C81'}
+            textColor={'#0F4C81'}
+            backgroundColor={'transparent'}
+            arrowColor={'blue'}
+            arrowPadding={'10px'}
+          />
         </div>
-        <div className={`column text-center ${style.column}`}>
+        <div className={`column text-center ${style.imgWrapper} ${style.column}`}>
           <img
             className={style.img}
             src={'/images/leaf-and-books.png'}
@@ -31,6 +30,7 @@ export default () => (
           />
         </div>
       </div>
+      {/* <Arrow /> */}
     </InnerContainer>
   </section>
 )

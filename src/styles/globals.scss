@@ -1,5 +1,10 @@
 .sectionPadding {
     padding: 160px 20px;
+
+    @include mq(custom, max, 800) {
+        padding: 120px 20px;
+    }
+    
 }
 
 .sectionPadding-lg {

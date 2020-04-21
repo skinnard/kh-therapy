@@ -4,6 +4,8 @@ import Logo from '../../shared/Logo/Logo'
 import Creds from '../../shared/Creds/Creds'
 import style from './Navigation.module.scss'
 import InnerContainer from '../../shared/InnerContainer/InnerContainer'
+import MobileMenu from './MobileMenu/MobileMenu'
+import DesktopMenu from '../Navigation/DesktopMenu/DesktopMenu'
 
 class Navigation extends Component {
   state = {
@@ -31,20 +33,8 @@ class Navigation extends Component {
               <Logo color={'blue'} width={'200px'} height={'25px'} />
               <Creds fontSize={'12px'} color={'0F4C81'} marginBottom={'0'} />
             </div>
-            <div className="flex">
-              <Link className={style.navLink} to="/blog">
-                about
-              </Link>
-              <Link className={style.navLink} to="/blog">
-                services
-              </Link>
-              <Link className={style.navLink} to="/blog">
-                resources
-              </Link>
-              <Link className={style.navLink} to="/blog">
-                contact
-              </Link>
-            </div>
+            <DesktopMenu />
+            <MobileMenu />
           </div>
         </InnerContainer>
       </nav>
