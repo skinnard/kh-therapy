@@ -38,7 +38,7 @@
         }
 
         .imgWrapper {
-            @include mq(custom, max, 1000) {
+            @include mq(custom, max, 800) {
                 display: none;
             }
         }

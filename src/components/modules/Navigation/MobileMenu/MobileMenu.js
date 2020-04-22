@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react'
-import style from './mobileMenu.module.scss'
+import style from './mobileBurger.module.scss'
 import '../../../../styles/hamburgers/hamburgers.scss'
 import './hamburger-settings.scss'
+import { Link } from 'gatsby'
 
 function MobileMenu() {
   // useEffect(() => {
@@ -9,17 +10,26 @@ function MobileMenu() {
   // })
 
   const handleClick = () => {
-    var el = document.querySelector('.hamburger');
-    el.classList.toggle('is-active');
+    var el = document.querySelector('.hamburger')
+    el.classList.toggle('is-active')
   }
 
   return (
     <div id="mobile-menu" className={style.mobileMenu}>
-      <button className="hamburger--collapse hamburger" type="button" onClick={handleClick}>
-        <span className="hamburger-box">
-          <span className="hamburger-inner"></span>
-        </span>
-      </button>
+      <div className={style.menu}>
+        <Link className={style.navLink} to="/blog">
+          about
+        </Link>
+        <Link className={style.navLink} to="/blog">
+          services
+        </Link>
+        <Link className={style.navLink} to="/blog">
+          resources
+        </Link>
+        <Link className={style.navLink} to="/blog">
+          contact
+        </Link>
+      </div>
     </div>
   )
 }
