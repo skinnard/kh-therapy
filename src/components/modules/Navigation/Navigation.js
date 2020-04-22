@@ -4,8 +4,8 @@ import Logo from '../../shared/Logo/Logo'
 import Creds from '../../shared/Creds/Creds'
 import style from './Navigation.module.scss'
 import InnerContainer from '../../shared/InnerContainer/InnerContainer'
-import MobileMenu from './MobileMenu/MobileMenu'
 import DesktopMenu from '../Navigation/DesktopMenu/DesktopMenu'
+import MobileMenu from '../Navigation/MobileMenu/MobileMenu'
 
 class Navigation extends Component {
   state = {
@@ -29,7 +29,7 @@ class Navigation extends Component {
       <nav className={style.nav} role="navigation">
         <InnerContainer>
           <div className={style.wrapper}>
-            <div className="logo-wrapper">
+            <div className={style.logoWrapper}>
               <Logo color={'blue'} width={'200px'} height={'25px'} />
               <Creds fontSize={'12px'} color={'0F4C81'} marginBottom={'0'} />
             </div>

@@ -13,10 +13,19 @@
     padding: 0 20px;
     font-size: 15px;
 
+    @include mq(custom, max, 800) {
+        position: sticky;
+        top: -1px;
+    }
+
     .wrapper {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        .logoWrapper {
+            z-index: 100;
+        }
 
         .navLink {
             font-weight: 400;

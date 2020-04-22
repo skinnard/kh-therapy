@@ -5,6 +5,7 @@
 
   @include mq(custom, max, 800) {
     display: block;
+    overflow: hidden;
   }
 
   .menuWrapper {

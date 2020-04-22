@@ -1,17 +1,16 @@
 import React, { useEffect } from 'react'
 import style from './MobileBurger.module.scss'
-import '../../../../styles/hamburgers/hamburgers.scss'
-import './hamburger-settings.scss'
+import '../../../../../styles/hamburgers/hamburgers.scss'
 import { Link } from 'gatsby'
 
 function MobileBurger() {
-  // useEffect(() => {
-  //   var el = document.querySelector('.hamburger');
-  // })
-
   const handleClick = () => {
     var el = document.querySelector('.hamburger')
+    var menu = document.getElementById('mobile-menu-items')
+    var body = document.querySelector('body')
     el.classList.toggle('is-active')
+    menu.classList.toggle('is-shown')
+    body.classList.toggle('fixed')
   }
 
   return (

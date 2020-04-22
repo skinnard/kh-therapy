@@ -1,28 +1,32 @@
-.sectionPadding {
-    padding: 160px 20px;
+body.fixed {
+  height: 100%;
+  overflow: hidden;
+}
 
-    @include mq(custom, max, 800) {
-        padding: 120px 20px;
-    }
-    
+.sectionPadding {
+  padding: 160px 20px;
+
+  @include mq(custom, max, 800) {
+    padding: 120px 20px;
+  }
 }
 
 .sectionPadding-lg {
-    padding: 200px 20px;
+  padding: 200px 20px;
 }
 
 .sectionPadding-sm {
-    padding: 100px 20px;
+  padding: 100px 20px;
 }
 
 .text-center {
-    text-align: center;
+  text-align: center;
 }
 
 .flex {
-    display: flex;
+  display: flex;
 
-    .flex-item {
-        flex: 1;
-    }
+  .flex-item {
+    flex: 1;
+  }
 }
