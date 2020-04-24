@@ -13,15 +13,18 @@ function Button({
     border: `2px solid ${borderColor}`,
     color: textColor,
     background: backgroundColor,
-    cursor: 'pointer'
+    cursor: 'pointer',
   }
 
   return (
     <div className={style.btnWrapper}>
-      <a className={style.button} href="#" style={btnStyle}>
-        Contact
-        <Arrow arrowColor={arrowColor} arrowPadding={arrowPadding} />
-      </a>
+      <div className={style.innerWrapper}>
+        <div className={style.btnBg}></div>
+        <a className={style.button} href="#" style={btnStyle}>
+          Contact
+          <Arrow arrowColor={arrowColor} arrowPadding={arrowPadding} />
+        </a>
+      </div>
     </div>
   )
 }
