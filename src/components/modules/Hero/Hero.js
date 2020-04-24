@@ -17,7 +17,8 @@ export default () => (
           <Button
             borderColor={'#0F4C81'}
             textColor={'#0F4C81'}
-            backgroundColor={'transparent'}
+            backgroundColor={'#F9F6EC'}
+            hoverBgColor={'#0F4C81'}
             arrowColor={'blue'}
             arrowPadding={'10px'}
           />

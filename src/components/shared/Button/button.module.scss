@@ -6,14 +6,22 @@
     position: relative;
     display: inline-block;
 
+    &:hover {
+      
+      .btnBg {
+        transform: translate(0, 0);
+        transition: all 0.3s ease;
+      }
+    }
+
     .btnBg {
       position: absolute;
       background: $rust;
-      top: -5px;
-      right: -5px;
+      transform: translate(5px, -5px);
       width: 100%;
       height: 100%;
       z-index: 1;
+      transition: all 0.3s ease;
     }
 
     .button {
