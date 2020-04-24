@@ -26,10 +26,15 @@ h1,
 .h1 {
     @include font-size(46);
     line-height: 1.2;
+
+    @include mq(med, max) {
+        @include font-size(42);
+    }
     
     @include mq(small, max) {
-        @include font-size(32);
+        @include font-size(36);
     }
+
     @include mq(xsmall, max) {
         @include font-size(28);
     }
@@ -40,35 +45,34 @@ h2,
     @include font-size(42);
     line-height: 1.2;
 
-    @include mq(small, max) {
-        @include font-size(32);
-    }
-
-    @include mq(xsmall, max) {
-        @include font-size(28);
-    }
-}
-
-.cta-h2 {
-    @include font-size(42);
-    line-height: 1.2;
-
     @include mq(med, max) {
-        @include font-size(40);
+        @include font-size(36);
     }
 
     @include mq(small, max) {
-        @include font-size(38);
+        @include font-size(30);
     }
 
     @include mq(xsmall, max) {
-        @include font-size(30);
+        @include font-size(22);
     }
 }
 
 h3,
 .h3 {
     @include font-size(38);
+
+    @include mq(med, max) {
+        @include font-size(32);
+    }
+
+    @include mq(small, max) {
+        @include font-size(28);
+    }
+
+    @include mq(xsmall, max) {
+        @include font-size(24);
+    }
 }
 
 h4,
@@ -78,14 +82,10 @@ h4,
 
 h5,
 .h5 {
-    @include font-size(24);
-
-    @include mq(med, max) {
-        @include font-size(22);
-    }
+    @include font-size(28);
 
     @include mq(small, max) {
-        @include font-size(20);
+        @include font-size(22);
     }
 
     @include mq(xsmall, max) {
@@ -254,4 +254,9 @@ p.pre-title {
     @include font-size(14);
     font-weight: 400;
     text-transform: uppercase;
+    margin-bottom: 15px;
+
+    @include mq(custom, max, 600) {
+        @include font-size(12);
+    }
 }

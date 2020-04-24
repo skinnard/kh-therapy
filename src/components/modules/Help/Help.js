@@ -11,7 +11,7 @@ export default () => (
       <h3 className={`text-center ${style.title}`}>How can I help?</h3>
       <div className={style.gridWrapper}>
         <div className={style.gridItem}>
-            <h4 className={style.itemTitle}>Family Therapy</h4>
+            <h5 className={style.itemTitle}>Family Therapy</h5>
             <ul>
                 <li>Item 1</li>
                 <li>Item 2</li>
@@ -20,11 +20,11 @@ export default () => (
                 <li>Item 5</li>
             </ul>
             <div className={style.btnWrapper}>
-                <a href="#">Learn More<ArrowRight /></a>
+                <a href="#">Learn More <ArrowRight /></a>
             </div>
         </div>
         <div className={style.gridItem}>
-            <h4 className={style.itemTitle}>Family Therapy</h4>
+            <h5 className={style.itemTitle}>Couples Therapy</h5>
             <ul>
                 <li>Item 1</li>
                 <li>Item 2</li>
@@ -33,11 +33,11 @@ export default () => (
                 <li>Item 5</li>
             </ul>
             <div className={style.btnWrapper}>
-                <a href="#">Learn More<ArrowRight /></a>
+                <a href="#">Learn More <ArrowRight /></a>
             </div>
         </div>
         <div className={style.gridItem}>
-            <h4 className={style.itemTitle}>Family Therapy</h4>
+            <h5 className={style.itemTitle}>Family Therapy</h5>
             <ul>
                 <li>Item 1</li>
                 <li>Item 2</li>
@@ -46,11 +46,11 @@ export default () => (
                 <li>Item 5</li>
             </ul>
             <div className={style.btnWrapper}>
-                <a href="#">Learn More<ArrowRight /></a>
+                <a href="#">Learn More <ArrowRight /></a>
             </div>
         </div>
         <div className={style.gridItem}>
-            <h4 className={style.itemTitle}>Family Therapy</h4>
+            <h5 className={style.itemTitle}>Family Therapy</h5>
             <ul>
                 <li>Item 1</li>
                 <li>Item 2</li>
@@ -59,7 +59,7 @@ export default () => (
                 <li>Item 5</li>
             </ul>
             <div className={style.btnWrapper}>
-                <a href="#">Learn More<ArrowRight /></a>
+                <a href="#">Learn More <ArrowRight /></a>
             </div>
         </div>
       </div>

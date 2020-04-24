@@ -22,11 +22,11 @@
                 width: 100%;
             }
 
-            .title {
-                @include mq(custom, max, 1000) {
-                    @include font-size(38);
-                }
-            }
+            // .title {
+            //     @include mq(custom, max, 1000) {
+            //         @include font-size(38);
+            //     }
+            // }
 
             .bodyText {
                 margin-bottom: 30px;

@@ -13,6 +13,7 @@ function Button({
     border: `2px solid ${borderColor}`,
     color: textColor,
     background: backgroundColor,
+    cursor: 'pointer'
   }
 
   return (

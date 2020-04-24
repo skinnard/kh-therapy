@@ -9,6 +9,14 @@ body.fixed {
   @include mq(custom, max, 800) {
     padding: 120px 20px;
   }
+
+  @include mq(custom, max, 600) {
+    padding: 80px 20px;
+  }
+
+  @include mq(custom, max, 400) {
+    padding: 50px 20px;
+  }
 }
 
 .sectionPadding-lg {
@@ -17,6 +25,18 @@ body.fixed {
 
 .sectionPadding-sm {
   padding: 100px 20px;
+
+  @include mq(custom, max, 800) {
+    padding: 80px 20px;
+  }
+
+  @include mq(custom, max, 600) {
+    padding: 60px 20px;
+  }
+
+  @include mq(custom, max, 400) {
+    padding: 40px 20px;
+  }
 }
 
 .text-center {

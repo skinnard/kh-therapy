@@ -18,8 +18,8 @@ function Logo(props) {
   }
 
   return (
-    <div className="logo" style={divStyle}>
-      <Link to="/">{logo}</Link>
+    <div className={style.logo} style={divStyle}>
+      <Link to="/" className={style.logoLink}>{logo}</Link>
     </div>
   )
 }

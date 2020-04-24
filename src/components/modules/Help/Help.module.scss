@@ -7,16 +7,25 @@
   background-position: bottom center;
   margin-bottom: 100px;
 
+  @include mq(custom, max, 650) {
+    margin-bottom: 0;
+  }
+
   .title {
     margin-bottom: 50px;
   }
 
   .gridWrapper {
     display: grid;
-    grid-template-columns: minmax(auto, 300px)  minmax(auto, 300px);
+    grid-template-columns: minmax(auto, 350px) minmax(auto, 350px);
     grid-row-gap: 50px;
     grid-column-gap: 50px;
     justify-content: center;
+
+    @include mq(custom, max, 650) {
+      grid-template-columns: minmax(auto, 350px);
+      grid-row-gap: 20px;
+    }
 
     .gridItem {
       padding: 30px;
@@ -30,7 +39,15 @@
       ul {
         li {
           color: $blue;
-          margin-bottom: 20px;
+          margin-bottom: 15px;
+        }
+      }
+
+      .btnWrapper {
+        margin-top: 30px;
+
+        a {
+          font-weight: 600;
         }
       }
     }

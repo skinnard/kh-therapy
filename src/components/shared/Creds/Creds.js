@@ -8,7 +8,9 @@ function Creds({ fontSize, color, marginBottom }) {
   }
 
   let divStyle = {
-    marginBottom: marginBottom
+    marginBottom: marginBottom,
+    top: '-3px',
+    position: 'relative'
   }
 
   return (

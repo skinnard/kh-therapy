@@ -27,6 +27,10 @@
       margin-bottom: 20px;
       color: $blue;
 
+      &:hover {
+        text-decoration: underline;
+      }
+
       &.last {
         margin-bottom: 0;
       }
