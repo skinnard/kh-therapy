@@ -1,18 +1,16 @@
 @import '../../../../../styles/style.scss';
 
 #mobile-menu-items {
-  overflow: hidden;
-  position: absolute;
+  position: fixed;
   background: #eef4f3;
   height: 100vh;
-  width: 110%;
+  width: 100%;
   left: calc(100% + 20px);
-  top: -20px;
+  top: 0;
   transition: all 0.3s ease;
 
   &.is-shown {
-    left: -20px;
-    overflow: visible;
+    left: 0;
   }
 
   .items-wrapper {

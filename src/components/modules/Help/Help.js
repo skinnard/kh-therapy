@@ -5,13 +5,13 @@ import ArrowRight from '../../../svg/arrow-right-blue.svg';
 import '../../../styles/style.scss';
 
 export default () => (
-  <section id="help" className={`sectionPadding ${style.helpWrapper}`}>
+  <section id="help" className={`sectionPadding-sm ${style.helpWrapper}`}>
     <InnerContainer>
       <p className="pre-title text-center">Nurture Your Emotional Health</p>
       <h3 className={`text-center ${style.title}`}>How can I help?</h3>
       <div className={style.gridWrapper}>
         <div className={style.gridItem}>
-            <h5 className={style.itemTitle}>Family Therapy</h5>
+            <h4 className={style.itemTitle}>Family Therapy</h4>
             <ul>
                 <li>Item 1</li>
                 <li>Item 2</li>
@@ -19,12 +19,12 @@ export default () => (
                 <li>Item 4</li>
                 <li>Item 5</li>
             </ul>
-            <div className="btn-wrpper">
+            <div className={style.btnWrapper}>
                 <a href="#">Learn More<ArrowRight /></a>
             </div>
         </div>
         <div className={style.gridItem}>
-            <h5 className={style.itemTitle}>Family Therapy</h5>
+            <h4 className={style.itemTitle}>Family Therapy</h4>
             <ul>
                 <li>Item 1</li>
                 <li>Item 2</li>
@@ -32,12 +32,12 @@ export default () => (
                 <li>Item 4</li>
                 <li>Item 5</li>
             </ul>
-            <div className="btn-wrpper">
+            <div className={style.btnWrapper}>
                 <a href="#">Learn More<ArrowRight /></a>
             </div>
         </div>
         <div className={style.gridItem}>
-            <h5 className={style.itemTitle}>Family Therapy</h5>
+            <h4 className={style.itemTitle}>Family Therapy</h4>
             <ul>
                 <li>Item 1</li>
                 <li>Item 2</li>
@@ -45,12 +45,12 @@ export default () => (
                 <li>Item 4</li>
                 <li>Item 5</li>
             </ul>
-            <div className="btn-wrpper">
+            <div className={style.btnWrapper}>
                 <a href="#">Learn More<ArrowRight /></a>
             </div>
         </div>
         <div className={style.gridItem}>
-            <h5 className={style.itemTitle}>Family Therapy</h5>
+            <h4 className={style.itemTitle}>Family Therapy</h4>
             <ul>
                 <li>Item 1</li>
                 <li>Item 2</li>
@@ -58,7 +58,7 @@ export default () => (
                 <li>Item 4</li>
                 <li>Item 5</li>
             </ul>
-            <div className="btn-wrpper">
+            <div className={style.btnWrapper}>
                 <a href="#">Learn More<ArrowRight /></a>
             </div>
         </div>
