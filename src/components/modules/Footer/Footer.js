@@ -47,9 +47,10 @@ function Footer() {
                   123-333-3333
                 </a>
                 <Button
-                  borderColor={'#fff'}
-                  textColor={'#fff'}
-                  backgroundColor={'transparent'}
+                  borderColor={'#ffffff'}
+                  textColor={'#ffffff'}
+                  hoverBgColor={'#ffffff'}
+                  backgroundColor={'#0F4C81'}
                   arrowColor={'white'}
                   arrowPadding={'10px'}
                 />

@@ -2,13 +2,18 @@ import React from 'react'
 import style from './cta.module.scss'
 import Divider from '../../../svg/divider-line.svg'
 import InnerContainer from '../../shared/InnerContainer/InnerContainer'
-import Button from '../../shared/Button/Button';
+import Button from '../../shared/Button/Button'
 
 export default () => (
-  <section id="info-section" className={`sectionPadding-sm ${style.infoSection}`}>
+  <section
+    id="info-section"
+    className={`sectionPadding-sm ${style.infoSection}`}
+  >
     <InnerContainer size={'small'}>
       <div className={style.contentWrapper}>
-        <h2 className={style.title}>Trust is earned in the smallest of moments.</h2>
+        <h2 className={style.title}>
+          Trust is earned in the smallest of moments.
+        </h2>
         <Divider />
         <p className={style.bodyText}>
           It is earned not through heroic deeds, or even highly visible actions,
@@ -18,7 +23,8 @@ export default () => (
         <Button
           borderColor={'#0F4C81'}
           textColor={'#0F4C81'}
-          backgroundColor={'transparent'}
+          hoverBgColor={'#0F4C81'}
+          backgroundColor={'#ffffff'}
           arrowColor={'blue'}
           arrowPadding={'10px'}
         />

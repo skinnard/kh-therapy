@@ -1,0 +1,70 @@
+@import '../../../styles/style.scss';
+
+.aboutWrapper {
+  background: #f9f6ec;
+  position: relative;
+  top: -80px;
+  margin-bottom: -80px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  min-height: 800px;
+
+  .columns {
+    flex-wrap: wrap;
+
+    .title {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+
+    .left {
+      width: 60%;
+      display: flex;
+      justify-content: space-between;
+
+      .shape {
+          width: 6px;
+          height: 200px;
+          background: $rust;
+      }
+
+      .textWrapper {
+          width: 95%;
+      }
+    }
+
+    .right {
+      width: 40%;
+
+      .imgWrapper {
+        max-width: 300px;
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+
+        .img {
+          width: 100%;
+          position: relative;
+          z-index: 10;
+        }
+
+        .imgBg {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          max-width: 300px;
+          background-color: $blue;
+          transform: translate(30px, -30px);
+          top: 0;
+        }
+      }
+    }
+
+    .imgWrapper {
+      @include mq(custom, max, 800) {
+        display: none;
+      }
+    }
+  }
+}

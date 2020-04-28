@@ -111,7 +111,7 @@ p {
     font-family: $body-font;
     @include font-size(16);
     line-height: 1.6;
-    color: #3b3b3b;
+    color: $blue;
 
     @include mq(small, max) {
         @include font-size(15);
