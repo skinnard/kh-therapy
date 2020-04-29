@@ -1,28 +1,92 @@
 import React from 'react'
 import style from './aboutInfo.module.scss'
+import '../../../styles/style.scss'
 import InnerContainer from '../../shared/InnerContainer/InnerContainer'
 import Arrow from '../../../svg/long-arrow.svg'
-import Button from '../../shared/Button/Button'
+import RightArrow from '../../../svg/arrow-right-blue.svg'
 
 export default () => (
-  <section id="about-info" className={style.aboutWrapper}>
+  <section
+    id="about-info"
+    className={`sectionPadding-sm ${style.aboutInfoWrapper}`}
+  >
     <InnerContainer>
+      <h3 className={`text-center ${style.title}`}>
+        Background &amp;
+        <br /> Professional Experience
+      </h3>
+      <Arrow />
       <div className={`flex ${style.columns}`}>
-      <h3 className={style.title}>Get to know Kristen</h3>
-        <div className={`column ${style.left}`}>  
-          <div className={style.shape}></div>
-          <div class={style.textWrapper}>
-            <p>I am a Registered Psychotherapist with the College of Registered Psychotherapists of Ontario (CRPO) and a Registered Marriage and Family Therapist with the American Association for Marriage and Family Therapy (AAMFT). I hold a Masters degree in Counselling from Tyndale University College and Seminary and an honours degree in Psychology from the University of Guelph.</p><p>I believe in a holistic approach to counselling that focuses on the emotional, physical, cognitive, relational, and spiritual well-being of my clients. I completed my training in Family Systems Theory, which considers each person as part of a broader past and present social context. </p><p>Building on this foundation, I integrate many different theories and models into my counselling, drawing primarily on Internal Family Systems Therapy, Emotion Focused Therapy, Focusing, and Cognitive Behavioural Therapy. Each of these models helps clients leave behind unhelpful patterns and move toward authentic and healthy relationships with themselves and others.</p>
+        <div className={`column ${style.left}`}>
+          <div class={style.infoSection}>
+            <p className={style.sectionTitle}>Education and work experience</p>
+            <p className={style.sectionSubTitle}>
+              <RightArrow />
+              Licensed Marriage and Family Therapist #101250
+            </p>
+            <p className={style.sectionSubTitle}>
+              <RightArrow />
+              Richmond Area Multi-Services (RAMS):
+            </p>
+            <p>
+              <strong>CAAP Counseling and Pre-Vocational Services</strong>
+            </p>
+            <p>
+              Provide mental health services to individuals who may be dealing
+              with drug addictions, experiencing trauma and homelessness. Link
+              clients to community services and offer vocational counseling and
+              assessment. Advocate and promote social justice for underserved
+              populations.
+            </p>
+            <p className={style.sectionSubTitle}>
+              <RightArrow />
+              Dominican University of California
+            </p>
+            <p>
+              <strong>
+                M.A. in Counseling Psychology, emphasis in Marriage and Family
+                Therapy
+              </strong>
+            </p>
+            <p className={style.sectionSubTitle}>
+              <RightArrow />
+              Dominican University of California
+            </p>
+            <p>
+              <strong>
+                B.A. in Psychology, Minor in Communication Studies
+              </strong>
+            </p>
           </div>
         </div>
         <div className={`column ${style.right}`}>
-          <div class={style.imgWrapper}>
-            <img
-              className={style.img}
-              src={'/images/kristen.png'}
-              alt="Kristen Hodges"
-            />
-            <div className={style.imgBg}></div>
+          <div class={style.infoSection}>
+            <p className={style.sectionTitle}>Training</p>
+            <p className={`${style.sectionSubTitle}`}>
+              <RightArrow />
+              Emotionally Focused Therapy Externship
+            </p>
+          </div>
+          <div class={style.infoSection}>
+            <p className={style.sectionTitle}>PROFESSIONAL AFFILIATIONS</p>
+            <p className={style.sectionSubTitle}>
+              <RightArrow />
+              California Association of Marriage and Family Therapists (CAMFT)
+            </p>
+          </div>
+          <div class={style.infoSection}>
+            <p className={style.sectionSubTitle}>
+              <RightArrow />
+              San Francisco Chapter (SFCAMFT)
+            </p>
+          </div>
+          <div class={style.infoSection}>
+            <p className={style.sectionTitle}>Languages</p>
+
+            <p className={style.sectionSubTitle}>
+              <RightArrow />
+              English
+            </p>
           </div>
         </div>
       </div>

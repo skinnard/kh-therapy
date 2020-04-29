@@ -1,0 +1,29 @@
+@import '../../../styles/style.scss';
+
+.servicesIntroWrapper {
+  background: #f9f6ec;
+  position: relative;
+  top: -80px;
+  margin-bottom: -80px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  min-height: 800px;
+
+  .title {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .shape {
+    width: 6px;
+    height: 200px;
+    background: $rust;
+  }
+
+  .textWrapper {
+   .shape {
+     position: absolute;
+   }
+  }
+}

@@ -4,38 +4,38 @@ body.fixed {
 }
 
 .sectionPadding {
-  padding: 160px 20px;
+  padding: 160px 40px;
 
   @include mq(custom, max, 800) {
-    padding: 120px 20px;
+    padding: 120px 40px;
   }
 
   @include mq(custom, max, 600) {
-    padding: 80px 20px;
+    padding: 80px 40px;
   }
 
   @include mq(custom, max, 400) {
-    padding: 50px 20px;
+    padding: 50px 40px;
   }
 }
 
 .sectionPadding-lg {
-  padding: 200px 20px;
+  padding: 200px 40px;
 }
 
 .sectionPadding-sm {
-  padding: 100px 20px;
+  padding: 100px 40px;
 
   @include mq(custom, max, 800) {
-    padding: 80px 20px;
+    padding: 80px 40px;
   }
 
   @include mq(custom, max, 600) {
-    padding: 60px 20px;
+    padding: 60px 40px;
   }
 
   @include mq(custom, max, 400) {
-    padding: 40px 20px;
+    padding: 40px 40px;
   }
 }
 
