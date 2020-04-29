@@ -11,16 +11,16 @@ function MobileMenuItems() {
   return (
     <div id="mobile-menu-items" className="mobileMenuItems">
       <div className="items-wrapper">
-        <Link className="item" to="/blog">
+        <Link className="item" to="/about">
           about
         </Link>
-        <Link className="item" to="/blog">
+        <Link className="item" to="/services">
           services
         </Link>
-        <Link className="item" to="/blog">
+        <Link className="item" to="/resources">
           resources
         </Link>
-        <Link className="item last" to="/blog">
+        <Link className="item last" to="/contact">
           contact
         </Link>
       </div>

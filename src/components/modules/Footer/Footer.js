@@ -28,10 +28,10 @@ function Footer() {
           <div className={style.flexItem}>
             <div class={style.colWrap}>
               <div className={style.menuWrapper}>
-                <Link to="/">About</Link>
-                <Link to="/">Services</Link>
-                <Link to="/">Contact</Link>
-                <Link to="/">LEgal</Link>
+                <Link to="/about">About</Link>
+                <Link to="/services">Services</Link>
+                <Link to="/contact">Contact</Link>
+                <Link to="/legal">Legal</Link>
               </div>
             </div>
           </div>

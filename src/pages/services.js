@@ -12,6 +12,8 @@ import Cta from '../components/modules/Cta/Cta'
 import Footer from '../components/modules/Footer/Footer'
 import About from '../components/modules/About/About'
 import ServicesIntro from '../components/modules/ServicesIntro/ServicesIntro'
+import WhatToExpect from '../components/modules/WhatToExpect/WhatToExpect'
+import ServicesFaq from '../components/modules/ServicesFaq/ServicesFaq'
 
 class RootIndex extends React.Component {
   render() {
@@ -21,6 +23,8 @@ class RootIndex extends React.Component {
           <Helmet />
           <Navigation />
           <ServicesIntro />
+          <WhatToExpect />
+          <ServicesFaq />
           <Footer />
         </Container>
       </Layout>

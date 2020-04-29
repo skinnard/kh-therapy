@@ -15,15 +15,35 @@
     margin-bottom: 50px;
   }
 
-  .shape {
-    width: 6px;
-    height: 200px;
-    background: $rust;
+  .contentWrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    .shape {
+      width: 4px;
+      height: 100%;
+      background: $rust;
+      position: absolute;
+    }
+
+    .textWrapper {
+      padding-left: 60px;
+
+      .subTitle {
+        color: $rust;
+        font-weight: 600;
+      }
+
+      p:last-child {
+        margin: 0;
+      }
+    }
   }
 
-  .textWrapper {
-   .shape {
-     position: absolute;
-   }
+  svg {
+    position: absolute;
+    bottom: -70px;
+    margin-left: calc(50% - 8px);
   }
 }

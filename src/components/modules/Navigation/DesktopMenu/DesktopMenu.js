@@ -5,16 +5,16 @@ import style from './DesktopMenu.module.scss'
 function DesktopMenu() {
   return (
     <div className={style.desktopMenu}>
-      <Link className={style.navLink} to="/blog">
+      <Link className={style.navLink} to="/about">
         about
       </Link>
-      <Link className={style.navLink} to="/blog">
+      <Link className={style.navLink} to="/services">
         services
       </Link>
-      <Link className={style.navLink} to="/blog">
+      <Link className={style.navLink} to="/resources">
         resources
       </Link>
-      <Link className={style.navLink} to="/blog">
+      <Link className={style.navLink} to="/contact">
         contact
       </Link>
     </div>
