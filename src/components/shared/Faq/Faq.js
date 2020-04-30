@@ -1,19 +1,29 @@
-import React from 'react'
+import React, { useState } from 'react'
 import AccordionArrow from '../../../svg/accordion-arrow.svg'
-import style from './faq.module.scss'
+import style from './faq.scss'
 import InnerContainer from '../InnerContainer/InnerContainer'
 
-function Faq(props) {
+function Faq() {
+  const [isToggled, setToggled] = useState(false)
+
+  const toggle = () => {
+    setToggled(!isToggled);
+    // console.log(isToggled);
+  }  
+
+  const result = isToggled === true ? 'style.show' : null;
+  console.log(result);
+
   return (
-    <div className={style.faqWrapper}>
+    <div id="faq" className="sectionPadding faqWrapper">
       <InnerContainer size={'medium'}>
-        <div className={style.faq}>
-          <div className={style.faqHeader}>
+        <div className="faq">
+          <div className="faqHeader" onClick={toggle}>
             Family Therapy
             <AccordionArrow />
           </div>
 
-          <div className={style.body}>
+          <div className="faqBody">
             Provide individuals with the space to explore emotions and personal
             experiences in order to create healthier coping skills to handle
             daily life stressors and develop tools to maintain positive
