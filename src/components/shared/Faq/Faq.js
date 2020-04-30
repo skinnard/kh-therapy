@@ -1,33 +1,40 @@
-import React, { useState } from 'react'
-import AccordionArrow from '../../../svg/accordion-arrow.svg'
+import React, { useState, useRef } from 'react'
 import style from './faq.scss'
 import InnerContainer from '../InnerContainer/InnerContainer'
+import Chevron from '../../../svg/Chevron'
 
-function Faq() {
-  const [isToggled, setToggled] = useState(false)
+function Faq(props) {
+  const [setActive, setActiveState] = useState('')
+  const [setHeight, setHeightState] = useState('0px')
+  const [setRotate, setRotateState] = useState('accordion__icon')
 
-  const toggle = () => {
-    setToggled(!isToggled);
-    // console.log(isToggled);
-  }  
+  const content = useRef(null)
 
-  const result = isToggled === true ? 'style.show' : null;
-  console.log(result);
+  function toggleAccordion() {
+    setActiveState(setActive === '' ? 'active' : '')
+    setHeightState(
+      setActive === 'active' ? '0px' : `${content.current.scrollHeight}px`
+    )
+    setRotateState(
+      setActive === 'active' ? 'accordion__icon' : 'accordion__icon rotate'
+    )
+  }
 
   return (
-    <div id="faq" className="sectionPadding faqWrapper">
+    <div id="faq" className="faqWrapper">
       <InnerContainer size={'medium'}>
         <div className="faq">
-          <div className="faqHeader" onClick={toggle}>
-            Family Therapy
-            <AccordionArrow />
+          <div className={`faqHeader ${setActive}`} onClick={toggleAccordion}>
+            {props.title}
+            <Chevron className={`${setRotate}`} width={20} fill={"#777"} />
           </div>
 
-          <div className="faqBody">
-            Provide individuals with the space to explore emotions and personal
-            experiences in order to create healthier coping skills to handle
-            daily life stressors and develop tools to maintain positive
-            relationships and engage in a thriving community.
+          <div
+            className={`faqBody`}
+            ref={content}
+            style={{ maxHeight: `${setHeight}` }}
+          >
+            <p>{props.content}</p>
           </div>
         </div>
       </InnerContainer>

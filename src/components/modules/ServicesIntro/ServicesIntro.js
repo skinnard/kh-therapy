@@ -7,7 +7,7 @@ import Button from '../../shared/Button/Button'
 export default () => (
   <section id="services-intro" className={style.servicesIntroWrapper}>
     <InnerContainer>
-      <div className="sectionPadding">
+      <div className="sectionPadding-both">
         <h1 className={style.title}>Services</h1>
         <div class={style.contentWrapper}>
           <div className={style.shape}></div>

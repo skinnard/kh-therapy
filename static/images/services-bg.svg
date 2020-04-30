@@ -1,4 +1,9 @@
-<svg width="1572" height="1225" viewBox="0 0 1572 1225" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M1572 1225H445V574.777C445 574.777 541.265 703.747 695.444 703.747C755.662 703.747 903.626 645.979 1033.54 510.292C1154.72 383.732 1291.94 193.687 1365.38 92.4826C1420.95 15.9069 1536 -47.2346 1572 48.1493V1225Z" fill="#EFF3F4" fill-opacity="0.42"/>
-<path d="M0 1225H1440V741C1440 741 1317 837 1120 837C1043.06 837 854 794 688 693C533.167 598.795 357.835 457.332 264 382C193 325 46 278 0 349V1225Z" fill="#EFF3F4"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1572 901" enable-background="new 0 0 1572 901" xml:space="preserve">
+<path fill="#EFF3F4" fill-opacity="0.42" d="M1572,1225H445V581.7c0,0,96.3,127.6,250.4,127.6c60.2,0,208.2-57.2,338.1-191.4
+	c121.2-125.2,258.4-313.2,331.8-413.4C1420.9,28.7,1536-33.7,1572,60.6V1225z"/>
+<path fill="#EFF3F4" d="M0,1225h1572V741c0,0-134.3,96-349.3,96c-84,0-290.4-43-471.6-144c-169-94.2-360.4-235.7-462.9-311
+	C210.7,325,50.2,278,0,349V1225z"/>
 </svg>

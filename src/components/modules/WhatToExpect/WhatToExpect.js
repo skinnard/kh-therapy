@@ -6,7 +6,7 @@ const WhatToExpect = () => {
   return (
     <section
       id="what-to-expect"
-      className={`sectionPadding ${style.whatToExpectWrapper}`}
+      className={`sectionPadding-both ${style.whatToExpectWrapper}`}
     >
       <InnerContainer>
         <p className={style.title}>What to expect</p>
