@@ -4,10 +4,10 @@ body.fixed {
 }
 
 .sectionPadding {
-  padding: 0 40px 160px;
+  padding: 0 0 160px;
 
   @include mq(custom, max, 800) {
-    padding: 0 20px 120px;
+    padding: 0 0 120px;
   }
 
   @include mq(custom, max, 600) {
@@ -20,10 +20,10 @@ body.fixed {
 }
 
 .sectionPadding-both {
-  padding: 160px 40px;
+  padding: 160px 0;
 
   @include mq(custom, max, 800) {
-    padding: 120px 20px;
+    padding: 120px 0;
   }
 
   @include mq(custom, max, 600) {
@@ -34,6 +34,23 @@ body.fixed {
     padding: 50px 0;
   }
 }
+
+.sectionPadding-top {
+  padding: 200px 0 160px;
+
+  @include mq(custom, max, 800) {
+    padding: 160px 0 120px;
+  }
+
+  @include mq(custom, max, 600) {
+    padding: 80px 0;
+  }
+
+  @include mq(custom, max, 400) {
+    padding: 50px 0;
+  }
+}
+
 
 .sectionPadding-lg {
   padding: 0 40px 200px;

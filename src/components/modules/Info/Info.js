@@ -5,7 +5,7 @@ import Rings from '../../../svg/rings.svg';
 import InnerContainer from '../../shared/InnerContainer/InnerContainer';
 
 export default () => (
-    <section id="info-section" className={`sectionPadding ${style.infoSection}`}>
+    <section id="info-section" className={`sectionPadding-both ${style.infoSection}`}>
         <InnerContainer size={'small'}>
             <div className="text-center">
                 <h2>Trust is earned in the smallest of moments.</h2>

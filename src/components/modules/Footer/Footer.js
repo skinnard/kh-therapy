@@ -9,7 +9,7 @@ import { Link } from 'gatsby'
 
 function Footer() {
   return (
-    <section className={`sectionPadding-sm ${style.footer}`}>
+    <section className={`sectionPadding-both ${style.footer}`}>
       <InnerContainer>
         <div className={style.flex}>
           <div className={style.flexItem}>

@@ -7,7 +7,7 @@ import Button from '../../shared/Button/Button'
 export default () => (
   <section id="about" className={style.aboutWrapper}>
     <InnerContainer>
-      <div className={`flex sectionPadding ${style.columns}`}>
+      <div className={`flex sectionPadding-top ${style.columns}`}>
       <h3 className={style.title}>Get to know Kristen</h3>
         <div className={`column ${style.left}`}>  
           <div className={style.shape}></div>

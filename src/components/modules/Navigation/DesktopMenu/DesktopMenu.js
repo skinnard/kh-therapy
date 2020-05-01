@@ -14,6 +14,9 @@ function DesktopMenu() {
       <Link className={style.navLink} to="/resources">
         resources
       </Link>
+      <Link className={style.navLink} to="/faq">
+        faq
+      </Link>
       <Link className={style.navLink} to="/contact">
         contact
       </Link>

@@ -1,5 +1,5 @@
 import React from 'react'
-import style from './servicesIntro.module.scss'
+import style from './faqIntro.module.scss'
 import InnerContainer from '../../shared/InnerContainer/InnerContainer'
 import Arrow from '../../../svg/long-arrow.svg'
 import Button from '../../shared/Button/Button'
@@ -8,7 +8,7 @@ export default () => (
   <section id="services-intro" className={style.servicesIntroWrapper}>
     <InnerContainer>
       <div className="sectionPadding-top">
-        <h1 className={style.title}>Services</h1>
+        <h1 className={style.title}>FAQ</h1>
         <div class={style.contentWrapper}>
           <div className={style.shape}></div>
           <div class={style.textWrapper}>
