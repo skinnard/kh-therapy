@@ -1,0 +1,39 @@
+@import '../../../styles/style.scss';
+
+.contactForm {
+    
+    .formWrapper {
+        border: 4px solid $blue;
+        padding: 50px;
+
+        .form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            input,
+            textarea {
+                width: 100%;
+                padding: 10px;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                border-bottom: 2px solid red;
+            }
+
+            .leftCol {
+                width: 44%;
+                background: pink;
+            }
+
+            .rightCol {
+                width: 48%;
+                background: steelblue;
+            }
+
+            .bottom {
+                width: 100%;
+            }
+        }
+    }
+}

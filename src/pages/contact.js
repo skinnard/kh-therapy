@@ -5,11 +5,9 @@ import Helmet from 'react-helmet'
 import Layout from '../components/shared/Layout/Layout'
 import Navigation from '../components/modules/Navigation/Navigation'
 import Container from '../components/shared/Container/Container'
-import Hero from '../components/modules/Hero/Hero'
-import Info from '../components/modules/Info/Info'
-import Help from '../components/modules/Help/Help'
-import Cta from '../components/modules/Cta/Cta'
+import ContactInfo from '../components/modules/ContactInfo/ContactInfo'
 import Footer from '../components/modules/Footer/Footer'
+import ContactForm from '../components/modules/ContactForm/ContactForm'
 
 class RootIndex extends React.Component {
   render() {
@@ -19,10 +17,8 @@ class RootIndex extends React.Component {
           <Helmet />
           {/* <Hero data={author.node} /> */}
           <Navigation />
-          <Hero />
-          <Info />
-          <Help />
-          <Cta />
+          <ContactInfo />
+          <ContactForm />
           <Footer />
         </Container>
       </Layout>
