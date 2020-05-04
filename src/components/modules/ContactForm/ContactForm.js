@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import style from './contactForm.module.scss'
 import '../../../styles/style.scss'
 import InnerContainer from '../../shared/InnerContainer/InnerContainer'
+import Button from '../../shared/Button/Button'
 
 class ContactForm extends Component {
   constructor(props) {
@@ -54,8 +55,7 @@ class ContactForm extends Component {
               </div>
 
               <div className={style.rightCol}>
-
-              <div className="form-group">
+                <div className="form-group">
                   {/* <label htmlFor="exampleInputEmail1">Email address</label> */}
                   <input
                     type="email"
@@ -67,27 +67,27 @@ class ContactForm extends Component {
               </div>
 
               <div class={style.bottom}>
-                  <div className="form-group">
-                      {/* <label htmlFor="name">Name</label> */}
-                      <input
-                        type="text"
-                        className="form-control"
-                        placeholder="Name"
-                      />
-                    </div>
-    
-                  <div className="form-group">
-                      <textarea
-                        className="form-control"
-                        rows="5"
-                        placeholder="Message"
-                      ></textarea>
-                    </div>
-                    <button type="submit" className="btn btn-primary">
-                      Submit
-                    </button>
-              </div>
+                <div className="form-group">
+                  {/* <label htmlFor="name">Name</label> */}
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Subject"
+                  />
+                </div>
 
+                <div className="form-group">
+                  <textarea
+                    className="form-control"
+                    rows="5"
+                    placeholder="Message"
+                  ></textarea>
+                </div>
+
+                <Button 
+                    btnText={'Submit'}
+                    type={'button'} />
+              </div>
             </form>
           </div>
         </InnerContainer>

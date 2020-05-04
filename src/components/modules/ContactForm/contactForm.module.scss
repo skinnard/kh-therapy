@@ -18,21 +18,65 @@
                 border-top: none;
                 border-left: none;
                 border-right: none;
-                border-bottom: 2px solid red;
+                border-bottom: 2px solid $blue;
+                // border: 2px solid $blue;
+                font-family: $title-font;
+                margin-bottom: 50px;
+                color: $blue;
+                @include font-size(14);
+
+                &::placeholder {
+                    color: #8eacc5;
+                }
+
+                &:focus {
+                    outline: none;
+                }
             }
 
-            .leftCol {
-                width: 44%;
-                background: pink;
-            }
-
+            .leftCol,
             .rightCol {
-                width: 48%;
-                background: steelblue;
+                width: 45%;
             }
 
             .bottom {
                 width: 100%;
+
+                .btnWrapper {
+
+                    .innerWrapper {
+                      position: relative;
+                      display: inline-block;
+                  
+                      &:hover {
+                        
+                        .btnBg {
+                          transform: translate(0, 0);
+                          transition: all 0.3s ease;
+                        }
+                      }
+                  
+                      .btnBg {
+                        position: absolute;
+                        background: $rust;
+                        transform: translate(5px, -5px);
+                        width: 100%;
+                        height: 100%;
+                        z-index: 1;
+                        transition: all 0.3s ease;
+                      }
+                  
+                      .button {
+                        position: relative;
+                        z-index: 10;
+                        display: inline-block;
+                        padding: 10px 30px;
+                        border: 2px solid $blue;
+                        font-weight: 600;
+                        @include font-size(14);
+                      }
+                    }
+                  }
             }
         }
     }

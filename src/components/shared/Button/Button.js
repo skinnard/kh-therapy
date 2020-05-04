@@ -8,7 +8,9 @@ function Button({
   backgroundColor,
   arrowColor,
   arrowPadding,
-  hoverBgColor
+  hoverBgColor,
+  type,
+  btnText
 }) {
   const btnStyle = {
     border: `2px solid ${borderColor}`,
@@ -20,14 +22,29 @@ function Button({
     background: hoverBgColor,
   }
 
+  let button
+
+  if (type === 'button') {
+    button = (
+      <button className={style.button} style={btnStyle}>
+        {btnText}
+        <Arrow arrowColor={arrowColor} arrowPadding={arrowPadding} />
+      </button>
+    )
+  } else {
+    button = (
+      <a className={style.button} href="#" style={btnStyle}>
+        {btnText}
+        <Arrow arrowColor={arrowColor} arrowPadding={arrowPadding} />
+      </a>
+    )
+  }
+
   return (
     <div className={style.btnWrapper}>
       <div className={style.innerWrapper}>
         <div className={style.btnBg} style={bgStyle}></div>
-        <a className={style.button} href="#" style={btnStyle}>
-          Contact
-          <Arrow arrowColor={arrowColor} arrowPadding={arrowPadding} />
-        </a>
+        {button}
       </div>
     </div>
   )
