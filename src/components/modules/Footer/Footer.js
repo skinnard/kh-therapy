@@ -15,7 +15,7 @@ function Footer() {
           <div className={style.flexItem}>
             <div class={style.colWrap}>
               <div className={style.imgWrapper}>
-                <img src={'/images/logo-white.svg'} alt="Logo"/>
+                <img src={'/images/logo-white.svg'} alt="Logo" />
               </div>
               <Creds
                 fontSize={'12px'}
@@ -47,12 +47,15 @@ function Footer() {
                   123-333-3333
                 </a>
                 <Button
-                  borderColor={'#ffffff'}
-                  textColor={'#ffffff'}
-                  hoverBgColor={'#ffffff'}
+                  btnText={'Contact'}
+                  link={'/contact'}
+                  type={'standard'}
+                  borderColor={'#fff'}
+                  textColor={'#fff'}
                   backgroundColor={'#0F4C81'}
-                  arrowColor={'white'}
+                  arrowColor={'#0F4C81'}
                   arrowPadding={'10px'}
+                  hoverBgColor={'#fff'}
                 />
               </div>
             </div>

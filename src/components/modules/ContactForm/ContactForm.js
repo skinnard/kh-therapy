@@ -35,8 +35,9 @@ class ContactForm extends Component {
     return (
       <div className={`sectionPadding-both ${style.contactForm}`}>
         <InnerContainer size={'small'}>
-          <h3 className="text-center">Contact Kristen</h3>
+          <h3 className={style.title}>Contact Kristen</h3>
           <div className={style.formWrapper}>
+          <div className={style.formOutline}></div>
             <form
               id="contact-form"
               className={style.form}
@@ -66,7 +67,7 @@ class ContactForm extends Component {
                 </div>
               </div>
 
-              <div class={style.bottom}>
+              <div className={style.bottom}>
                 <div className="form-group">
                   {/* <label htmlFor="name">Name</label> */}
                   <input
@@ -85,11 +86,23 @@ class ContactForm extends Component {
                 </div>
 
                 <Button 
-                    btnText={'Submit'}
-                    type={'button'} />
+                btnText={'Submit'} 
+                link={'false'}
+                type={'submit'} 
+                borderColor={'#0F4C81'}
+                textColor={'#fff'}
+                backgroundColor={'#0F4C81'}
+                arrowColor={'#0F4C81'}
+                arrowPadding={'10px'}
+                hoverBgColor={'#DB6B5C'} />
               </div>
             </form>
           </div>
+        </InnerContainer>
+        <InnerContainer size={'medium'}>
+          <p className={style.formLegal}>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque itaque ipsam labore repellendus exercitationem obcaecati minima, expedita aliquam, facere porro ullam ipsum quod quia deleniti veniam laboriosam modi dicta voluptate.
+          </p>
         </InnerContainer>
       </div>
     )

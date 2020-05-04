@@ -5,10 +5,7 @@ import InnerContainer from '../../shared/InnerContainer/InnerContainer'
 import Button from '../../shared/Button/Button'
 
 export default () => (
-  <section
-    id="info-section"
-    className={`sectionPadding ${style.infoSection}`}
-  >
+  <section id="info-section" className={`sectionPadding ${style.infoSection}`}>
     <InnerContainer size={'small'}>
       <div className={style.contentWrapper}>
         <h2 className={style.title}>
@@ -21,10 +18,12 @@ export default () => (
           and connection.
         </p>
         <Button
+          btnText={'Learn More'}
+          link={'./about'}
           borderColor={'#0F4C81'}
           textColor={'#0F4C81'}
+          backgroundColor={'#fff'}
           hoverBgColor={'#0F4C81'}
-          backgroundColor={'#ffffff'}
           arrowColor={'blue'}
           arrowPadding={'10px'}
         />

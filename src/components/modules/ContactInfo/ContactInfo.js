@@ -21,6 +21,7 @@ export default () => (
               <p className="phone">123-456-7890</p>
               <p className="email">kristen@hodges.com</p>
               <Button
+                btnText={'Get Directions'}
                 borderColor={'#0F4C81'}
                 textColor={'#0F4C81'}
                 backgroundColor={'#F9F6EC'}
