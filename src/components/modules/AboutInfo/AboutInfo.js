@@ -15,7 +15,7 @@ export default () => (
         Background &amp;
         <br /> Professional Experience
       </h3>
-      <Arrow />
+      {/* <Arrow /> */}
       <div className={`flex ${style.columns}`}>
         <div className={`column ${style.left}`}>
           <div class={style.infoSection}>

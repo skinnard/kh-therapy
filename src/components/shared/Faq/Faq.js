@@ -26,7 +26,9 @@ function Faq(props) {
         <div className="faq">
           <div className={`faqHeader ${setActive}`} onClick={toggleAccordion}>
             {props.title}
-            <Chevron className={`${setRotate}`} width={20} fill={"#777"} />
+            <div className="arrowWrapper">
+              <Chevron className={`${setRotate}`} width={20} fill={'#777'} />
+            </div>
           </div>
 
           <div

@@ -15,15 +15,20 @@ export default () => (
             finibus nisl. Vestibulum vulputate.
           </p>
           <Button
+            btnText={'Learn More'}
+            link={'/about'}
+            // type={''}
             borderColor={'#0F4C81'}
             textColor={'#0F4C81'}
             backgroundColor={'#F9F6EC'}
-            hoverBgColor={'#0F4C81'}
             arrowColor={'blue'}
             arrowPadding={'10px'}
+            hoverBgColor={'#0F4C81'}
           />
         </div>
-        <div className={`column text-center ${style.imgWrapper} ${style.column}`}>
+        <div
+          className={`column text-center ${style.imgWrapper} ${style.column}`}
+        >
           <img
             className={style.img}
             src={'/images/leaf-and-books.png'}

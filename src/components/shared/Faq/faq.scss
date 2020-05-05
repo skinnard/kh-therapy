@@ -16,7 +16,15 @@
       @include font-size(28);
       color: $blue;
 
-      /* Style the accordion chevron icon */
+      @include mq(custom, max, 800) {
+        @include font-size(22);
+      }
+
+      @include mq(custom, max, 550) {
+        @include font-size(18);
+      }
+      
+
       .accordion__icon {
         margin-left: auto;
         transition: transform 0.6s ease;
@@ -37,6 +45,10 @@
         color: $blue;
         font-family: $title-font;
         @include font-size(16);
+
+        @include mq(custom, max, 550) {
+          @include font-size(15);
+        }
       }
     }
   }
