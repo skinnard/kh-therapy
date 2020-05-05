@@ -11,7 +11,22 @@ export default () => (
         <div className={`flex-item text-center ${style.column}`}>
           <h1 className={style.title}>Contact</h1>
           <div className={style.infoWrapper}>
-            <div className={style.left}>
+            <table>
+              <tr>
+                <td className={style.left} valign="top">Address:</td>
+                <td className={style.right} valign="top">123 Awesome St. Hamilton, ON</td>
+              </tr>
+              <tr>
+                <td className={style.left} valign="top">Phone:</td>
+                <td className={style.right} valign="top">123-456-7890</td>
+              </tr>
+              <tr>
+                <td className={style.left} valign="top">Email:</td>
+                <td className={style.right} valign="top">kristen@hodges.com</td>
+              </tr>
+            </table>
+
+            {/* <div className={style.left}>
               <p className="address">Address:</p>
               <p className="phone">Phone:</p>
               <p className="email">Email:</p>
@@ -20,6 +35,8 @@ export default () => (
               <p className="address">123 Awesome St. Hamilton, ON</p>
               <p className="phone">123-456-7890</p>
               <p className="email">kristen@hodges.com</p>
+            </div> */}
+            <div className="btnWrapper">
               <Button
                 btnText={'Get Directions'}
                 borderColor={'#0F4C81'}
@@ -33,16 +50,14 @@ export default () => (
           </div>
         </div>
 
-        <div
-          className={`${style.mapWrapper} ${style.column}`}
-        >
+        <div className={`${style.mapWrapper} ${style.column}`}>
           <div className={style.map}>
             <div className={style.mapBg}></div>
             <iframe
               src="https://snazzymaps.com/embed/235252"
               width="100%"
               height="400px"
-              style={{border: 'none'}}
+              style={{ border: 'none' }}
             ></iframe>
           </div>
         </div>

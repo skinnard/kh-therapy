@@ -4,10 +4,10 @@ body.fixed {
 }
 
 .sectionPadding {
-  padding: 0 0 160px;
+  padding: 0 0 120px;
 
   @include mq(custom, max, 800) {
-    padding: 0 0 120px;
+    padding: 0 0 80px;
   }
 
   @include mq(custom, max, 600) {
@@ -20,10 +20,10 @@ body.fixed {
 }
 
 .sectionPadding-both {
-  padding: 160px 0;
+  padding: 120px 0;
 
   @include mq(custom, max, 800) {
-    padding: 120px 0;
+    padding: 80px 0;
   }
 
   @include mq(custom, max, 600) {

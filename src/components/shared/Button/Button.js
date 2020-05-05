@@ -13,6 +13,7 @@ function Button({
   type,
   btnText,
   link,
+  alignment
 }) {
   const btnStyle = {
     border: `2px solid ${borderColor}`,
@@ -20,8 +21,13 @@ function Button({
     background: backgroundColor,
     cursor: 'pointer',
   }
+
   const bgStyle = {
     background: hoverBgColor,
+  }
+
+  const wrapperStyle = {
+    textAlign: alignment
   }
 
   let button, btnType
@@ -62,7 +68,7 @@ function Button({
   }
 
   return (
-    <div className={style.btnWrapper}>
+    <div className={style.btnWrapper} style={wrapperStyle}>
       <div className={style.innerWrapper}>
         <div className={style.btnBg} style={bgStyle}></div>
         {button}
