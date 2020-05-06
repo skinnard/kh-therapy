@@ -26,6 +26,7 @@
 
     .right {
       width: 40%;
+      padding-left: 40px;
 
       .imgWrapper {
         max-width: 300px;
@@ -89,7 +90,7 @@
 
     .imgWrapper {
       @include mq(custom, max, 800) {
-        display: none;
+        // display: none;
       }
     }
   }

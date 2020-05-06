@@ -5,10 +5,10 @@ import Arrow from '../../../svg/long-arrow.svg'
 import Button from '../../shared/Button/Button'
 
 export default () => (
-  <section id="about" className={style.aboutWrapper}>
+  <section id="about" className={`sectionPadding-top ${style.aboutWrapper}`}>
     <InnerContainer>
-      <div className={`flex sectionPadding-top ${style.columns}`}>
       <h3 className={style.title}>Get to know Kristen</h3>
+      <div className={`${style.columns}`}>
         <div className={`column ${style.left}`}>  
           <div className={style.shape}></div>
           <div class={style.textWrapper}>

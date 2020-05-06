@@ -6,36 +6,54 @@
   top: -80px;
   margin-bottom: -80px;
   display: flex;
-  align-items: center;
+  // align-items: center;
   padding: 0 20px;
-  min-height: 800px;
+
+  .title {
+    width: 100%;
+    margin-bottom: 50px;
+  }
 
   .columns {
-    flex-wrap: wrap;
+    display: flex;
+    flex-wrap: nowrap;
 
-    .title {
-      width: 100%;
-      margin-bottom: 50px;
+    @include mq(custom, max, 1100) {
+      flex-wrap: wrap;
     }
-
+    
     .left {
       width: 60%;
       display: flex;
       justify-content: space-between;
+      padding-left: 0;
+
+      @include mq(custom, max, 1100) {
+        width: 100%;
+      }
 
       .shape {
-          width: 6px;
-          height: 200px;
-          background: $rust;
+        width: 4px;
+        height: 200px;
+        background: $rust;
+
+        @include mq(custom, max, 800) {
+          display: none;
+        }
       }
 
       .textWrapper {
-          width: 90%;
+        width: 90%;
       }
     }
 
     .right {
-      width: 40%;
+      width: 400px;
+
+      @include mq(custom, max, 1100) {
+        width: 100%;
+        margin-top: 70px;
+      }
 
       .imgWrapper {
         max-width: 300px;
@@ -55,7 +73,7 @@
           height: 100%;
           max-width: 300px;
           background-color: $blue;
-          transform: translate(30px, -30px);
+          transform: translate(25px, -25px);
           top: 0;
         }
       }
@@ -63,7 +81,7 @@
 
     .imgWrapper {
       @include mq(custom, max, 800) {
-        display: none;
+        //display: none;
       }
     }
   }

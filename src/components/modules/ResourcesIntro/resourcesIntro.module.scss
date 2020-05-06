@@ -12,6 +12,10 @@
   .title {
     width: 100%;
     margin-bottom: 50px;
+
+    @include mq(custom, max, 800) {
+      text-align: center;
+    }
   }
 
   .contentWrapper {
@@ -24,14 +28,27 @@
       height: 100%;
       background: $rust;
       position: absolute;
+
+      @include mq(custom, max, 800) {
+        display: none;
+      }
+      
     }
 
     .textWrapper {
       padding-left: 60px;
 
+      @include mq(custom, max, 800) {
+        padding-left: 0;
+      }
+
       .subTitle {
         color: $rust;
         font-weight: 600;
+
+        @include mq(custom, max, 800) {
+          text-align: center;
+        }
       }
 
       p:last-child {
