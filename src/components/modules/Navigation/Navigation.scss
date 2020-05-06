@@ -1,73 +1,73 @@
 @import '../../../styles/style.scss';
 
 .nav {
-    position: relative;
-    height: 80px;
+  position: relative;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  top: 20px;
+  justify-content: space-between;
+  z-index: 100;
+  font-family: 'Open Sans';
+  font-weight: 100;
+  padding: 0 0 0 20px;
+  font-size: 15px;
+  background: transparent;
+  transition: all 0.3s ease;
+
+  @include mq(custom, max, 800) {
+    position: sticky;
+    top: -1px;
+  }
+
+  .wrapper {
     display: flex;
-    align-items: center;
-    top: 20px;
     justify-content: space-between;
-    z-index: 100;
-    font-family: 'Open Sans';
-    font-weight: 100;
-        padding: 0 0 0 20px;
-    font-size: 15px;
-    background: transparent;
-    transition: all 0.3s ease;
+    align-items: center;
 
-    @include mq(custom, max, 800) {
-        position: sticky;
-        top: -1px;
+    .logoWrapper {
+      z-index: 100;
+
+      .logo {
+        transition: all 0.3s ease;
+      }
+
+      .creds {
+        p {
+          font-size: 12px;
+          transition: all 0.3s ease;
+        }
+      }
     }
 
-    .wrapper {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        .logoWrapper {
-            z-index: 100;
-
-            .logo {
-                transition: all 0.3s ease;
-            }
-
-            .creds {
-                p {
-                    font-size: 12px;
-                    transition: all 0.3s ease;
-                }
-            }
-        }
-
-        .navLink {
-            font-weight: 400;
-            padding-left: 50px;
-            text-transform: uppercase;
-            @include font-size(14);
-        }
+    .navLink {
+      font-weight: 400;
+      padding-left: 50px;
+      text-transform: uppercase;
+      @include font-size(14);
     }
+  }
 
-    @include mq(custom, max, 800) {
-        &.scrolled {
-            background: #ffffff;
+  @include mq(custom, max, 800) {
+    &.scrolled {
+      background: #ffffff;
+      transition: all 0.3s ease;
+      height: 50px;
+
+      .logoWrapper {
+        a svg {
+          transition: all 0.3s ease !important;
+          height: 30px !important;
+          width: 130px !important;
+        }
+
+        .creds {
+          p {
+            font-size: 10px;
             transition: all 0.3s ease;
-            height: 50px;
-    
-            .logoWrapper {
-                .logo {
-                    transition: all 0.3s ease;
-                    height: 15px !important;
-                    width: 150px !important;
-                }
-    
-                .creds {
-                    p {
-                        font-size: 10px;
-                        transition: all 0.3s ease;
-                    }
-                }
-            }
+          }
         }
+      }
     }
+  }
 }

@@ -6,7 +6,6 @@
   top: -80px;
   margin-bottom: -80px;
   display: flex;
-  // align-items: center;
   padding: 0 20px;
 
   .title {
@@ -17,16 +16,16 @@
   .columns {
     display: flex;
     flex-wrap: nowrap;
+    justify-content: space-between;
 
     @include mq(custom, max, 1100) {
       flex-wrap: wrap;
     }
-    
+
     .left {
-      width: 60%;
+      width: 50%;
       display: flex;
       justify-content: space-between;
-      padding-left: 0;
 
       @include mq(custom, max, 1100) {
         width: 100%;
@@ -43,12 +42,17 @@
       }
 
       .textWrapper {
-        width: 90%;
+        width: 100%;
+        padding-left: 60px;
+
+        @include mq(custom, max, 800) {
+          padding-left: 0;
+        }
       }
     }
 
     .right {
-      width: 400px;
+      width: 50%;
 
       @include mq(custom, max, 1100) {
         width: 100%;
@@ -75,6 +79,10 @@
           background-color: $blue;
           transform: translate(25px, -25px);
           top: 0;
+
+          @include mq(custom, max, 550) {
+            transform: translate(5px, -5px);
+          }
         }
       }
     }

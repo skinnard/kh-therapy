@@ -33,6 +33,8 @@ export default () => (
         </div>
       </div>
     </InnerContainer>
-    <Arrow />
+    <div className={style.arrowWrapper}>
+      <Arrow />
+    </div>
   </section>
 )

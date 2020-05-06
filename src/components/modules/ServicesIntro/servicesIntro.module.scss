@@ -6,8 +6,12 @@
   top: -80px;
   margin-bottom: -80px;
   display: flex;
-  align-items: center;
-  padding: 0 20px;
+  // align-items: center;
+  // padding: 0 20px;
+
+  @include mq(custom, max, 550) {
+    padding: 0;
+  }
 
   .title {
     width: 100%;
@@ -24,10 +28,18 @@
       height: 100%;
       background: $rust;
       position: absolute;
+
+      @include mq(custom, max, 800) {
+        display: none;
+      }
     }
 
     .textWrapper {
       padding-left: 60px;
+
+      @include mq(custom, max, 800) {
+        padding-left: 0;
+      }
 
       .subTitle {
         color: $rust;
@@ -44,5 +56,9 @@
     position: absolute;
     bottom: -70px;
     margin-left: calc(50% - 8px);
+
+    @include mq(custom, max, 550) {
+      display: none;
+    }
   }
 }

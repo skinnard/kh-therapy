@@ -10,7 +10,14 @@ function MobileBurger() {
     var body = document.querySelector('body')
     el.classList.toggle('is-active')
     menu.classList.toggle('is-shown')
-    body.classList.toggle('fixed')
+
+    if (body.classList.contains('fixed')) {
+      body.classList.remove('fixed')
+      console.log('remove fixed')
+    } else {
+      body.classList.add('fixed')
+      console.log('add fixed')
+    }
   }
 
   return (
