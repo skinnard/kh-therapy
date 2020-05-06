@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import style from './DesktopMenu.module.scss'
+import style from './desktopMenu.module.scss'
 
 function DesktopMenu() {
   return (

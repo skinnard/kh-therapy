@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import style from './MobileBurger.module.scss'
+import style from './mobileBurger.module.scss'
 import '../../../../../styles/hamburgers/hamburgers.scss'
 import { Link } from 'gatsby'
 
