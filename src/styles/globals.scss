@@ -36,14 +36,14 @@ body.fixed {
 }
 
 .sectionPadding-top {
-  padding: 200px 0 160px;
+  padding: 200px 40px 160px;
 
   @include mq(custom, max, 800) {
-    padding: 160px 0 120px;
+    padding: 160px 20px 120px;
   }
 
   @include mq(custom, max, 600) {
-    padding: 120px 0 80px;
+    padding: 120px 20px 80px;
   }
 }
 
@@ -56,15 +56,15 @@ body.fixed {
   padding: 100px 40px;
 
   @include mq(custom, max, 800) {
-    padding: 80px 40px;
+    padding: 80px 20px;
   }
 
   @include mq(custom, max, 600) {
-    padding: 60px 40px;
+    padding: 60px 20px;
   }
 
   @include mq(custom, max, 400) {
-    padding: 40px 40px;
+    padding: 40px 20px;
   }
 }
 
