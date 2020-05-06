@@ -1,8 +1,8 @@
 import React from 'react'
-import style from './help.module.scss'
 import InnerContainer from '../../shared/InnerContainer/InnerContainer'
 import ArrowRight from '../../../svg/arrow-right-blue.svg'
 import '../../../styles/style.scss'
+import style from './help.module.scss'
 
 export default () => (
   <section id="help" className={`sectionPadding-sm ${style.helpWrapper}`}>
