@@ -59,6 +59,7 @@ export default () => (
             </p>
           </div>
         </div>
+
         <div className={`column ${style.right}`}>
           <div class={style.infoSection}>
             <p className={style.sectionTitle}>Training</p>
