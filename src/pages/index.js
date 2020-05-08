@@ -1,4 +1,5 @@
 import React from 'react'
+import { graphql } from 'gatsby'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 // import Hero from '../components/hero'
@@ -13,12 +14,13 @@ import Footer from '../components/modules/Footer/Footer'
 
 class RootIndex extends React.Component {
   render() {
+    console.log(this.props.data.allContentfulHomePage.nodes[0].buttonText)
     return (
       <Layout>
         <Container>
           <Helmet />
           {/* <Hero data={author.node} /> */}
-
+    <h1>{this.props.data.allContentfulHomePage.nodes[0].buttonText}</h1>
           <Navigation />
           <Hero />
           <Info />
@@ -30,5 +32,33 @@ class RootIndex extends React.Component {
     )
   }
 }
+
+export const query = graphql`
+  {
+    contentfulHomePage(buttonText: {}) {
+      id
+    }
+    allContentfulHomePage {
+      totalCount
+      nodes {
+        id
+        buttonText
+        children {
+          id
+        }
+        contentful_id
+        createdAt
+        node_locale
+        parent {
+          id
+        }
+        title
+        updatedAt
+        subtitle
+        spaceId
+      }
+    }
+  }
+`
 
 export default RootIndex
