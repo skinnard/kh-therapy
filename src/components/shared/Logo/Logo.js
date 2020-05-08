@@ -5,6 +5,14 @@ import LogoWhite from '../../../svg/logo-white.svg'
 import style from './logo.module.scss'
 
 function Logo(props) {
+  const handleClick = () => {
+    let logoLink = document.querySelector('#logo')
+    let body = document.querySelector('body') 
+    body.classList.remove('fixed')
+    let mobileMenu = document.querySelector('#mobile-menu-items')
+    mobileMenu.classList.remove('is-shown')
+  }
+
   let logo
   if (props.color === 'blue') {
     logo = <LogoBlue />
@@ -14,12 +22,14 @@ function Logo(props) {
 
   let divStyle = {
     width: props.width,
-    height: props.height
+    height: props.height,
   }
 
   return (
     <div className={style.logo} style={divStyle}>
-      <Link to="/" className={style.logoLink}>{logo}</Link>
+      <Link to="/" id="logo" className={style.logoLink} onClick={handleClick}>
+        {logo}
+      </Link>
     </div>
   )
 }
