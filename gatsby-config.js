@@ -2,6 +2,8 @@ require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`
 })
 
+
+
 const contentfulConfig = {
   spaceId: process.env.CONTENTFUL_SPACE_ID,
   accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
@@ -18,7 +20,9 @@ if (!spaceId || !accessToken) {
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Contentful starter',
+    title: `Kristen Hodges Therapy`,
+    description: `Website for therapis Kristen Hodges`,
+    author: `Glen Hodges`,
   },
   pathPrefix: '/gatsby-contentful-starter',
   plugins: [
@@ -41,10 +45,18 @@ module.exports = {
       options: {
         fonts: [
           `Libre Baskerville\:400,400i,700`,
-          `Open Sans\:300,400,400i,600,700,700i,800` // you can also specify font weights and styles
+          `Open Sans\:300,400,400i,600,700,700i,800`
         ],
         display: 'swap'
       }
-    }
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      },
+    },
   ],
+  
 }
