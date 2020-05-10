@@ -14,13 +14,13 @@ import Footer from '../components/modules/Footer/Footer'
 
 class RootIndex extends React.Component {
   render() {
-    console.log(this.props.data.allContentfulHomePage.nodes[0].buttonText)
+    console.log(this.props.data)
     return (
       <Layout>
         <Container>
           <Helmet />
           {/* <Hero data={author.node} /> */}
-    <h1>{this.props.data.allContentfulHomePage.nodes[0].buttonText}</h1>
+          <h1></h1>
           <Navigation />
           <Hero />
           <Info />
@@ -35,27 +35,11 @@ class RootIndex extends React.Component {
 
 export const query = graphql`
   {
-    contentfulHomePage(buttonText: {}) {
-      id
-    }
-    allContentfulHomePage {
-      totalCount
-      nodes {
-        id
-        buttonText
-        children {
+    allContentfulPage(filter: {title: {eq: "Home"}}) {
+      edges {
+        node {
           id
         }
-        contentful_id
-        createdAt
-        node_locale
-        parent {
-          id
-        }
-        title
-        updatedAt
-        subtitle
-        spaceId
       }
     }
   }

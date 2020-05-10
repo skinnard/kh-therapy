@@ -13,7 +13,7 @@ function Footer() {
       <InnerContainer>
         <div className={style.flex}>
           <div className={style.flexItem}>
-            <div class={style.colWrap}>
+            <div className={style.colWrap}>
               <div className={style.imgWrapper}>
                 <img src={'/images/logo-white.svg'} alt="Logo" />
               </div>
@@ -26,7 +26,7 @@ function Footer() {
             </div>
           </div>
           <div className={style.flexItem}>
-            <div class={style.colWrap}>
+            <div className={style.colWrap}>
               <div className={style.menuWrapper}>
                 <Link to="/about">About</Link>
                 <Link to="/services">Services</Link>
@@ -36,7 +36,7 @@ function Footer() {
             </div>
           </div>
           <div className={style.flexItem}>
-            <div class={style.colWrap}>
+            <div className={style.colWrap}>
               <div className={style.contactWrapper}>
                 <p className={style.address}>
                   123 Awesome St.
