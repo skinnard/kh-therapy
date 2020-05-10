@@ -14,13 +14,11 @@ import Footer from '../components/modules/Footer/Footer'
 
 class RootIndex extends React.Component {
   render() {
-    console.log(this.props.data)
+    
     return (
       <Layout>
         <Container>
           <Helmet />
-          {/* <Hero data={author.node} /> */}
-          <h1></h1>
           <Navigation />
           <Hero />
           <Info />
@@ -32,17 +30,5 @@ class RootIndex extends React.Component {
     )
   }
 }
-
-export const query = graphql`
-  {
-    allContentfulPage(filter: {title: {eq: "Home"}}) {
-      edges {
-        node {
-          id
-        }
-      }
-    }
-  }
-`
 
 export default RootIndex
