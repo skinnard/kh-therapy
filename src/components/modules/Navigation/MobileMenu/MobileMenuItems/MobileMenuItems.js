@@ -16,6 +16,9 @@ function MobileMenuItems() {
   return (
     <div id="mobile-menu-items" className="mobileMenuItems">
       <div className="items-wrapper">
+      <Link className="item" to="/" onClick={handleClick}>
+          home
+        </Link>
         <Link className="item" to="/about" onClick={handleClick}>
           about
         </Link>

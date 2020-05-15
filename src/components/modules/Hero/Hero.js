@@ -4,19 +4,22 @@ import InnerContainer from '../../shared/InnerContainer/InnerContainer'
 import Arrow from '../../../svg/long-arrow.svg'
 import Button from '../../shared/Button/Button'
 
-export default () => (
+
+const Hero = ({homeData}) => {
+
+  console.log(homeData)
+
+  return (
   <section id="hero" className={style.heroWrapper}>
     <InnerContainer>
       <div className={`flex ${style.columns}`}>
         <div className={`flex-item text-center ${style.column}`}>
-          <h1 className={style.title}>Nurture Your Emotional Health</h1>
-          <p className={style.bodyText}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget
-            finibus nisl. Vestibulum vulputate.
+  <h1 className={style.title}>sdsdsdsd</h1>
+          <p className={style.bodyText}>sdsdsds
           </p>
           <Button
-            btnText={'Learn More'}
-            link={'/about'}
+            btnText={'sdsdsd'}
+            link={'sdsdsd'}
             // type={''}
             borderColor={'#0F4C81'}
             textColor={'#0F4C81'}
@@ -29,14 +32,17 @@ export default () => (
         <div
           className={`column text-center ${style.imgWrapper} ${style.column}`}
         >
-          <img
+          {/* <img
             className={style.img}
-            src={'/images/leaf-and-books.png'}
-            alt="A stack of books"
-          />
+            src={homeData.hero_image.url}
+            alt={homeData.hero_image.alt}
+          /> */}
         </div>
       </div>
       {/* <Arrow /> */}
     </InnerContainer>
   </section>
 )
+  }
+
+export default Hero;
