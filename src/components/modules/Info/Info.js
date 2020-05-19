@@ -4,13 +4,17 @@ import '../../../styles/style.scss'
 import Rings from '../../../svg/rings.svg';
 import InnerContainer from '../../shared/InnerContainer/InnerContainer';
 
-export default () => (
+export default ({homeData}) => (
     <section id="info-section" className={`sectionPadding-both ${style.infoSection}`}>
         <InnerContainer size={'small'}>
             <div className="text-center">
-                <h2>Trust is earned in the smallest of moments.</h2>
-                <Rings />
-                <p className={style.text}>It is earned not through heroic deeds, or even highly visible actions, but through paying attention, listening, and gestures of genuine care and connection.</p>
+                <h2>{homeData.section_2_title[0].text}</h2>
+                <img
+            className={style.img}
+            src={homeData.section_2_icon.url}
+            alt={homeData.section_2_icon.alt}
+          />
+                <p className={style.text}>{homeData.section_2_text[0].text}</p>
             </div>
         </InnerContainer>
     </section>
