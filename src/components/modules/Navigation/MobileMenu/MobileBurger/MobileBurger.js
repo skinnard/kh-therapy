@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import style from './mobileBurger.module.scss'
+import './mobileBurger.scss'
 import '../../../../../styles/hamburgers/hamburgers.scss'
 import { Link } from 'gatsby'
 
@@ -21,7 +21,7 @@ function MobileBurger() {
   }
 
   return (
-    <div id="mobile-burger" className={style.mobileBurger}>
+    <div id="mobile-burger" className="mobileBurger">
       <button
         className="hamburger--collapse hamburger"
         type="button"

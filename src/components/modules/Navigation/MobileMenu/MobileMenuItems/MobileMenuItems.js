@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import style from './mobileMenuItems.scss'
+import './mobileMenuItems.scss'
 import { Link } from 'gatsby'
 
 function MobileMenuItems() {

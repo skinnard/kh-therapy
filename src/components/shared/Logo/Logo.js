@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import LogoBlue from '../../../svg/logo-blue.svg'
 import LogoWhite from '../../../svg/logo-white.svg'
-import style from './logo.module.scss'
+import './logo.scss'
 
 function Logo(props) {
   let logo
@@ -14,12 +14,14 @@ function Logo(props) {
 
   let divStyle = {
     width: props.width,
-    height: props.height
+    height: props.height,
   }
 
   return (
-    <div className={style.logo} style={divStyle}>
-      <Link to="/" className={style.logoLink}>{logo}</Link>
+    <div className="logo" style={divStyle}>
+      <Link to="/" className="logoLink">
+        {logo}
+      </Link>
     </div>
   )
 }

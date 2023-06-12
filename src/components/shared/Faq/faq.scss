@@ -23,7 +23,6 @@
       @include mq(custom, max, 550) {
         @include font-size(18);
       }
-      
 
       .accordion__icon {
         margin-left: auto;

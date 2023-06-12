@@ -54,26 +54,26 @@
         }
 
         table {
-            text-align: left;
+          text-align: left;
 
-            tr {
-                td {
-                    padding: 0 10px 30px 0;
-                    
-                    @include mq(custom, max, 550) {
-                        @include font-size(14);
-                    }
+          tr {
+            td {
+              padding: 0 10px 30px 0;
 
-                    &.left {
-                        color: $rust;
-                        font-family: $title-font;
-                    }
+              @include mq(custom, max, 550) {
+                @include font-size(14);
+              }
 
-                    &.right {
-                        font-family: $title-font;
-                    }
-                }
+              &.left {
+                color: $rust;
+                font-family: $title-font;
+              }
+
+              &.right {
+                font-family: $title-font;
+              }
             }
+          }
         }
 
         .btnWrapper {

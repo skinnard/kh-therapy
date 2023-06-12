@@ -1,6 +1,6 @@
 import React from 'react'
 import Arrow from '../Arrow/Arrow'
-import style from './button.module.scss'
+import './button.scss'
 import { Link } from 'gatsby'
 
 function Button({
@@ -13,7 +13,7 @@ function Button({
   type,
   btnText,
   link,
-  alignment
+  alignment,
 }) {
   const btnStyle = {
     border: `2px solid ${borderColor}`,
@@ -27,40 +27,28 @@ function Button({
   }
 
   const wrapperStyle = {
-    textAlign: alignment
+    textAlign: alignment,
   }
 
   let button, btnType
 
-  // <Button
-  //   btnText={'Submit'}
-  //   link={'false'}
-  //   type={'submit'}
-  //   borderColor={'#0F4C81'}
-  //   textColor={'#fff'}
-  //   backgroundColor={'#0F4C81'}
-  //   arrowColor={'#0F4C81'}
-  //   arrowPadding={'10px'}
-  //   hoverBgColor={'#DB6B5C'}
-  // />
-
   if (link === 'false' && type === 'submit') {
     button = (
-      <button className={style.button} style={btnStyle} type={type}>
+      <button className="button" style={btnStyle} type={type}>
         {btnText}
         <Arrow arrowColor={arrowColor} arrowPadding={arrowPadding} />
       </button>
     )
   } else if (link === 'false' && btnType === 'standard') {
     button = (
-      <button className={style.button} style={btnStyle}>
+      <button className="button" style={btnStyle}>
         {btnText}
         <Arrow arrowColor={arrowColor} arrowPadding={arrowPadding} />
       </button>
     )
   } else {
     button = (
-      <Link className={style.button} to={link} style={btnStyle}>
+      <Link className="button" to={link} style={btnStyle}>
         {btnText}
         <Arrow arrowColor={arrowColor} arrowPadding={arrowPadding} />
       </Link>
@@ -68,9 +56,9 @@ function Button({
   }
 
   return (
-    <div className={style.btnWrapper} style={wrapperStyle}>
-      <div className={style.innerWrapper}>
-        <div className={style.btnBg} style={bgStyle}></div>
+    <div className="btnWrapper" style={wrapperStyle}>
+      <div className="innerWrapper">
+        <div className="btnBg" style={bgStyle}></div>
         {button}
       </div>
     </div>

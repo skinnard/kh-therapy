@@ -1,0 +1,46 @@
+@import '../../../styles/style.scss';
+
+.heroWrapper {
+  background: #f9f6ec;
+  position: relative;
+  top: -80px;
+  margin-bottom: -80px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  min-height: 800px;
+
+  .columns {
+    align-items: center;
+    flex-wrap: wrap;
+
+    .column {
+      padding: 20px;
+      width: 50%;
+
+      @include mq(custom, max, 800) {
+        width: 100%;
+      }
+
+      // .title {
+      //     @include mq(custom, max, 1000) {
+      //         @include font-size(38);
+      //     }
+      // }
+
+      .bodyText {
+        margin-bottom: 30px;
+      }
+
+      .img {
+        width: 100%;
+      }
+    }
+
+    .imgWrapper {
+      @include mq(custom, max, 800) {
+        display: none;
+      }
+    }
+  }
+}

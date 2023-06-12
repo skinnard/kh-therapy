@@ -32,18 +32,18 @@
       border: 4px solid $blue;
       max-width: 350px;
       display: flex;
-    flex-direction: column;
+      flex-direction: column;
 
       .itemTitle {
         margin-bottom: 30px;
       }
 
       .img-wrapper {
-          margin-bottom: 20px;
-          img {
-              width: 100%;
-              max-width: 150px;
-          }
+        margin-bottom: 20px;
+        img {
+          width: 100%;
+          max-width: 150px;
+        }
       }
 
       .btnWrapper {

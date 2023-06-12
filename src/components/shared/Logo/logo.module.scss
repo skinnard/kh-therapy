@@ -1,7 +1,0 @@
-@import '../../../styles/style.scss';
-
-.logo {
-    @include mq(custom, max, 400) {
-        width: 160px !important;
-    }
-}

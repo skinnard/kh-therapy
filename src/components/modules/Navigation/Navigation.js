@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Link } from 'gatsby'
 import Logo from '../../shared/Logo/Logo'
 import Creds from '../../shared/Creds/Creds'
 import './Navigation.scss'
@@ -18,10 +17,8 @@ class Navigation extends Component {
 
       if (window.scrollY < 80) {
         this.setState({ navBackground: null })
-        // console.log('NOT scrolled');
       } else {
         this.setState({ navBackground: 'scrolled' })
-        // console.log('scrolled');
       }
     })
   }
@@ -33,7 +30,6 @@ class Navigation extends Component {
     } else {
       navClassName = 'nav'
     }
-    // console.log(this.state.navBackground);
 
     return (
       <nav id="nav-wrapper" className={navClassName} role="navigation">

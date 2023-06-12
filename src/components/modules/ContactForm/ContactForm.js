@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import style from './contactForm.module.scss'
+import './contactForm.scss'
 import '../../../styles/style.scss'
 import InnerContainer from '../../shared/InnerContainer/InnerContainer'
 import Button from '../../shared/Button/Button'
@@ -33,18 +33,18 @@ class ContactForm extends Component {
 
   render() {
     return (
-      <div className={`sectionPadding-both ${style.contactForm}`}>
+      <div className="sectionPadding-both contactForm">
         <InnerContainer size={'small'}>
-          <h3 className={style.title}>Contact Kristen</h3>
-          <div className={style.formWrapper}>
-            <div className={style.formOutline}></div>
+          <h3 className="title">Contact Kristen</h3>
+          <div className="formWrapper">
+            <div className="formOutline"></div>
             <form
               id="contact-form"
-              className={style.form}
+              className="form"
               onSubmit={this.handleSubmit.bind(this)}
               method="POST"
             >
-              <div className={style.leftCol}>
+              <div className="leftCol">
                 <div className="form-group">
                   {/* <label htmlFor="name">Name</label> */}
                   <input
@@ -55,7 +55,7 @@ class ContactForm extends Component {
                 </div>
               </div>
 
-              <div className={style.rightCol}>
+              <div className="rightCol">
                 <div className="form-group">
                   {/* <label htmlFor="exampleInputEmail1">Email address</label> */}
                   <input
@@ -67,7 +67,7 @@ class ContactForm extends Component {
                 </div>
               </div>
 
-              <div className={style.bottom}>
+              <div className="bottom">
                 <div className="form-group">
                   {/* <label htmlFor="name">Name</label> */}
                   <input
@@ -102,7 +102,7 @@ class ContactForm extends Component {
           </div>
         </InnerContainer>
         <InnerContainer size={'medium'}>
-          <p className={style.formLegal}>
+          <p className="formLegal">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
             itaque ipsam labore repellendus exercitationem obcaecati minima,
             expedita aliquam, facere porro ullam ipsum quod quia deleniti veniam

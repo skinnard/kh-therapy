@@ -1,30 +1,27 @@
 import React from 'react'
-import style from './aboutInfo.module.scss'
+import './aboutInfo.scss'
 import '../../../styles/style.scss'
 import InnerContainer from '../../shared/InnerContainer/InnerContainer'
 import Arrow from '../../../svg/long-arrow.svg'
 import RightArrow from '../../../svg/arrow-right-blue.svg'
 
 export default () => (
-  <section
-    id="about-info"
-    className={`sectionPadding-sm ${style.aboutInfoWrapper}`}
-  >
+  <section id="about-info" className="sectionPadding-sm aboutInfoWrapper">
     <InnerContainer>
-      <h3 className={`text-center ${style.title}`}>
+      <h3 className="text-center title">
         Background &amp;
         <br /> Professional Experience
       </h3>
       {/* <Arrow /> */}
-      <div className={`flex ${style.columns}`}>
-        <div className={`column ${style.left}`}>
-          <div class={style.infoSection}>
-            <p className={style.sectionTitle}>Education and work experience</p>
-            <p className={style.sectionSubTitle}>
+      <div className="flex columns">
+        <div className="column left">
+          <div class="infoSection">
+            <p className="sectionTitle">Education and work experience</p>
+            <p className="sectionSubTitle">
               <RightArrow />
               Licensed Marriage and Family Therapist #101250
             </p>
-            <p className={style.sectionSubTitle}>
+            <p className="sectionSubTitle">
               <RightArrow />
               Richmond Area Multi-Services (RAMS):
             </p>
@@ -38,7 +35,7 @@ export default () => (
               assessment. Advocate and promote social justice for underserved
               populations.
             </p>
-            <p className={style.sectionSubTitle}>
+            <p className="sectionSubTitle">
               <RightArrow />
               Dominican University of California
             </p>
@@ -48,7 +45,7 @@ export default () => (
                 Therapy
               </strong>
             </p>
-            <p className={style.sectionSubTitle}>
+            <p className="sectionSubTitle">
               <RightArrow />
               Dominican University of California
             </p>
@@ -60,31 +57,31 @@ export default () => (
           </div>
         </div>
 
-        <div className={`column ${style.right}`}>
-          <div class={style.infoSection}>
-            <p className={style.sectionTitle}>Training</p>
-            <p className={`${style.sectionSubTitle}`}>
+        <div className="column right">
+          <div class="infoSection">
+            <p className="sectionTitle">Training</p>
+            <p className="sectionSubTitle">
               <RightArrow />
               Emotionally Focused Therapy Externship
             </p>
           </div>
-          <div class={style.infoSection}>
-            <p className={style.sectionTitle}>PROFESSIONAL AFFILIATIONS</p>
-            <p className={style.sectionSubTitle}>
+          <div class="infoSection">
+            <p className="sectionTitle">PROFESSIONAL AFFILIATIONS</p>
+            <p className="sectionSubTitle">
               <RightArrow />
               California Association of Marriage and Family Therapists (CAMFT)
             </p>
           </div>
-          <div class={style.infoSection}>
-            <p className={style.sectionSubTitle}>
+          <div class="infoSection">
+            <p className="sectionSubTitle">
               <RightArrow />
               San Francisco Chapter (SFCAMFT)
             </p>
           </div>
-          <div class={style.infoSection}>
-            <p className={style.sectionTitle}>Languages</p>
+          <div class="infoSection">
+            <p className="sectionTitle">Languages</p>
 
-            <p className={style.sectionSubTitle}>
+            <p className="sectionSubTitle">
               <RightArrow />
               English
             </p>

@@ -1,19 +1,17 @@
 import React from 'react'
-import style from './cta.module.scss'
-import Divider from '../../../svg/divider-line.svg'
+import style from './cta.scss'
+import Divider from '../../shared/Divider/Divider'
 import InnerContainer from '../../shared/InnerContainer/InnerContainer'
 import Button from '../../shared/Button/Button'
 import { Link } from 'gatsby'
 
 export default () => (
-  <section id="info-section" className={`sectionPadding ${style.infoSection}`}>
+  <section id="info-section" className="sectionPadding infoSection">
     <InnerContainer size={'small'}>
-      <div className={style.contentWrapper}>
-        <h2 className={style.title}>
-          Trust is earned in the smallest of moments.
-        </h2>
+      <div className="contentWrapper">
+        <h2 className="title">Trust is earned in the smallest of moments.</h2>
         <Divider />
-        <p className={style.bodyText}>
+        <p className="bodyText">
           It is earned not through heroic deeds, or even highly visible actions,
           but through paying attention, listening, and gestures of genuine care
           and connection.

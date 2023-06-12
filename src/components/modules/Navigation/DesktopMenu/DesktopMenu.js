@@ -1,23 +1,23 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import style from './desktopMenu.module.scss'
+import './desktopMenu.scss'
 
 function DesktopMenu() {
   return (
-    <div className={style.desktopMenu}>
-      <Link className={style.navLink} to="/about">
+    <div className="flex">
+      <Link className="pl-[50px] font-normal" to="/about">
         about
       </Link>
-      <Link className={style.navLink} to="/services">
+      <Link className="pl-[50px] font-normal" to="/services">
         services
       </Link>
-      <Link className={style.navLink} to="/resources">
+      <Link className="pl-[50px] font-normal" to="/resources">
         resources
       </Link>
-      <Link className={style.navLink} to="/faq">
+      <Link className="pl-[50px] font-normal" to="/faq">
         faq
       </Link>
-      <Link className={style.navLink} to="/contact">
+      <Link className="pl-[50px] font-normal" to="/contact">
         contact
       </Link>
     </div>

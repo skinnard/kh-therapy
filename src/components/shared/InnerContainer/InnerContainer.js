@@ -1,16 +1,15 @@
 import React from 'react'
-import style from './InnerContainer.module.scss'
+import style from './InnerContainer.scss'
 
 function InnerContainer({ size, children }) {
-  
-  let containerSize;
+  let containerSize
 
   if (size === 'small') {
-    containerSize = '650px';
+    containerSize = '650px'
   } else if (size === 'medium') {
-    containerSize = '800px';
+    containerSize = '800px'
   } else {
-    containerSize = '1200px';
+    containerSize = '1200px'
   }
 
   let divStyle = {
@@ -20,7 +19,7 @@ function InnerContainer({ size, children }) {
   }
 
   return (
-    <div className={style.innerContainer} style={divStyle}>
+    <div class="innerContainer" style={divStyle}>
       {children}
     </div>
   )

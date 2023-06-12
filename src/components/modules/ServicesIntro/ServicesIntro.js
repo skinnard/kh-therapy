@@ -1,18 +1,18 @@
 import React from 'react'
-import style from './servicesIntro.module.scss'
+import './servicesIntro.scss'
 import InnerContainer from '../../shared/InnerContainer/InnerContainer'
 import Arrow from '../../../svg/long-arrow.svg'
 import Button from '../../shared/Button/Button'
 
 export default () => (
-  <section id="services-intro" className={style.servicesIntroWrapper}>
+  <section id="services-intro" className="servicesIntroWrapper">
     <InnerContainer>
       <div className="sectionPadding-top">
-        <h1 className={style.title}>Services</h1>
-        <div class={style.contentWrapper}>
-          <div className={style.shape}></div>
-          <div class={style.textWrapper}>
-            <p className={style.subTitle}>Why Therapy?</p>
+        <h1 className="title">Services</h1>
+        <div class="contentWrapper">
+          <div className="shape"></div>
+          <div class="textWrapper">
+            <p className="subTitle">Why Therapy?</p>
             <p>
               Choosing whether to pursue therapy can bring up many questions
               within us. “Do I really need therapy?” “Are my problems and
@@ -33,7 +33,7 @@ export default () => (
         </div>
       </div>
     </InnerContainer>
-    <div className={style.arrowWrapper}>
+    <div className="arrowWrapper">
       <Arrow />
     </div>
   </section>

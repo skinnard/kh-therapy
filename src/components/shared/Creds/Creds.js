@@ -5,12 +5,13 @@ function Creds({ fontSize, color, marginBottom }) {
     margin: '0',
     fontSize: fontSize,
     color: color,
+    opacity: 0.8,
   }
 
   let divStyle = {
     marginBottom: marginBottom,
     top: '-3px',
-    position: 'relative'
+    position: 'relative',
   }
 
   return (

@@ -1,0 +1,19 @@
+@import '../../../styles/style.scss';
+
+.infoSection {
+  // background: $alt-grey;
+  margin-bottom: 20px;
+
+  .contentWrapper {
+    text-align: center;
+    margin: 0 auto;
+
+    .title {
+      margin-bottom: 30px;
+    }
+
+    .bodyText {
+      margin: 30px 0;
+    }
+  }
+}
