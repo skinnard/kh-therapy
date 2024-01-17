@@ -1,0 +1,5646 @@
+{
+  "contentTypes": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "avsm3ozy5o5o"
+          }
+        },
+        "id": "resource",
+        "type": "ContentType",
+        "createdAt": "2020-05-08T19:52:17.149Z",
+        "updatedAt": "2022-03-20T10:37:05.841Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 7,
+        "publishedAt": "2022-03-20T10:37:05.841Z",
+        "firstPublishedAt": "2020-05-08T19:52:17.544Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "publishedCounter": 4,
+        "version": 8,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        }
+      },
+      "displayField": "title",
+      "name": "Resources",
+      "description": "",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "resourceLogo",
+          "name": "Resource Logo",
+          "type": "Link",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "linkMimetypeGroup": [
+                "image"
+              ]
+            },
+            {
+              "assetImageDimensions": {
+                "width": {
+                  "min": null,
+                  "max": 600
+                },
+                "height": {
+                  "min": null,
+                  "max": null
+                }
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "resourceLink",
+          "name": "Resource Link",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "avsm3ozy5o5o"
+          }
+        },
+        "id": "homePage",
+        "type": "ContentType",
+        "createdAt": "2020-05-10T00:05:39.291Z",
+        "updatedAt": "2022-03-20T10:32:20.037Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 37,
+        "publishedAt": "2022-03-20T10:32:20.037Z",
+        "firstPublishedAt": "2020-05-10T00:05:40.018Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "publishedCounter": 19,
+        "version": 38,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        }
+      },
+      "displayField": "pageName",
+      "name": "Home Page",
+      "description": "",
+      "fields": [
+        {
+          "id": "pageName",
+          "name": "Page Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "defaultValue": {
+            "en-US": "Home"
+          },
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "heroTitle",
+          "name": "Hero Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "heroText",
+          "name": "Hero Text",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "heroButtonText",
+          "name": "Hero Button Text",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "heroButtonLink",
+          "name": "Hero Button Link",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "heroImage",
+          "name": "Hero Image",
+          "type": "Link",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "ctaTitle",
+          "name": "Cta Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "ctaText",
+          "name": "Cta Text",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "size": {
+                "min": null,
+                "max": 500
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "ctaButtonText",
+          "name": "CTA Button Text",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "ctaButtonLink",
+          "name": "CTA Button Link",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "howCanIHelpLead",
+          "name": "How Can I Help - Lead",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "howCanIHelpTitle",
+          "name": "How Can I Help - Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "howCanIHelpButtonText",
+          "name": "How Can I help Button Text",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "howCanIHelpLink",
+          "name": "How Can I help Link",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "showCta2",
+          "name": "Show CTA 2",
+          "type": "Boolean",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "cta2Title",
+          "name": "CTA 2 Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "cta2Text",
+          "name": "CTA 2 Text",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "cta2ButtonText",
+          "name": "CTA 2 Button Text",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "cta2ButtonLink",
+          "name": "CTA 2 Button Link",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "avsm3ozy5o5o"
+          }
+        },
+        "id": "areasOfPractice",
+        "type": "ContentType",
+        "createdAt": "2022-03-03T13:14:39.499Z",
+        "updatedAt": "2022-03-20T10:57:57.607Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 9,
+        "publishedAt": "2022-03-20T10:57:57.607Z",
+        "firstPublishedAt": "2022-03-03T13:14:39.681Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "publishedCounter": 5,
+        "version": 10,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        }
+      },
+      "displayField": "title",
+      "name": "Areas of Practice",
+      "description": "Add all the areas that you specialize and bullet points for each area.",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "bulletPoints",
+          "name": "Bullet Points",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": [
+            ]
+          }
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "avsm3ozy5o5o"
+          }
+        },
+        "id": "generalInfo",
+        "type": "ContentType",
+        "createdAt": "2022-03-19T17:19:00.034Z",
+        "updatedAt": "2022-03-29T02:14:01.279Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 19,
+        "publishedAt": "2022-03-29T02:14:01.279Z",
+        "firstPublishedAt": "2022-03-19T17:19:49.031Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "publishedCounter": 10,
+        "version": 20,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        }
+      },
+      "displayField": "name",
+      "name": "General Info",
+      "description": "",
+      "fields": [
+        {
+          "id": "logo",
+          "name": "Logo Light",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "logoDark",
+          "name": "Logo Dark",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "credentials",
+          "name": "Credentials",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "phoneNumber",
+          "name": "Phone Number",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "regexp": {
+                "pattern": "^\\d[ -.]?\\(?\\d\\d\\d\\)?[ -.]?\\d\\d\\d[ -.]?\\d\\d\\d\\d$",
+                "flags": null
+              },
+              "message": "Woops, you didn't enter your phone number correctly"
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "address",
+          "name": "Address",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "location",
+          "name": "Location",
+          "type": "Location",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "footerLegalText",
+          "name": "Footer Legal Text",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "email",
+          "name": "Email",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "googleMapsLink",
+          "name": "Google Maps Link",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "avsm3ozy5o5o"
+          }
+        },
+        "id": "servicesPage",
+        "type": "ContentType",
+        "createdAt": "2022-03-20T10:06:26.992Z",
+        "updatedAt": "2022-03-20T11:14:17.392Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 27,
+        "publishedAt": "2022-03-20T11:14:17.392Z",
+        "firstPublishedAt": "2022-03-20T10:06:27.278Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "publishedCounter": 14,
+        "version": 28,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        }
+      },
+      "displayField": "pageTitle",
+      "name": "Services Page",
+      "description": "",
+      "fields": [
+        {
+          "id": "pageTitle",
+          "name": "Page Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "introTitle",
+          "name": "Intro Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "introText",
+          "name": "Intro Text",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "whatToExpectTitle",
+          "name": "What to Expect Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "whatToExpect",
+          "name": "What to Expect",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+            ],
+            "linkType": "Entry"
+          }
+        },
+        {
+          "id": "areasOfPracticeTitle",
+          "name": "Areas Of Practice Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "areasOfPractice",
+          "name": "Areas Of Practice",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+            ],
+            "linkType": "Entry"
+          }
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "avsm3ozy5o5o"
+          }
+        },
+        "id": "whatToExpect",
+        "type": "ContentType",
+        "createdAt": "2022-03-20T10:16:31.047Z",
+        "updatedAt": "2022-03-20T10:16:31.219Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2022-03-20T10:16:31.219Z",
+        "firstPublishedAt": "2022-03-20T10:16:31.219Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        }
+      },
+      "displayField": "whatToExpect",
+      "name": "What to Expect",
+      "description": "",
+      "fields": [
+        {
+          "id": "whatToExpect",
+          "name": "What to Expect",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "avsm3ozy5o5o"
+          }
+        },
+        "id": "resourcesPage",
+        "type": "ContentType",
+        "createdAt": "2022-03-22T00:36:25.688Z",
+        "updatedAt": "2022-03-22T00:43:09.999Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 19,
+        "publishedAt": "2022-03-22T00:43:09.999Z",
+        "firstPublishedAt": "2022-03-22T00:36:25.945Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "publishedCounter": 10,
+        "version": 20,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        }
+      },
+      "displayField": "pageTitle",
+      "name": "Resources Page",
+      "description": "",
+      "fields": [
+        {
+          "id": "pageTitle",
+          "name": "Page Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "introTitle",
+          "name": "Intro Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "introText",
+          "name": "Intro Text",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "resourcesLead",
+          "name": "Resources Lead",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "resourcesTitle",
+          "name": "Resources Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "resources",
+          "name": "Resources",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+            ],
+            "linkType": "Entry"
+          }
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "avsm3ozy5o5o"
+          }
+        },
+        "id": "faqPage",
+        "type": "ContentType",
+        "createdAt": "2022-03-27T12:24:51.704Z",
+        "updatedAt": "2022-03-27T12:32:39.109Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 7,
+        "publishedAt": "2022-03-27T12:32:39.109Z",
+        "firstPublishedAt": "2022-03-27T12:24:51.916Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "publishedCounter": 4,
+        "version": 8,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        }
+      },
+      "displayField": "pageTitle",
+      "name": "FAQ Page",
+      "description": "",
+      "fields": [
+        {
+          "id": "pageTitle",
+          "name": "Page Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "introTitle",
+          "name": "Intro Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "introText",
+          "name": "Intro Text",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "faqItems",
+          "name": "FAQ Items",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+            ],
+            "linkType": "Entry"
+          }
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "avsm3ozy5o5o"
+          }
+        },
+        "id": "faq",
+        "type": "ContentType",
+        "createdAt": "2022-03-27T12:26:48.480Z",
+        "updatedAt": "2022-03-27T12:26:48.691Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2022-03-27T12:26:48.691Z",
+        "firstPublishedAt": "2022-03-27T12:26:48.691Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        }
+      },
+      "displayField": "title",
+      "name": "FAQ",
+      "description": "",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "content",
+          "name": "Content",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "avsm3ozy5o5o"
+          }
+        },
+        "id": "aboutPage",
+        "type": "ContentType",
+        "createdAt": "2022-03-27T12:56:26.587Z",
+        "updatedAt": "2022-03-28T11:41:13.188Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2022-03-28T11:41:13.188Z",
+        "firstPublishedAt": "2022-03-27T12:56:26.782Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "publishedCounter": 3,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        }
+      },
+      "displayField": "pageTitle",
+      "name": "About Page",
+      "description": "",
+      "fields": [
+        {
+          "id": "pageTitle",
+          "name": "Page Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "introTitle",
+          "name": "Intro Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "introText",
+          "name": "Intro Text",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "image",
+          "name": "Image",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "experienceTitle",
+          "name": "Experience Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "avsm3ozy5o5o"
+          }
+        },
+        "id": "experience",
+        "type": "ContentType",
+        "createdAt": "2022-03-27T13:01:43.398Z",
+        "updatedAt": "2022-03-27T13:10:23.012Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 15,
+        "publishedAt": "2022-03-27T13:10:23.012Z",
+        "firstPublishedAt": "2022-03-27T13:01:43.575Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "publishedCounter": 8,
+        "version": 16,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        }
+      },
+      "displayField": "title",
+      "name": "Experience",
+      "description": "",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "position",
+          "name": "Position",
+          "type": "Boolean",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "avsm3ozy5o5o"
+          }
+        },
+        "id": "contactPage",
+        "type": "ContentType",
+        "createdAt": "2022-03-29T02:09:29.305Z",
+        "updatedAt": "2022-03-29T02:36:09.743Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 11,
+        "publishedAt": "2022-03-29T02:36:09.743Z",
+        "firstPublishedAt": "2022-03-29T02:09:29.550Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "publishedCounter": 6,
+        "version": 12,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        }
+      },
+      "displayField": "pageTitle",
+      "name": "Contact Page",
+      "description": "",
+      "fields": [
+        {
+          "id": "pageTitle",
+          "name": "Page Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "contactFormTitle",
+          "name": "Contact Form Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "contactFormText",
+          "name": "Contact Form Legal Text",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "avsm3ozy5o5o"
+          }
+        },
+        "id": "blogPost",
+        "type": "ContentType",
+        "createdAt": "2023-06-10T15:13:50.413Z",
+        "updatedAt": "2023-06-10T15:13:57.447Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2023-06-10T15:13:57.447Z",
+        "firstPublishedAt": "2023-06-10T15:13:57.447Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        }
+      },
+      "displayField": "title",
+      "name": "Blog Post",
+      "description": "",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "slug",
+          "name": "Slug",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "heroImage",
+          "name": "Hero Image",
+          "type": "Link",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Text",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "body",
+          "name": "Body",
+          "type": "Text",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "author",
+          "name": "Author",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "linkContentType": [
+                "person"
+              ]
+            }
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry"
+        },
+        {
+          "id": "publishDate",
+          "name": "Publish Date",
+          "type": "Date",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "tags",
+          "name": "Tags",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": [
+              {
+                "in": [
+                  "general",
+                  "javascript",
+                  "static-sites"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "avsm3ozy5o5o"
+          }
+        },
+        "id": "person",
+        "type": "ContentType",
+        "createdAt": "2023-06-10T15:13:50.599Z",
+        "updatedAt": "2023-06-10T15:13:55.344Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2023-06-10T15:13:55.344Z",
+        "firstPublishedAt": "2023-06-10T15:13:55.344Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        }
+      },
+      "displayField": "name",
+      "name": "Person",
+      "description": "",
+      "fields": [
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "company",
+          "name": "Company",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "shortBio",
+          "name": "Short Bio",
+          "type": "Text",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "email",
+          "name": "Email",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "phone",
+          "name": "Phone",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "facebook",
+          "name": "Facebook",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "twitter",
+          "name": "Twitter",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "github",
+          "name": "Github",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "image",
+          "name": "Image",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        }
+      ]
+    }
+  ],
+  "tags": [
+  ],
+  "editorInterfaces": [
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "avsm3ozy5o5o",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 9,
+        "createdAt": "2020-05-08T19:52:17.612Z",
+        "createdBy": {
+          "sys": {
+            "id": "1nAy3aZoDSADzI2x3Sf5bk",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2022-03-20T10:37:06.083Z",
+        "updatedBy": {
+          "sys": {
+            "id": "1nAy3aZoDSADzI2x3Sf5bk",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "resource",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "sidebar": [
+        {
+          "widgetId": "publication-widget",
+          "widgetNamespace": "sidebar-builtin"
+        },
+        {
+          "widgetId": "content-preview-widget",
+          "widgetNamespace": "sidebar-builtin"
+        },
+        {
+          "widgetId": "1VchawWvbIClHuMIyxwR5m",
+          "widgetNamespace": "app"
+        },
+        {
+          "widgetId": "incoming-links-widget",
+          "widgetNamespace": "sidebar-builtin"
+        },
+        {
+          "widgetId": "translation-widget",
+          "widgetNamespace": "sidebar-builtin"
+        },
+        {
+          "widgetId": "versions-widget",
+          "widgetNamespace": "sidebar-builtin"
+        }
+      ],
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "resourceLogo",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "resourceLink",
+          "widgetId": "urlEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "avsm3ozy5o5o",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 39,
+        "createdAt": "2020-05-10T00:05:40.094Z",
+        "createdBy": {
+          "sys": {
+            "id": "1nAy3aZoDSADzI2x3Sf5bk",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2022-03-20T10:32:20.394Z",
+        "updatedBy": {
+          "sys": {
+            "id": "1nAy3aZoDSADzI2x3Sf5bk",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "homePage",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "sidebar": [
+        {
+          "widgetId": "publication-widget",
+          "widgetNamespace": "sidebar-builtin"
+        },
+        {
+          "widgetId": "content-preview-widget",
+          "widgetNamespace": "sidebar-builtin"
+        },
+        {
+          "widgetId": "1VchawWvbIClHuMIyxwR5m",
+          "widgetNamespace": "app"
+        },
+        {
+          "widgetId": "incoming-links-widget",
+          "widgetNamespace": "sidebar-builtin"
+        },
+        {
+          "widgetId": "translation-widget",
+          "widgetNamespace": "sidebar-builtin"
+        },
+        {
+          "widgetId": "versions-widget",
+          "widgetNamespace": "sidebar-builtin"
+        }
+      ],
+      "controls": [
+        {
+          "fieldId": "pageName",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "heroTitle",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "heroText",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "heroButtonText",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "heroButtonLink",
+          "widgetId": "urlEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "heroImage",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "ctaTitle",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "ctaText",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "ctaButtonText",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "ctaButtonLink",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "howCanIHelpLead",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "howCanIHelpTitle",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "howCanIHelpButtonText",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "howCanIHelpLink",
+          "settings": {
+            "helpText": "Add a link to where this section should link to."
+          },
+          "widgetId": "urlEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "showCta2",
+          "widgetId": "boolean",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "cta2Title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "cta2Text",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "cta2ButtonText",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "cta2ButtonLink",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "avsm3ozy5o5o",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 11,
+        "createdAt": "2022-03-03T13:14:39.724Z",
+        "createdBy": {
+          "sys": {
+            "id": "1nAy3aZoDSADzI2x3Sf5bk",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2022-03-20T10:57:57.877Z",
+        "updatedBy": {
+          "sys": {
+            "id": "1nAy3aZoDSADzI2x3Sf5bk",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "areasOfPractice",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "sidebar": [
+        {
+          "widgetId": "publication-widget",
+          "widgetNamespace": "sidebar-builtin"
+        },
+        {
+          "widgetId": "content-preview-widget",
+          "widgetNamespace": "sidebar-builtin"
+        },
+        {
+          "widgetId": "1VchawWvbIClHuMIyxwR5m",
+          "widgetNamespace": "app"
+        },
+        {
+          "widgetId": "incoming-links-widget",
+          "widgetNamespace": "sidebar-builtin"
+        },
+        {
+          "widgetId": "translation-widget",
+          "widgetNamespace": "sidebar-builtin"
+        },
+        {
+          "widgetId": "versions-widget",
+          "widgetNamespace": "sidebar-builtin"
+        }
+      ],
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "bulletPoints",
+          "widgetId": "tagEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "avsm3ozy5o5o",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 20,
+        "createdAt": "2022-03-19T17:19:49.262Z",
+        "createdBy": {
+          "sys": {
+            "id": "1nAy3aZoDSADzI2x3Sf5bk",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2022-03-29T02:14:01.776Z",
+        "updatedBy": {
+          "sys": {
+            "id": "1nAy3aZoDSADzI2x3Sf5bk",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "generalInfo",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "sidebar": [
+        {
+          "widgetId": "publication-widget",
+          "widgetNamespace": "sidebar-builtin"
+        },
+        {
+          "widgetId": "content-preview-widget",
+          "widgetNamespace": "sidebar-builtin"
+        },
+        {
+          "widgetId": "1VchawWvbIClHuMIyxwR5m",
+          "widgetNamespace": "app"
+        },
+        {
+          "widgetId": "incoming-links-widget",
+          "widgetNamespace": "sidebar-builtin"
+        },
+        {
+          "widgetId": "translation-widget",
+          "widgetNamespace": "sidebar-builtin"
+        },
+        {
+          "widgetId": "versions-widget",
+          "widgetNamespace": "sidebar-builtin"
+        }
+      ],
+      "controls": [
+        {
+          "fieldId": "logo",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "logoDark",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "name",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "credentials",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "phoneNumber",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "address",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "location",
+          "widgetId": "locationEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "footerLegalText",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "email",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "googleMapsLink",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "avsm3ozy5o5o",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 28,
+        "createdAt": "2022-03-20T10:06:27.444Z",
+        "createdBy": {
+          "sys": {
+            "id": "1nAy3aZoDSADzI2x3Sf5bk",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2022-03-20T11:14:17.662Z",
+        "updatedBy": {
+          "sys": {
+            "id": "1nAy3aZoDSADzI2x3Sf5bk",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "servicesPage",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "pageTitle",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "introTitle",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "introText",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "whatToExpectTitle",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "whatToExpect",
+          "widgetId": "entryLinksEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "areasOfPracticeTitle",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "areasOfPractice",
+          "widgetId": "entryLinksEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "avsm3ozy5o5o",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2022-03-20T10:16:31.273Z",
+        "createdBy": {
+          "sys": {
+            "id": "1nAy3aZoDSADzI2x3Sf5bk",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2022-03-20T10:16:31.542Z",
+        "updatedBy": {
+          "sys": {
+            "id": "1nAy3aZoDSADzI2x3Sf5bk",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "whatToExpect",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "whatToExpect",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "avsm3ozy5o5o",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 20,
+        "createdAt": "2022-03-22T00:36:26.033Z",
+        "createdBy": {
+          "sys": {
+            "id": "1nAy3aZoDSADzI2x3Sf5bk",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2022-03-22T00:43:10.308Z",
+        "updatedBy": {
+          "sys": {
+            "id": "1nAy3aZoDSADzI2x3Sf5bk",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "resourcesPage",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "pageTitle",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "introTitle",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "introText",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "resourcesLead",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "resourcesTitle",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "resources",
+          "widgetId": "entryLinksEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "avsm3ozy5o5o",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 8,
+        "createdAt": "2022-03-27T12:24:51.984Z",
+        "createdBy": {
+          "sys": {
+            "id": "1nAy3aZoDSADzI2x3Sf5bk",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2022-03-27T12:32:39.424Z",
+        "updatedBy": {
+          "sys": {
+            "id": "1nAy3aZoDSADzI2x3Sf5bk",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "faqPage",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "pageTitle",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "introTitle",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "introText",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "faqItems",
+          "widgetId": "entryLinksEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "avsm3ozy5o5o",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2022-03-27T12:26:48.772Z",
+        "createdBy": {
+          "sys": {
+            "id": "1nAy3aZoDSADzI2x3Sf5bk",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2022-03-27T12:26:49.028Z",
+        "updatedBy": {
+          "sys": {
+            "id": "1nAy3aZoDSADzI2x3Sf5bk",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "faq",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "content",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "avsm3ozy5o5o",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 6,
+        "createdAt": "2022-03-27T12:56:26.860Z",
+        "createdBy": {
+          "sys": {
+            "id": "1nAy3aZoDSADzI2x3Sf5bk",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2022-03-28T11:41:13.631Z",
+        "updatedBy": {
+          "sys": {
+            "id": "1nAy3aZoDSADzI2x3Sf5bk",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "aboutPage",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "pageTitle",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "introTitle",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "introText",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "image",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "experienceTitle",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "avsm3ozy5o5o",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 16,
+        "createdAt": "2022-03-27T13:01:43.626Z",
+        "createdBy": {
+          "sys": {
+            "id": "1nAy3aZoDSADzI2x3Sf5bk",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2022-03-27T13:10:23.289Z",
+        "updatedBy": {
+          "sys": {
+            "id": "1nAy3aZoDSADzI2x3Sf5bk",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "experience",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "position",
+          "settings": {
+            "helpText": "Choose which column to add your experience to.",
+            "trueLabel": "Left",
+            "falseLabel": "Right"
+          },
+          "widgetId": "boolean",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "avsm3ozy5o5o",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 12,
+        "createdAt": "2022-03-29T02:09:29.632Z",
+        "createdBy": {
+          "sys": {
+            "id": "1nAy3aZoDSADzI2x3Sf5bk",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2022-03-29T02:36:10.042Z",
+        "updatedBy": {
+          "sys": {
+            "id": "1nAy3aZoDSADzI2x3Sf5bk",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "contactPage",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "pageTitle",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "contactFormTitle",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "contactFormText",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "avsm3ozy5o5o",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2023-06-10T15:13:57.675Z",
+        "createdBy": {
+          "sys": {
+            "id": "1nAy3aZoDSADzI2x3Sf5bk",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2023-06-10T15:14:00.529Z",
+        "updatedBy": {
+          "sys": {
+            "id": "1nAy3aZoDSADzI2x3Sf5bk",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "blogPost",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "slug",
+          "widgetId": "slugEditor"
+        },
+        {
+          "fieldId": "heroImage",
+          "widgetId": "assetLinkEditor"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "markdown"
+        },
+        {
+          "fieldId": "body",
+          "widgetId": "markdown"
+        },
+        {
+          "fieldId": "author",
+          "widgetId": "entryLinkEditor"
+        },
+        {
+          "fieldId": "publishDate",
+          "settings": {
+            "ampm": "24",
+            "format": "timeZ"
+          },
+          "widgetId": "datePicker"
+        },
+        {
+          "fieldId": "tags",
+          "widgetId": "tagEditor"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "avsm3ozy5o5o",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2023-06-10T15:13:55.627Z",
+        "createdBy": {
+          "sys": {
+            "id": "1nAy3aZoDSADzI2x3Sf5bk",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2023-06-10T15:14:00.677Z",
+        "updatedBy": {
+          "sys": {
+            "id": "1nAy3aZoDSADzI2x3Sf5bk",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "person",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "name",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "company",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "shortBio",
+          "widgetId": "markdown"
+        },
+        {
+          "fieldId": "email",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "phone",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "facebook",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "twitter",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "github",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "image",
+          "widgetId": "assetLinkEditor"
+        }
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "avsm3ozy5o5o"
+          }
+        },
+        "id": "Fjgrv1GnTu0jUDYCuzLFR",
+        "type": "Entry",
+        "createdAt": "2020-05-08T20:35:52.804Z",
+        "updatedAt": "2022-05-26T01:42:11.244Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 12,
+        "publishedAt": "2022-05-26T01:42:11.244Z",
+        "firstPublishedAt": "2020-05-08T20:38:37.110Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "publishedCounter": 3,
+        "version": 13,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "resource"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "OAMFT"
+        },
+        "description": {
+          "en-US": "Nullam quis risus eget urna mollis ornare vel eu leo. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+        },
+        "resourceLogo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "3FplMJysHuJ1gdAxJUI1IZ"
+            }
+          }
+        },
+        "resourceLink": {
+          "en-US": "https://oamft.com/"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "avsm3ozy5o5o"
+          }
+        },
+        "id": "TcnZwD3alMNq5UAvyEfDF",
+        "type": "Entry",
+        "createdAt": "2020-05-10T00:08:45.001Z",
+        "updatedAt": "2022-05-26T01:33:44.312Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 183,
+        "publishedAt": "2022-05-26T01:33:44.312Z",
+        "firstPublishedAt": "2020-05-10T00:09:41.124Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "publishedCounter": 21,
+        "version": 184,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "homePage"
+          }
+        }
+      },
+      "fields": {
+        "pageName": {
+          "en-US": "Home"
+        },
+        "heroTitle": {
+          "en-US": "If you are struggling and need support, I can help. I offer psychotherapy for individuals, couples and families and look forward to connecting with you soon."
+        },
+        "heroText": {
+          "en-US": "Hero Text Here"
+        },
+        "heroButtonText": {
+          "en-US": "Connect With Me"
+        },
+        "heroButtonLink": {
+          "en-US": "/contact"
+        },
+        "heroImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "6py8D0FFMbXrH95WKu5Yed"
+            }
+          }
+        },
+        "ctaTitle": {
+          "en-US": "Deciding to make that first contact with a therapist can be an intimidating and often overwhelming prospect. "
+        },
+        "ctaText": {
+          "en-US": " It's common to put therapy off due to fear, financial constraints, stigma, or other concerns. When you’re ready to reach out, I’ll do my best to help you feel as comfortable as possible so you can begin to move forward meaningfully in your life.."
+        },
+        "ctaButtonText": {
+          "en-US": "Connect With Me"
+        },
+        "ctaButtonLink": {
+          "en-US": "#"
+        },
+        "howCanIHelpLead": {
+          "en-US": "You're Not Alone"
+        },
+        "howCanIHelpTitle": {
+          "en-US": "Some of the many challenges I can support you through include:"
+        },
+        "howCanIHelpButtonText": {
+          "en-US": "Connect With Me"
+        },
+        "howCanIHelpLink": {
+          "en-US": "#"
+        },
+        "showCta2": {
+          "en-US": true
+        },
+        "cta2Title": {
+          "en-US": "CTA 2 Title"
+        },
+        "cta2Text": {
+          "en-US": "My services are covered by most extended health benefit plans and some sliding scale options are available based on financial need. Please reach out to find out more."
+        },
+        "cta2ButtonText": {
+          "en-US": "Connect With Me"
+        },
+        "cta2ButtonLink": {
+          "en-US": "/contact"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "avsm3ozy5o5o"
+          }
+        },
+        "id": "WnSLQP0GMV7Z9BsQTSuuh",
+        "type": "Entry",
+        "createdAt": "2022-02-23T00:36:09.996Z",
+        "updatedAt": "2022-05-26T01:40:51.909Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 10,
+        "publishedAt": "2022-05-26T01:40:51.909Z",
+        "firstPublishedAt": "2022-03-22T00:45:20.110Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "publishedCounter": 3,
+        "version": 11,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "resource"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "AAMFT"
+        },
+        "description": {
+          "en-US": "Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla."
+        },
+        "resourceLogo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "5XpT7KqLNpuc0Ze9C5BW1z"
+            }
+          }
+        },
+        "resourceLink": {
+          "en-US": "https://gooogle.com"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "avsm3ozy5o5o"
+          }
+        },
+        "id": "4jGLYIT6UGlxFoTaYo9D0H",
+        "type": "Entry",
+        "createdAt": "2022-03-03T13:15:28.977Z",
+        "updatedAt": "2022-04-25T16:27:20.857Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 12,
+        "publishedAt": "2022-03-20T10:58:39.223Z",
+        "firstPublishedAt": "2022-03-03T13:16:02.276Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4FsQ9OBYjrfheFI0H74xMy"
+          }
+        },
+        "publishedCounter": 3,
+        "version": 20,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "areasOfPractice"
+          }
+        }
+      },
+      "fields": {
+        "bulletPoints": {
+          "en-US": [
+            "Anxiety",
+            "Depression",
+            "Self-Esteem",
+            "Trauma",
+            "Stress"
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "avsm3ozy5o5o"
+          }
+        },
+        "id": "68sCNz9lNFZtsYz9f0JFYG",
+        "type": "Entry",
+        "createdAt": "2022-03-03T13:17:31.711Z",
+        "updatedAt": "2022-04-25T17:53:28.568Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 6,
+        "publishedAt": "2022-03-20T10:58:21.441Z",
+        "firstPublishedAt": "2022-03-03T13:17:51.808Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4FsQ9OBYjrfheFI0H74xMy"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 15,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "areasOfPractice"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Individual Therapy"
+        },
+        "bulletPoints": {
+          "en-US": [
+            "Abuse",
+            "Addiction",
+            "Grief",
+            "Relationships"
+          ]
+        },
+        "description": {
+          "en-US": "I am invested in each individual's journey toward wholeness, offering the guidance and support needed to move in this direction."
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "avsm3ozy5o5o"
+          }
+        },
+        "id": "1hDNUqqbCxqyQiO0CRJ3zh",
+        "type": "Entry",
+        "createdAt": "2022-03-19T17:30:55.903Z",
+        "updatedAt": "2022-03-29T02:32:09.250Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 27,
+        "publishedAt": "2022-03-29T02:32:09.250Z",
+        "firstPublishedAt": "2022-03-19T17:31:31.788Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "publishedCounter": 9,
+        "version": 28,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "generalInfo"
+          }
+        }
+      },
+      "fields": {
+        "logo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "4gHCKFC5ur9aIyttTjZIfq"
+            }
+          }
+        },
+        "logoDark": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "7qnoXsAP2ZhTuANFNwFFYv"
+            }
+          }
+        },
+        "name": {
+          "en-US": "Kristen Hodges"
+        },
+        "credentials": {
+          "en-US": "MDIV | RP | RMFT"
+        },
+        "phoneNumber": {
+          "en-US": "1 289 237 1877"
+        },
+        "address": {
+          "en-US": "33 Huxley Ave S\nHamilton, ON\nL8K 2P5\n"
+        },
+        "location": {
+          "en-US": {
+            "lon": -79.8121,
+            "lat": 43.23961
+          }
+        },
+        "footerLegalText": {
+          "en-US": "Kristen Hodges Therapy"
+        },
+        "email": {
+          "en-US": "rando@rando.com"
+        },
+        "googleMapsLink": {
+          "en-US": "https://www.google.com/maps/place/33+Huxley+Ave+S,+Hamilton,+ON+L8K+2P5/@43.2396161,-79.8143203,17z/data=!3m1!4b1!4m5!3m4!1s0x882c996a10a2f541:0x67bc22032d40f8dc!8m2!3d43.2396161!4d-79.8121316"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "avsm3ozy5o5o"
+          }
+        },
+        "id": "7gT3EYPDDBmHm5tOfGfRl0",
+        "type": "Entry",
+        "createdAt": "2022-03-20T10:11:33.492Z",
+        "updatedAt": "2022-04-25T17:53:45.618Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 19,
+        "publishedAt": "2022-03-20T11:14:48.250Z",
+        "firstPublishedAt": "2022-03-20T10:11:44.143Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4FsQ9OBYjrfheFI0H74xMy"
+          }
+        },
+        "publishedCounter": 5,
+        "version": 33,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "servicesPage"
+          }
+        }
+      },
+      "fields": {
+        "pageTitle": {
+          "en-US": "Services"
+        },
+        "introText": {
+          "en-US": "Individual Therapy\n\nI am invested in each individual's journey toward wholeness, offering the guidance and support needed to move in this direction.\n\nCouple Therapy\n\nWhether couples are just starting out on their journey together or are trying to find their way back to a happier time, I help them understand themselves and their relationship dynamics so they can create and sustain a new and healthy connection.\n\nFamily Therapy\n\nFrom parenting to conflict, I do my best to help families leave behind the same old arguments and begin to find balance in the home.\n\nDiscernment Counselling\n\nSome couples may be considering divorce but are not completely sure that’s the best path. Discernment Counseling is a new way of helping couples where one person is “leaning out” of the relationship—and not sure that regular marriage counseling would help--and the other is“leaning in”—that is, interested in rebuilding the marriage. \n\nI can help these couples decide whether to try to restore the marriage to health, move toward divorce, or take a time out and decide later. \n\nWe work together to help each person gain clarity and confidence about a direction, based on a deeper understanding of their relationship and its possibilities for the future. \n\nClinical Supervision\n\nI offer clinical supervision for qualifying Registered Psychotherapists and Registered Marriage and Family Therapists who need to satisfy their clinical hours with CRPO and CAMFT, respectively. I am also available to meet with more seasoned psychotherapists looking to maintain or enhance their therapeutic skills. I am available to meet in a dyadic or group format, depending on the supervisee’s needs and preferences. \n\nOnline Services\n\nIt’s not always easy to meet with me in person. Thankfully, video therapy overcomes barriers such as distance, scheduling, child-care, transportation, and illness because clients can meet with me securely wherever they are on their computer, tablet, or phone. Whether clients choose to meet exclusively by video or through a combination of in-person and video, we can find an arrangement that meets their need for flexibility.\n"
+        },
+        "whatToExpectTitle": {
+          "en-US": "What to Expect"
+        },
+        "whatToExpect": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "67mDK4LmvTRgZoJWj0IIba"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "15u6uhbMGM59S8LvWFR5eP"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6bfAj09YqEKbdbFcM3V6UF"
+              }
+            }
+          ]
+        },
+        "areasOfPracticeTitle": {
+          "en-US": "Services"
+        },
+        "areasOfPractice": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "68sCNz9lNFZtsYz9f0JFYG"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4jGLYIT6UGlxFoTaYo9D0H"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "avsm3ozy5o5o"
+          }
+        },
+        "id": "6bfAj09YqEKbdbFcM3V6UF",
+        "type": "Entry",
+        "createdAt": "2022-03-20T10:16:43.624Z",
+        "updatedAt": "2022-03-20T10:16:55.058Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2022-03-20T10:16:55.058Z",
+        "firstPublishedAt": "2022-03-20T10:16:55.058Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "whatToExpect"
+          }
+        }
+      },
+      "fields": {
+        "whatToExpect": {
+          "en-US": "\nWe’ll start with a brief phone conversation so that I can get a sense of the kind of support that you are looking for. I’ll ask for some basic information to get to know you and also use this time to answer any questions that you might have. If it feels like we are a good fit for working together, we will schedule an in-person appointment."
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "avsm3ozy5o5o"
+          }
+        },
+        "id": "15u6uhbMGM59S8LvWFR5eP",
+        "type": "Entry",
+        "createdAt": "2022-03-20T10:17:02.624Z",
+        "updatedAt": "2022-03-20T10:17:10.274Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2022-03-20T10:17:10.274Z",
+        "firstPublishedAt": "2022-03-20T10:17:10.274Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "whatToExpect"
+          }
+        }
+      },
+      "fields": {
+        "whatToExpect": {
+          "en-US": "\nIn the first few sessions, I will learn more about you and together, we will explore the goals you have for therapy. Do you want to build healthier relationships? Learn how to better manage emotions and stress? Or even identifying patterns that keep us feeling \"stuck\" in our lives."
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "avsm3ozy5o5o"
+          }
+        },
+        "id": "67mDK4LmvTRgZoJWj0IIba",
+        "type": "Entry",
+        "createdAt": "2022-03-20T10:17:22.150Z",
+        "updatedAt": "2022-04-25T17:36:40.094Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2022-03-20T10:17:24.896Z",
+        "firstPublishedAt": "2022-03-20T10:17:24.896Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4FsQ9OBYjrfheFI0H74xMy"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "whatToExpect"
+          }
+        }
+      },
+      "fields": {
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "avsm3ozy5o5o"
+          }
+        },
+        "id": "2TyrHtRfVS477wFzOQMCdy",
+        "type": "Entry",
+        "createdAt": "2022-03-22T00:41:56.261Z",
+        "updatedAt": "2022-03-22T01:01:16.844Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 12,
+        "publishedAt": "2022-03-22T01:01:16.844Z",
+        "firstPublishedAt": "2022-03-22T00:42:43.649Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "publishedCounter": 3,
+        "version": 13,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "resourcesPage"
+          }
+        }
+      },
+      "fields": {
+        "pageTitle": {
+          "en-US": "Resources"
+        },
+        "introTitle": {
+          "en-US": "Our Resources"
+        },
+        "introText": {
+          "en-US": "Donec ullamcorper nulla non metus auctor fringilla. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Sed posuere consectetur est at lobortis.\n\nDonec ullamcorper nulla non metus auctor fringilla. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Sed posuere consectetur est at lobortis.\n\nDonec ullamcorper nulla non metus auctor fringilla."
+        },
+        "resourcesLead": {
+          "en-US": "our partners"
+        },
+        "resourcesTitle": {
+          "en-US": "Learn More About Resources"
+        },
+        "resources": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "WnSLQP0GMV7Z9BsQTSuuh"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "Fjgrv1GnTu0jUDYCuzLFR"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "avsm3ozy5o5o"
+          }
+        },
+        "id": "3a99VMgxThH3hJrig6zfOP",
+        "type": "Entry",
+        "createdAt": "2022-03-27T12:26:58.117Z",
+        "updatedAt": "2022-03-27T12:27:17.665Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2022-03-27T12:27:17.665Z",
+        "firstPublishedAt": "2022-03-27T12:27:17.665Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "faq"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Why is the sky blue?"
+        },
+        "content": {
+          "en-US": "I have no idea."
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "avsm3ozy5o5o"
+          }
+        },
+        "id": "6NPDPTEKfBZOYnfJRoniVX",
+        "type": "Entry",
+        "createdAt": "2022-03-27T12:27:24.331Z",
+        "updatedAt": "2022-03-27T12:27:35.318Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2022-03-27T12:27:35.318Z",
+        "firstPublishedAt": "2022-03-27T12:27:35.318Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "faq"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Where do babies come from?"
+        },
+        "content": {
+          "en-US": "I have no idea."
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "avsm3ozy5o5o"
+          }
+        },
+        "id": "1NjUIOPZxfHhvJVp4fiNap",
+        "type": "Entry",
+        "createdAt": "2022-03-27T12:27:40.603Z",
+        "updatedAt": "2022-03-27T12:27:50.346Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2022-03-27T12:27:50.346Z",
+        "firstPublishedAt": "2022-03-27T12:27:50.346Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "faq"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Whats the deal with stuff?"
+        },
+        "content": {
+          "en-US": "I have no idea."
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "avsm3ozy5o5o"
+          }
+        },
+        "id": "4W4ddb64hiQWWi8Kvfw3W9",
+        "type": "Entry",
+        "createdAt": "2022-03-27T12:29:44.620Z",
+        "updatedAt": "2022-03-27T12:32:57.660Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 7,
+        "publishedAt": "2022-03-27T12:32:57.660Z",
+        "firstPublishedAt": "2022-03-27T12:30:08.882Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 8,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "faqPage"
+          }
+        }
+      },
+      "fields": {
+        "pageTitle": {
+          "en-US": "FAQ"
+        },
+        "introTitle": {
+          "en-US": "Customizable text"
+        },
+        "introText": {
+          "en-US": "Donec id elit non mi porta gravida at eget metus. Curabitur blandit tempus porttitor. Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.\n\nAenean lacinia bibendum nulla sed consectetur. Donec sed odio dui. Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam id dolor id nibh ultricies vehicula ut id elit."
+        },
+        "faqItems": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4W4ddb64hiQWWi8Kvfw3W9"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "1NjUIOPZxfHhvJVp4fiNap"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6NPDPTEKfBZOYnfJRoniVX"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "avsm3ozy5o5o"
+          }
+        },
+        "id": "1u8kEQ8PVmstBnz5Nvd9mt",
+        "type": "Entry",
+        "createdAt": "2022-03-27T13:05:01.709Z",
+        "updatedAt": "2022-04-14T10:07:37.766Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 20,
+        "publishedAt": "2022-04-14T10:07:37.766Z",
+        "firstPublishedAt": "2022-03-27T13:09:39.043Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "publishedCounter": 4,
+        "version": 21,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "experience"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "EDUCATION AND WORK EXPERIENCE"
+        },
+        "description": {
+          "en-US": "Licensed Marriage and Family Therapist #101250\n\n__Richmond Area Multi-Services (RAMS):__\n\n__CAAP Counseling and Pre-Vocational Services__\n\n- Provide mental health services to individuals who may be dealing with drug addictions, experiencing trauma and homelessness. Link clients to community services and offer vocational counseling and assessment. Advocate and promote social justice for underserved populations.\n\n__Dominican University of California__\n\n- M.A. in Counseling Psychology, emphasis in Marriage and Family Therapy Dominican University of California\n\n- B.A. in Psychology, Minor in Communication Studies"
+        },
+        "position": {
+          "en-US": true
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "avsm3ozy5o5o"
+          }
+        },
+        "id": "2WY0aUEz2gx6UP7ZM0bXQ4",
+        "type": "Entry",
+        "createdAt": "2022-03-27T13:09:47.193Z",
+        "updatedAt": "2022-03-27T13:10:04.003Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2022-03-27T13:10:04.003Z",
+        "firstPublishedAt": "2022-03-27T13:10:00.147Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "experience"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Languages"
+        },
+        "description": {
+          "en-US": "English"
+        },
+        "position": {
+          "en-US": false
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "avsm3ozy5o5o"
+          }
+        },
+        "id": "7ADfEIlD2w4NIkrgH9FZY2",
+        "type": "Entry",
+        "createdAt": "2022-03-27T13:10:46.923Z",
+        "updatedAt": "2022-03-27T13:11:00.660Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2022-03-27T13:11:00.660Z",
+        "firstPublishedAt": "2022-03-27T13:11:00.660Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "experience"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "TRAINING"
+        },
+        "description": {
+          "en-US": "Emotionally Focused Therapy Externship"
+        },
+        "position": {
+          "en-US": false
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "avsm3ozy5o5o"
+          }
+        },
+        "id": "16fYBIClcI1SDNtRw78eyF",
+        "type": "Entry",
+        "createdAt": "2022-03-27T13:11:05.306Z",
+        "updatedAt": "2022-03-27T13:11:25.594Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2022-03-27T13:11:25.594Z",
+        "firstPublishedAt": "2022-03-27T13:11:25.594Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "experience"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "PROFESSIONAL AFFILIATIONS"
+        },
+        "description": {
+          "en-US": "California Association of Marriage and Family Therapists (CAMFT)\n\nSan Francisco Chapter (SFCAMFT)"
+        },
+        "position": {
+          "en-US": false
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "avsm3ozy5o5o"
+          }
+        },
+        "id": "1KKU0cU5d7qiG0uxx7ZlqW",
+        "type": "Entry",
+        "createdAt": "2022-03-27T13:33:05.075Z",
+        "updatedAt": "2023-06-13T09:16:36.694Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 29,
+        "publishedAt": "2023-06-13T09:16:36.694Z",
+        "firstPublishedAt": "2022-03-27T13:34:12.083Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "publishedCounter": 8,
+        "version": 30,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "aboutPage"
+          }
+        }
+      },
+      "fields": {
+        "pageTitle": {
+          "en-US": "About"
+        },
+        "introTitle": {
+          "en-US": "Get to know Kristen  weeeeeee"
+        },
+        "introText": {
+          "en-US": "Credentials\n\nI am a Registered Psychotherapist with the College of Registered Psychotherapists of Ontario (CRPO), a Registered Marriage and Family Therapist with the American Association for Marriage and Family Therapy (AAMFT), and a Clinical Supervisor. I hold a Masters degree in Counselling from Tyndale University College and Seminary and an honours degree in Psychology from the University of Guelph. I value ongoing professional development and regularly attend training that enhances my therapeutic skills. \n\nCounselling Approach\n\nI believe in a holistic approach to therapy that focuses on the emotional, physical, cognitive, relational, and spiritual well-being of my clients. My training in Family Systems Theory continually invites me to consider each person as part of a broader past and present social context. Building on this foundation, I integrate various theories and models into therapy, drawing primarily on Internal Family Systems Therapy, Emotion Focused Therapy, Focusing, and Mindfulness. Each of these models helps clients access their natural inner resources to find balance within themselves and their relationships.\n\nAreas of Interest\n\nAnxiety\n\nI help clients understand and heal their relationship with anxiety, including phobias, perfectionism, social anxiety, and generalized anxiety\n\nTrauma\n\nMany clients have been through painful experiences that overwhelmed their capacity to cope. These experiences often continue to show up in ways that negatively affect their present life, such as anxiety, depression, addictions, and relationship struggles. I help clients build the skills they need to overcome the effects of trauma and begin to experience the inner calm they long for.\n\nRelationships\n\nRelationship Enrichment: For couples wanting to move toward more loving and satisfying relationships, I support them every step of the way\n\nRelationship Discernment: I work with couples that are at a crossroads in their relationship to discern the future of their relationship and move toward a mutually satisfying outcome.\n\nInfidelity: Whether infidelity is undisclosed, has just been uncovered, or continues to be a wedge in the relationship despite the passage of time, I work with couples to recover from its impact in a way that fits their unique circumstances.\n"
+        },
+        "image": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "aw5ztOa0O1nVc7ETZF8CZ"
+            }
+          }
+        },
+        "experienceTitle": {
+          "en-US": "Experience"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "avsm3ozy5o5o"
+          }
+        },
+        "id": "54RyZ1pkQ2JN2zvYuEyU0d",
+        "type": "Entry",
+        "createdAt": "2022-03-29T02:20:17.653Z",
+        "updatedAt": "2022-03-29T02:38:30.148Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 6,
+        "publishedAt": "2022-03-29T02:38:30.148Z",
+        "firstPublishedAt": "2022-03-29T02:20:32.810Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 7,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "contactPage"
+          }
+        }
+      },
+      "fields": {
+        "pageTitle": {
+          "en-US": "Contact"
+        },
+        "contactFormTitle": {
+          "en-US": "Contact Kristen"
+        },
+        "contactFormText": {
+          "en-US": "Aenean lacinia bibendum nulla sed consectetur. Sed posuere consectetur est at lobortis."
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "avsm3ozy5o5o"
+          }
+        },
+        "id": "15jwOBqpxqSAOy2eOO4S0m",
+        "type": "Entry",
+        "createdAt": "2023-06-10T15:14:22.915Z",
+        "updatedAt": "2023-06-10T15:14:30.124Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2023-06-10T15:14:30.124Z",
+        "firstPublishedAt": "2023-06-10T15:14:30.124Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "person"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "John Doe"
+        },
+        "title": {
+          "en-US": "Web Developer"
+        },
+        "company": {
+          "en-US": "ACME"
+        },
+        "shortBio": {
+          "en-US": "Research and recommendations for modern stack websites."
+        },
+        "email": {
+          "en-US": "john@doe.com"
+        },
+        "phone": {
+          "en-US": "0176 / 1234567"
+        },
+        "facebook": {
+          "en-US": "johndoe"
+        },
+        "twitter": {
+          "en-US": "johndoe"
+        },
+        "github": {
+          "en-US": "johndoe"
+        },
+        "image": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "7orLdboQQowIUs22KAW4U"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "assets": [
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "avsm3ozy5o5o"
+          }
+        },
+        "id": "4shwYI3POEGkw0Eg6kcyaQ",
+        "type": "Asset",
+        "createdAt": "2020-04-15T11:51:31.697Z",
+        "updatedAt": "2023-06-10T15:14:16.803Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 13,
+        "publishedAt": "2023-06-10T15:14:16.803Z",
+        "firstPublishedAt": "2020-04-15T11:51:39.046Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "publishedCounter": 4,
+        "version": 14,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Man in the fields"
+        },
+        "description": {
+          "en-US": "Tattooed man walking in a field"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/avsm3ozy5o5o/4shwYI3POEGkw0Eg6kcyaQ/87193a19a9593303bb6cd0360e397106/felix-russell-saw-112140.jpg",
+            "details": {
+              "size": 4539181,
+              "image": {
+                "width": 2500,
+                "height": 1667
+              }
+            },
+            "fileName": "felix-russell-saw-112140.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "avsm3ozy5o5o"
+          }
+        },
+        "id": "7orLdboQQowIUs22KAW4U",
+        "type": "Asset",
+        "createdAt": "2020-04-15T11:51:31.708Z",
+        "updatedAt": "2023-06-10T15:14:14.744Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 13,
+        "publishedAt": "2023-06-10T15:14:14.744Z",
+        "firstPublishedAt": "2020-04-15T11:51:38.667Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "publishedCounter": 4,
+        "version": 14,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Sparkler"
+        },
+        "description": {
+          "en-US": "John with Sparkler"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/avsm3ozy5o5o/7orLdboQQowIUs22KAW4U/3aa9c7208501cc8836fed1f8f03f5bb3/matt-palmer-254999.jpg",
+            "details": {
+              "size": 2293094,
+              "image": {
+                "width": 3000,
+                "height": 2000
+              }
+            },
+            "fileName": "matt-palmer-254999.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "avsm3ozy5o5o"
+          }
+        },
+        "id": "4NzwDSDlGECGIiokKomsyI",
+        "type": "Asset",
+        "createdAt": "2020-04-15T11:51:31.710Z",
+        "updatedAt": "2023-06-10T15:14:18.468Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 13,
+        "publishedAt": "2023-06-10T15:14:18.468Z",
+        "firstPublishedAt": "2020-04-15T11:51:39.380Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "publishedCounter": 4,
+        "version": 14,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "City"
+        },
+        "description": {
+          "en-US": "City pictured from the sky"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/avsm3ozy5o5o/4NzwDSDlGECGIiokKomsyI/6429cd1df4a819613093539fa3190d85/denys-nevozhai-100695.jpg",
+            "details": {
+              "size": 15736986,
+              "image": {
+                "width": 3992,
+                "height": 2992
+              }
+            },
+            "fileName": "denys-nevozhai-100695.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "avsm3ozy5o5o"
+          }
+        },
+        "id": "6Od9v3wzLOysiMum0Wkmme",
+        "type": "Asset",
+        "createdAt": "2020-04-15T11:51:31.713Z",
+        "updatedAt": "2023-06-10T15:14:20.360Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 13,
+        "publishedAt": "2023-06-10T15:14:20.360Z",
+        "firstPublishedAt": "2020-04-15T11:51:39.719Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "publishedCounter": 4,
+        "version": 14,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Woman with black hat"
+        },
+        "description": {
+          "en-US": "Woman wearing a black hat"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/avsm3ozy5o5o/6Od9v3wzLOysiMum0Wkmme/7d129d63d4853358a1195f214d3471cd/cameron-kirby-88711.jpg",
+            "details": {
+              "size": 7316629,
+              "image": {
+                "width": 3000,
+                "height": 2000
+              }
+            },
+            "fileName": "cameron-kirby-88711.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "avsm3ozy5o5o"
+          }
+        },
+        "id": "3FplMJysHuJ1gdAxJUI1IZ",
+        "type": "Asset",
+        "createdAt": "2020-05-08T20:37:39.613Z",
+        "updatedAt": "2020-05-08T20:38:25.845Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 9,
+        "publishedAt": "2020-05-08T20:38:25.845Z",
+        "firstPublishedAt": "2020-05-08T20:38:25.845Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 10,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "OAMFT logo"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/avsm3ozy5o5o/3FplMJysHuJ1gdAxJUI1IZ/ea7375d62dac3a6ada335f71fc333114/oamft.png",
+            "details": {
+              "size": 111846,
+              "image": {
+                "width": 198,
+                "height": 99
+              }
+            },
+            "fileName": "oamft.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "avsm3ozy5o5o"
+          }
+        },
+        "id": "7jpKzgNEx4DzyPtGdnj38K",
+        "type": "Asset",
+        "createdAt": "2020-05-09T10:40:16.353Z",
+        "updatedAt": "2022-03-03T16:56:54.333Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 12,
+        "publishedAt": "2022-03-03T16:56:54.333Z",
+        "firstPublishedAt": "2020-05-09T10:41:26.852Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 13,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Rings icon"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/avsm3ozy5o5o/7jpKzgNEx4DzyPtGdnj38K/a5d40c92dc1de847b076788eb5abd991/rings.svg",
+            "details": {
+              "size": 2081,
+              "image": {
+                "width": 30,
+                "height": 21
+              }
+            },
+            "fileName": "rings.svg",
+            "contentType": "image/svg+xml"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "avsm3ozy5o5o"
+          }
+        },
+        "id": "6py8D0FFMbXrH95WKu5Yed",
+        "type": "Asset",
+        "createdAt": "2022-03-03T13:23:01.634Z",
+        "updatedAt": "2022-03-03T16:28:08.896Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 6,
+        "publishedAt": "2022-03-03T16:28:08.896Z",
+        "firstPublishedAt": "2022-03-03T13:24:53.714Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 7,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "leaf-and-books"
+        },
+        "description": {
+          "en-US": "A pile of books with a plant on top"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/avsm3ozy5o5o/6py8D0FFMbXrH95WKu5Yed/d99f2e03b94ab66e45d6f5019035c8fa/leaf-and-books.png",
+            "details": {
+              "size": 1243563,
+              "image": {
+                "width": 1765,
+                "height": 1259
+              }
+            },
+            "fileName": "leaf-and-books.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "avsm3ozy5o5o"
+          }
+        },
+        "id": "4gHCKFC5ur9aIyttTjZIfq",
+        "type": "Asset",
+        "createdAt": "2022-03-19T17:33:32.070Z",
+        "updatedAt": "2022-03-19T17:36:06.687Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 9,
+        "publishedAt": "2022-03-19T17:36:06.687Z",
+        "firstPublishedAt": "2022-03-19T17:34:06.014Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 10,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Logo Light"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/avsm3ozy5o5o/4gHCKFC5ur9aIyttTjZIfq/2ca39d78c726d7c046600d345ea95210/logo-white.svg",
+            "details": {
+              "size": 15656,
+              "image": {
+                "width": 274,
+                "height": 39
+              }
+            },
+            "fileName": "logo-white.svg",
+            "contentType": "image/svg+xml"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "avsm3ozy5o5o"
+          }
+        },
+        "id": "7qnoXsAP2ZhTuANFNwFFYv",
+        "type": "Asset",
+        "createdAt": "2022-03-19T17:36:15.172Z",
+        "updatedAt": "2022-03-19T17:36:29.519Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2022-03-19T17:36:29.519Z",
+        "firstPublishedAt": "2022-03-19T17:36:29.519Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Logo Dark"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/avsm3ozy5o5o/7qnoXsAP2ZhTuANFNwFFYv/6b2beb640b2c55a7485bfa6d26ad8778/logo-blue.svg",
+            "details": {
+              "size": 15656,
+              "image": {
+                "width": 274,
+                "height": 39
+              }
+            },
+            "fileName": "logo-blue.svg",
+            "contentType": "image/svg+xml"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "avsm3ozy5o5o"
+          }
+        },
+        "id": "5XpT7KqLNpuc0Ze9C5BW1z",
+        "type": "Asset",
+        "createdAt": "2022-03-22T00:44:50.447Z",
+        "updatedAt": "2022-03-22T00:45:13.269Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2022-03-22T00:45:13.269Z",
+        "firstPublishedAt": "2022-03-22T00:45:13.269Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "AAMFT Logo"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/avsm3ozy5o5o/5XpT7KqLNpuc0Ze9C5BW1z/ef8ffca58bcf7b3933a7a70f210fce66/aamft-logo.png",
+            "details": {
+              "size": 19179,
+              "image": {
+                "width": 348,
+                "height": 111
+              }
+            },
+            "fileName": "aamft-logo.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "avsm3ozy5o5o"
+          }
+        },
+        "id": "aw5ztOa0O1nVc7ETZF8CZ",
+        "type": "Asset",
+        "createdAt": "2022-03-27T13:33:28.341Z",
+        "updatedAt": "2022-03-28T12:53:33.180Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 8,
+        "publishedAt": "2022-03-28T12:53:33.180Z",
+        "firstPublishedAt": "2022-03-27T13:33:49.880Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 9,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Kristen Hodges"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/avsm3ozy5o5o/aw5ztOa0O1nVc7ETZF8CZ/13aa53d3dd76012f8b8961da2d1919c1/kristen.jpeg",
+            "details": {
+              "size": 364715,
+              "image": {
+                "width": 640,
+                "height": 960
+              }
+            },
+            "fileName": "kristen.jpeg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    }
+  ],
+  "locales": [
+    {
+      "name": "U.S. English",
+      "code": "en-US",
+      "fallbackCode": null,
+      "default": true,
+      "contentManagementApi": true,
+      "contentDeliveryApi": true,
+      "optional": false,
+      "sys": {
+        "type": "Locale",
+        "id": "2vNJqCJGmTCBXsuaW08dhH",
+        "version": 2,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "avsm3ozy5o5o"
+          }
+        },
+        "environment": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Environment",
+            "id": "master",
+            "uuid": "f6bf4892-7045-4a27-9df9-62b3e1815ffd"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "createdAt": "2020-02-09T12:05:01Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "updatedAt": "2020-02-09T12:05:03Z"
+      }
+    }
+  ],
+  "webhooks": [
+    {
+      "name": "Gatsby Builds",
+      "url": "https://webhook.gatsbyjs.com/hooks/data_source/publish/dafdf795-8f7d-47ef-b107-929a38fda641",
+      "httpBasicUsername": null,
+      "topics": [
+        "ContentType.publish",
+        "Entry.publish",
+        "Asset.publish"
+      ],
+      "filters": null,
+      "transformation": null,
+      "active": true,
+      "sys": {
+        "type": "WebhookDefinition",
+        "id": "gatsby-builds",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "avsm3ozy5o5o"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "createdAt": "2020-02-09T12:05:22Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1nAy3aZoDSADzI2x3Sf5bk"
+          }
+        },
+        "updatedAt": "2020-02-09T12:05:22Z"
+      },
+      "headers": [
+      ]
+    }
+  ],
+  "roles": [
+  ]
+}

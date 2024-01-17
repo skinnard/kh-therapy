@@ -1,0 +1,48 @@
+@import '../../../styles/style.scss';
+
+.cs-wrapper {
+  background: #f9f6ec;
+  position: relative;
+  top: 0;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  height: 100vh;
+  width: 100vw;
+
+  .columns {
+    align-items: center;
+    flex-wrap: wrap;
+
+    .column {
+      padding: 20px;
+      width: 50%;
+
+      @include mq(custom, max, 800) {
+        width: 100%;
+      }
+
+      // .title {
+      //     @include mq(custom, max, 1000) {
+      //         @include font-size(38);
+      //     }
+      // }
+
+      .bodyText {
+        margin-bottom: 30px;
+      }
+
+      .img {
+        width: 100%;
+      }
+    }
+
+    .imgWrapper {
+      @include mq(custom, max, 800) {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,7 +1,5 @@
 import React from 'react'
-import get from 'lodash/get'
 import Helmet from 'react-helmet'
-// import Hero from '../components/hero'
 import Layout from '../components/shared/Layout/Layout'
 import Navigation from '../components/modules/Navigation/Navigation'
 import Container from '../components/shared/Container/Container'
@@ -10,6 +8,7 @@ import Info from '../components/modules/Info/Info'
 import Help from '../components/modules/Help/Help'
 import Cta from '../components/modules/Cta/Cta'
 import Footer from '../components/modules/Footer/Footer'
+import ComingSoon from "../components/modules/ComingSoon/ComingSoon"
 
 class RootIndex extends React.Component {
   render() {
@@ -17,14 +16,13 @@ class RootIndex extends React.Component {
       <Layout>
         <Container>
           <Helmet />
-          {/* <Hero data={author.node} /> */}
-
-          <Navigation />
+          <ComingSoon />
+          {/* <Navigation />
           <Hero />
           <Info />
           <Help />
           <Cta />
-          <Footer />
+          <Footer /> */}
         </Container>
       </Layout>
     )

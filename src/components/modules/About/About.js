@@ -6,7 +6,7 @@ import Button from '../../shared/Button/Button'
 
 export default () => (
   <section id="about" className="sectionPadding-top aboutWrapper">
-    <InnerContainer>
+    <InnerContainer classes="mt-[80px]">
       <h1 className="title">Get to know Kristen</h1>
       <div className="columns">
         <div className="column left">

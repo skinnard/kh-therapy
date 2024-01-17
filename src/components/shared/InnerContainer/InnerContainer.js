@@ -1,7 +1,7 @@
 import React from 'react'
 import style from './InnerContainer.scss'
 
-function InnerContainer({ size, children }) {
+function InnerContainer({ size, children, classes }) {
   let containerSize
 
   if (size === 'small') {
@@ -15,11 +15,10 @@ function InnerContainer({ size, children }) {
   let divStyle = {
     width: '100%',
     maxWidth: containerSize,
-    margin: '0 auto',
   }
 
   return (
-    <div class="innerContainer" style={divStyle}>
+    <div className={`innerContainer ${classes}`} style={divStyle}>
       {children}
     </div>
   )
