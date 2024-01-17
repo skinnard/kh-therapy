@@ -36,6 +36,16 @@ therapy@kristenhodges.com"
               1 647-269-3436
             </a>
           </li>
+          <li>
+            <a
+              className="text-xl font-semibold cursor-pointer"
+              href="https://maps.app.goo.gl/CRnHz1B3N8iYzwUw7" target="_blank"
+            >
+              3425 Harvester Rd,
+              <br />
+              Burlington, ON L7N 3M7
+            </a>
+          </li>
           <li></li>
         </ul>
       </div>
