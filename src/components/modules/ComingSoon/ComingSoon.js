@@ -18,7 +18,7 @@ export default () => (
           contact me here.
         </p>
         <ul className="mt-20">
-          <li className="pb-3">
+          <li className="pb-3 cursor-pointer">
             <a
               className="text-xl font-semibold cursor-pointer"
               href="mailto:
@@ -28,7 +28,7 @@ therapy@kristenhodges.com"
               therapy@kristenhodges.com
             </a>
           </li>
-          <li>
+          <li className="pb-3 cursor-pointer">
             <a
               className="text-xl font-semibold cursor-pointer"
               href="tel:16472693436"
@@ -36,10 +36,11 @@ therapy@kristenhodges.com"
               1 647-269-3436
             </a>
           </li>
-          <li>
+          <li className="cursor-pointer">
             <a
               className="text-xl font-semibold cursor-pointer"
-              href="https://maps.app.goo.gl/CRnHz1B3N8iYzwUw7" target="_blank"
+              href="https://maps.app.goo.gl/CRnHz1B3N8iYzwUw7"
+              target="_blank"
             >
               3425 Harvester Rd,
               <br />
