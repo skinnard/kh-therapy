@@ -17,7 +17,15 @@ export default () => (
                   Address:
                 </td>
                 <td className="right" valign="top">
-                  123 Awesome St. Hamilton, ON
+                  <a
+                    href="https://maps.app.goo.gl/dNE3XmvbdjtTncHs8"
+                    target="_blank"
+                  >
+                    3425 Harvester Rd.,&nbsp;Suite&nbsp;213
+                    <br />
+                    Burlington, ON&nbsp;L7N&nbsp;3M7
+                  </a>
+                  <p className="instructions">Some stuff here</p>
                 </td>
               </tr>
               <tr>
@@ -25,7 +33,9 @@ export default () => (
                   Phone:
                 </td>
                 <td className="right" valign="top">
-                  123-456-7890
+                  <a href="tel:6472693436" target="_blank">
+                    1 647-269-3436
+                  </a>
                 </td>
               </tr>
               <tr>
@@ -33,7 +43,9 @@ export default () => (
                   Email:
                 </td>
                 <td className="right" valign="top">
-                  kristen@hodges.com
+                  <a href="mailto:therapy@kristenhodges.com" target="_blank">
+                    therapy@kristenhodges.com
+                  </a>
                 </td>
               </tr>
             </table>
@@ -57,6 +69,7 @@ export default () => (
                 hoverBgColor={'#0F4C81'}
                 arrowColor={'blue'}
                 arrowPadding={'10px'}
+                link={'https://maps.app.goo.gl/dNE3XmvbdjtTncHs8'}
               />
             </div>
           </div>

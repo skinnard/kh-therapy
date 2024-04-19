@@ -12,6 +12,14 @@
   font-size: calc($size / $base) * 1rem;
 }
 
+// $html-font-size: 16px;
+// @function stripUnit($value) {
+//     @return $value / ($value * 0 + 1);
+// }
+// @function rem($pxValue) {
+//     @return #{stripUnit($pxValue) / stripUnit($html-font-size)}rem;
+// }
+
 // Mixin usage **************
 // @include font-size(24);
 // will output a font size of 1.5rem with 24px fallback
@@ -264,8 +272,8 @@ $breakpoint-xlarge: 1400px;
 }
 
 // Mixin usage **************
-// <button class="mobile-navigation-trigger">
-//   <b class="visually-hidden">Open the navigation</b>
+// <button className="mobile-navigation-trigger">
+//   <b className="visually-hidden">Open the navigation</b>
 //   <img src="img/mobile-navigation-icon.svg">
 // </button>
 //

@@ -6,85 +6,76 @@ import Arrow from '../../../svg/long-arrow.svg'
 import RightArrow from '../../../svg/arrow-right-blue.svg'
 
 export default () => (
-  <section id="about-info" className="sectionPadding-sm aboutInfoWrapper">
+  <section id="about-info" className="aboutInfoWrapper">
     <InnerContainer>
-      <h3 className="text-center title">
-        Background &amp;
-        <br /> Professional Experience
-      </h3>
+      <div class="creds">
+        <h3 className="text-center title">Credentials</h3>
+        {/* <Arrow /> */}
+        <div className="flex columns">
+          <p>
+            I am a Registered Psychotherapist with the College of Registered
+            Psychotherapists of Ontario (CRPO), a Registered Marriage and Family
+            Therapist with the Canadian Association for Marriage and Family
+            Therapy (CAMFT), and a qualified Supervisor.</p>
+          
+          <p>
+            I hold a Masters degree
+            in Counselling and an Honours degree in Psychology. Professional
+            development is a priority for me and I regularly attend training
+            that enhances my therapeutic skills.
+          </p>
+        </div>
+      </div>
+      <h3 className="text-center title">Areas of Interest</h3>
       {/* <Arrow /> */}
       <div className="flex columns">
         <div className="column left">
-          <div class="infoSection">
-            <p className="sectionTitle">Education and work experience</p>
+          <div className="infoSection">
+            <p className="sectionTitle">Anxiety</p>
             <p className="sectionSubTitle">
-              <RightArrow />
-              Licensed Marriage and Family Therapist #101250
+              I help clients understand and heal their relationship with anxiety
+              in general and I love working with perfectionism and social
+              anxiety in particular.
             </p>
+            <p className="sectionTitle">Trauma</p>
             <p className="sectionSubTitle">
-              <RightArrow />
-              Richmond Area Multi-Services (RAMS):
+              Many clients have been through painful experiences that
+              overwhelmed their capacity to cope. These experiences often
+              continue to show up in ways that negatively affect their present
+              life, such as anxiety, depression, addictions, and relationship
+              struggles.
             </p>
-            <p>
-              <strong>CAAP Counseling and Pre-Vocational Services</strong>
-            </p>
-            <p>
-              Provide mental health services to individuals who may be dealing
-              with drug addictions, experiencing trauma and homelessness. Link
-              clients to community services and offer vocational counseling and
-              assessment. Advocate and promote social justice for underserved
-              populations.
-            </p>
+
             <p className="sectionSubTitle">
-              <RightArrow />
-              Dominican University of California
-            </p>
-            <p>
-              <strong>
-                M.A. in Counseling Psychology, emphasis in Marriage and Family
-                Therapy
-              </strong>
-            </p>
-            <p className="sectionSubTitle">
-              <RightArrow />
-              Dominican University of California
-            </p>
-            <p>
-              <strong>
-                B.A. in Psychology, Minor in Communication Studies
-              </strong>
+              I enjoy helping clients build the skills they need to overcome the
+              effects of trauma and begin to experience inner trust.
             </p>
           </div>
         </div>
 
         <div className="column right">
-          <div class="infoSection">
-            <p className="sectionTitle">Training</p>
-            <p className="sectionSubTitle">
-              <RightArrow />
-              Emotionally Focused Therapy Externship
-            </p>
-          </div>
-          <div class="infoSection">
-            <p className="sectionTitle">PROFESSIONAL AFFILIATIONS</p>
-            <p className="sectionSubTitle">
-              <RightArrow />
-              California Association of Marriage and Family Therapists (CAMFT)
-            </p>
-          </div>
-          <div class="infoSection">
-            <p className="sectionSubTitle">
-              <RightArrow />
-              San Francisco Chapter (SFCAMFT)
-            </p>
-          </div>
-          <div class="infoSection">
-            <p className="sectionTitle">Languages</p>
-
-            <p className="sectionSubTitle">
-              <RightArrow />
-              English
-            </p>
+          <div className="infoSection">
+            <p className="sectionTitle">Relationships</p>
+            <ul class="relationships-list">
+              <li>
+                <strong>Relationship Enrichment:</strong> For couples wanting to
+                move toward more loving and satisfying relationships, I support
+                them every step of the way
+              </li>
+              <li>
+                <strong>Relationship Discernment:</strong> I work with couples
+                that are at a crossroads in their relationship to discern the
+                future of their relationship and move toward a mutually
+                satisfying outcome.
+              </li>
+              <li>
+                <strong>Infidelity:</strong> Whether infidelity is undisclosed,
+                has just been uncovered, or continues to be a wedge in the
+                relationship despite the passage of time, I work with couples to
+                recover from its impact in a way that fits their unique
+                circumstances.
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -92,3 +83,4 @@ export default () => (
     </InnerContainer>
   </section>
 )
+           

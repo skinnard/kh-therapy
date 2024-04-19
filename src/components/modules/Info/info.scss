@@ -1,5 +1,32 @@
 .infoSection {
+  margin: 0 auto;
+
+  .rings {
+    margin: 0 auto;
+  }
+
   .text {
-    margin: 30px 0 0;
+    margin: 30px 0;
+  }
+
+  .issues {
+    font-weight: 600;
+  }
+
+  .issues-list-wrapper {
+    display: flex;
+    justify-content: center;
+
+    .issues-list {
+      li {
+        display: flex;
+
+        svg {
+          width: 15px;
+          height: auto;
+          margin-right: 10px;
+        }
+      }
+    }
   }
 }

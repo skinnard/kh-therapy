@@ -6,7 +6,7 @@
   top: -80px;
   margin-bottom: -80px;
   display: flex;
-  padding: 80px 20px;
+  padding: 200px 40px 100px;
 
   .title {
     width: 100%;
@@ -26,6 +26,7 @@
       width: 50%;
       display: flex;
       justify-content: space-between;
+      align-items: center;
 
       @include mq(custom, max, 1100) {
         width: 100%;
@@ -45,6 +46,11 @@
         width: 100%;
         padding-left: 60px;
 
+        .text-title {
+          font-size: 20px;
+          margin-bottom: 20px;
+        }
+
         @include mq(custom, max, 800) {
           padding-left: 0;
         }
@@ -62,8 +68,12 @@
       .imgWrapper {
         max-width: 300px;
         width: 100%;
-        margin: 0 auto;
+        margin: -120px auto 0;
         position: relative;
+
+        @include mq(custom, max, 1100) {
+           margin: 0 auto;
+        }
 
         .img {
           width: 100%;

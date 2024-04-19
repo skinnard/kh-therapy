@@ -5,6 +5,7 @@ import Navigation from '../components/modules/Navigation/Navigation'
 import Container from '../components/shared/Container/Container'
 import Footer from '../components/modules/Footer/Footer'
 import FaqIntro from '../components/modules/FaqIntro/FaqIntro'
+import WhatToExpect from '../components/modules/WhatToExpect/WhatToExpect'
 import FaqFaq from '../components/modules/FaqFaq/FaqFaq'
 
 class RootIndex extends React.Component {
@@ -15,6 +16,7 @@ class RootIndex extends React.Component {
           <Helmet />
           <Navigation />
           <FaqIntro />
+          <WhatToExpect />
           <FaqFaq />
           <Footer />
         </Container>

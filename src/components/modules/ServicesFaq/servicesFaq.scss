@@ -1,5 +1,10 @@
 .servicesFaq {
+  margin-top: 0;
   background: url('/images/services-bg.svg');
   background-size: cover;
   background-position: top center;
+
+  .title {
+    margin-bottom: 50px;
+  }
 }

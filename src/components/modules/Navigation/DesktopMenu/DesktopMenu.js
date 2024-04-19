@@ -4,21 +4,21 @@ import './desktopMenu.scss'
 
 function DesktopMenu() {
   return (
-    <div className="flex">
-      <Link className="pl-[50px] font-normal" to="/about">
-        about
+    <div className="flex desktopMenu">
+      <Link className="pl-[50px] font-normal uppercase" to="/about">
+        About Me
       </Link>
-      <Link className="pl-[50px] font-normal" to="/services">
-        services
+      <Link className="pl-[50px] font-normal uppercase" to="/services">
+        Services
       </Link>
-      <Link className="pl-[50px] font-normal" to="/resources">
-        resources
+      <Link
+        className="pl-[50px] font-normal uppercase"
+        to="/rates-availability"
+      >
+        Rates &amp; Availability
       </Link>
-      <Link className="pl-[50px] font-normal" to="/faq">
-        faq
-      </Link>
-      <Link className="pl-[50px] font-normal" to="/contact">
-        contact
+      <Link className="pl-[50px] font-normal uppercase" to="/contact">
+        Contact
       </Link>
     </div>
   )

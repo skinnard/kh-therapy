@@ -11,17 +11,23 @@ function MobileMenuItems() {
   return (
     <div id="mobile-menu-items" className="mobileMenuItems">
       <div className="items-wrapper">
-        <Link className="item" to="/about">
-          about
+        <Link className="pl-[50px] font-normal uppercase" to="/about">
+          About Me
         </Link>
-        <Link className="item" to="/services">
-          services
+        <Link className="pl-[50px] font-normal uppercase" to="/services">
+          Services
         </Link>
-        <Link className="item" to="/resources">
-          resources
+        <Link
+          className="pl-[50px] font-normal uppercase"
+          to="/rates-availability/"
+        >
+          Rates &amp; Availability
         </Link>
-        <Link className="item last" to="/contact">
-          contact
+        {/* <Link className="pl-[50px] font-normal uppercase" to="/faq">
+          FAQ
+        </Link> */}
+        <Link className="pl-[50px] font-normal uppercase" to="/contact">
+          Contact
         </Link>
       </div>
     </div>

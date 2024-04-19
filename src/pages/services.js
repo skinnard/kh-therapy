@@ -5,7 +5,6 @@ import Navigation from '../components/modules/Navigation/Navigation'
 import Container from '../components/shared/Container/Container'
 import Footer from '../components/modules/Footer/Footer'
 import ServicesIntro from '../components/modules/ServicesIntro/ServicesIntro'
-import WhatToExpect from '../components/modules/WhatToExpect/WhatToExpect'
 import ServicesFaq from '../components/modules/ServicesFaq/ServicesFaq'
 
 class RootIndex extends React.Component {
@@ -16,7 +15,6 @@ class RootIndex extends React.Component {
           <Helmet />
           <Navigation />
           <ServicesIntro />
-          <WhatToExpect />
           <ServicesFaq />
           <Footer />
         </Container>

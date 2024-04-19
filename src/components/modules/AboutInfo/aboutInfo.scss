@@ -7,7 +7,8 @@
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
-  margin-bottom: 20px;
+  margin: 100px auto 20px;
+  padding: 0 40px 100px;
 
   .title {
     width: 100%;
@@ -66,16 +67,18 @@
     .right {
       .infoSection {
         margin-bottom: 50px;
+
         .sectionTitle {
           color: $rust;
           text-transform: uppercase;
           @include font-size(18);
           font-weight: 600;
+          font-family: $title-font;
         }
 
         .sectionSubTitle {
-          font-family: $title-font;
-          @include font-size(18);
+          font-family: $body-font;
+          @include font-size(16);
           position: relative;
 
           .last {
@@ -88,11 +91,20 @@
             top: 9px;
           }
         }
+
         p {
           @include font-size(18);
 
           &.last {
             margin-bottom: 50px;
+          }
+        }
+
+        .relationships-list {
+          list-style-type: disc;
+
+          li {
+            margin-bottom: 20px;
           }
         }
       }
@@ -103,5 +115,10 @@
         // display: none;
       }
     }
+  }
+
+  .creds {
+    max-width: 800px;
+    margin: 0 auto 60px;
   }
 }

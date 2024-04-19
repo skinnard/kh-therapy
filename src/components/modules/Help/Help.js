@@ -12,62 +12,50 @@ const Help = () => {
         <h3 className="text-center title">How can I help?</h3>
         <div className="gridWrapper">
           <div className="gridItem">
-            <h5 className="itemTitle">Family Therapy</h5>
-            <ul>
-              <li>Item 1</li>
-              <li>Item 2</li>
-              <li>Item 3</li>
-              <li>Item 4</li>
-              <li>Item 5</li>
-            </ul>
+            <h5 className="itemTitle">Individual Therapy</h5>
             <div className="btnWrapper">
               <a href="#">
-                Learn More <ArrowRight />
+                <span>Learn More</span> <ArrowRight />
               </a>
             </div>
           </div>
           <div className="gridItem">
-            <h5 className="itemTitle">Couples Therapy</h5>
-            <ul>
-              <li>Item 1</li>
-              <li>Item 2</li>
-              <li>Item 3</li>
-              <li>Item 4</li>
-              <li>Item 5</li>
-            </ul>
+            <h5 className="itemTitle">Couple Therapy</h5>
             <div className="btnWrapper">
               <a href="#">
-                Learn More <ArrowRight />
+                <span>Learn More</span> <ArrowRight />
               </a>
             </div>
           </div>
           <div className="gridItem">
             <h5 className="itemTitle">Family Therapy</h5>
-            <ul>
-              <li>Item 1</li>
-              <li>Item 2</li>
-              <li>Item 3</li>
-              <li>Item 4</li>
-              <li>Item 5</li>
-            </ul>
             <div className="btnWrapper">
               <a href="#">
-                Learn More <ArrowRight />
+                <span>Learn More</span> <ArrowRight />
               </a>
             </div>
           </div>
           <div className="gridItem">
-            <h5 className="itemTitle">Family Therapy</h5>
-            <ul>
-              <li>Item 1</li>
-              <li>Item 2</li>
-              <li>Item 3</li>
-              <li>Item 4</li>
-              <li>Item 5</li>
-            </ul>
+            <h5 className="itemTitle">Online Therapy</h5>
             <div className="btnWrapper">
               <a href="#">
-                Learn More <ArrowRight />
+                <span>Learn More</span> <ArrowRight />
+              </a>
+            </div>
+          </div>
+          <div className="gridItem">
+            <h5 className="itemTitle">Discernment Counselling</h5>
+            <div className="btnWrapper">
+              <a href="#">
+                <span>Learn More</span> <ArrowRight />
+              </a>
+            </div>
+          </div>
+          <div className="gridItem">
+            <h5 className="itemTitle">Clinical Supervision</h5>
+            <div className="btnWrapper">
+              <a href="#">
+                <span>Learn More</span> <ArrowRight />
               </a>
             </div>
           </div>

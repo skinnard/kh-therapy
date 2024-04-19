@@ -16,13 +16,12 @@ class RootIndex extends React.Component {
       <Layout>
         <Container>
           <Helmet />
-          <ComingSoon />
-          {/* <Navigation />
+          <Navigation />
           <Hero />
           <Info />
-          <Help />
+          {/* <Help /> */}
           <Cta />
-          <Footer /> */}
+          <Footer />
         </Container>
       </Layout>
     )

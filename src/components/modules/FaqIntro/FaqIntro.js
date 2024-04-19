@@ -9,9 +9,9 @@ export default () => (
     <InnerContainer>
       <div className="sectionPadding-top">
         <h1 className="title">FAQ</h1>
-        <div class="contentWrapper">
+        <div className="contentWrapper">
           <div className="shape"></div>
-          <div class="textWrapper">
+          <div className="textWrapper">
             <p className="subTitle">Why Therapy?</p>
             <p>
               Choosing whether to pursue therapy can bring up many questions

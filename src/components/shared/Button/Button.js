@@ -14,6 +14,7 @@ function Button({
   btnText,
   link,
   alignment,
+  target,
 }) {
   const btnStyle = {
     border: `2px solid ${borderColor}`,

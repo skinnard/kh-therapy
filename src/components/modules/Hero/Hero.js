@@ -10,15 +10,12 @@ export default () => (
       <div className="flex columns">
         <div className="flex-item text-center column">
           <h1 className="text-5xl leading-tight">
-            Nurture Your Emotional Health
+            If you&rsquo;re facing challenges and need some support, I&rsquo;m
+            here for you.
           </h1>
-          <p className="bodyText">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget
-            finibus nisl. Vestibulum vulputate.
-          </p>
           <Button
-            btnText={'Learn More'}
-            link={'/about'}
+            btnText={'Connect'}
+            link={'/contact'}
             // type={''}
             borderColor={'#0F4C81'}
             textColor={'#0F4C81'}

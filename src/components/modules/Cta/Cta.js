@@ -6,19 +6,20 @@ import Button from '../../shared/Button/Button'
 import { Link } from 'gatsby'
 
 export default () => (
-  <section id="info-section" className="sectionPadding infoSection">
-    <InnerContainer size={'small'}>
+  <section id="info-section" className="sectionPadding infoSection cta-section">
+    <InnerContainer size={'large'}>
       <div className="contentWrapper">
-        <h2 className="title">Trust is earned in the smallest of moments.</h2>
-        <Divider />
+        <div className="formOutline"></div>
+        <h2 className="title">When you're ready, I'm here.</h2>
         <p className="bodyText">
-          It is earned not through heroic deeds, or even highly visible actions,
-          but through paying attention, listening, and gestures of genuine care
-          and connection.
+          Deciding to make that first contact with a therapist can be an
+          intimidating and often overwhelming prospect. When you’re ready to
+          reach out, I’ll do my best to help you feel as comfortable as
+          possible.
         </p>
         <Button
-          btnText={'Learn More'}
-          link={'/about'}
+          btnText={'Connect'}
+          link={'/contact'}
           borderColor={'#0F4C81'}
           textColor={'#0F4C81'}
           backgroundColor={'#fff'}

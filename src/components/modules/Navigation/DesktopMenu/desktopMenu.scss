@@ -11,7 +11,12 @@
     padding-left: 50px;
     text-transform: uppercase;
     @include font-size(14);
+    font-size: 14px;
     font-weight: 400;
+
+    &:hover {
+      text-shadow: 0 0 .5px #0F4C81, 0 0 .5px #0F4C81;
+    }
 
     &:last-child {
       padding-right: 20px;

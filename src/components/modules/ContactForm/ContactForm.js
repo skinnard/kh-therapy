@@ -37,7 +37,7 @@ class ContactForm extends Component {
         <InnerContainer size={'small'}>
           <h3 className="title">Contact Kristen</h3>
           <div className="formWrapper">
-            <div className="formOutline"></div>
+            {/* <div className="formOutline"></div> */}
             <form
               id="contact-form"
               className="form"
@@ -86,28 +86,20 @@ class ContactForm extends Component {
                 </div>
 
                 <Button
-                  btnText={'Submit'}
+                  btnText={'Get Directions'}
+                  borderColor={'#0F4C81'}
+                  textColor={'#0F4C81'}
+                  backgroundColor={'#ffffff'}
+                  hoverBgColor={'#0F4C81'}
+                  arrowColor={'blue'}
+                  arrowPadding={'10px'}
                   link={'false'}
                   type={'submit'}
-                  borderColor={'#0F4C81'}
-                  textColor={'#fff'}
-                  backgroundColor={'#0F4C81'}
-                  arrowColor={'#0F4C81'}
-                  arrowPadding={'10px'}
-                  hoverBgColor={'#DB6B5C'}
                   alignment={'center'}
                 />
               </div>
             </form>
           </div>
-        </InnerContainer>
-        <InnerContainer size={'medium'}>
-          <p className="formLegal">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-            itaque ipsam labore repellendus exercitationem obcaecati minima,
-            expedita aliquam, facere porro ullam ipsum quod quia deleniti veniam
-            laboriosam modi dicta voluptate.
-          </p>
         </InnerContainer>
       </div>
     )
