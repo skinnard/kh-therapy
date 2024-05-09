@@ -10,9 +10,9 @@ export default () => (
       <div className="flex columns">
         <div className="flex-item text-center column">
           <h1 className="text-5xl leading-tight">
-            If you&rsquo;re facing challenges and need some support, I&rsquo;m
-            here for you.
+            Nurture your<br></br>emotional health
           </h1>
+          <p class="subtitle">Compassionate and supportive psychotherapy </p>
           <Button
             btnText={'Connect'}
             link={'/contact'}

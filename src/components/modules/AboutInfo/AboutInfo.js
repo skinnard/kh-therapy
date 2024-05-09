@@ -16,13 +16,12 @@ export default () => (
             I am a Registered Psychotherapist with the College of Registered
             Psychotherapists of Ontario (CRPO), a Registered Marriage and Family
             Therapist with the Canadian Association for Marriage and Family
-            Therapy (CAMFT), and a qualified Supervisor.</p>
-          
+            Therapy (CAMFT), and a qualified Supervisor.
+          </p>
           <p>
-            I hold a Masters degree
-            in Counselling and an Honours degree in Psychology. Professional
-            development is a priority for me and I regularly attend training
-            that enhances my therapeutic skills.
+            I hold a Masters degree in Counselling and an Honours degree in
+            Psychology. Professional development is a priority for me and I
+            regularly attend training that enhances my therapeutic skills.
           </p>
         </div>
       </div>
@@ -43,12 +42,9 @@ export default () => (
               overwhelmed their capacity to cope. These experiences often
               continue to show up in ways that negatively affect their present
               life, such as anxiety, depression, addictions, and relationship
-              struggles.
-            </p>
-
-            <p className="sectionSubTitle">
-              I enjoy helping clients build the skills they need to overcome the
-              effects of trauma and begin to experience inner trust.
+              struggles. I enjoy helping clients build the skills they need to
+              overcome the effects of trauma and begin to experience inner
+              trust.
             </p>
           </div>
         </div>
@@ -83,4 +79,3 @@ export default () => (
     </InnerContainer>
   </section>
 )
-           

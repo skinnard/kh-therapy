@@ -9,14 +9,19 @@ export default () => (
   <section id="info-section" className="sectionPadding-both infoSection">
     <InnerContainer size={'small'}>
       <div className="text-center">
-        {/* <h4>
-          If you’re facing challenges and need some support, I’m here for you.
-        </h4>*/}
-        <h6 className="text">
-          Deciding to make that first contact with a therapist can be an
-          intimidating and often overwhelming prospect.
+        <h2 className="text">
+          Trust is earned in the smallest of moments.</h2>
+        <h6>
+        It is earned not through
+          heroic deeds, or even highly visible actions, but through paying
+          attention, listening, and gestures of genuine care and connection.
         </h6>
         <Rings />
+        <p>
+          Reaching out to a therapist can be intimidating, so I&rsquo;ll do my
+          best to help you feel as comfortable as possible as you get started on
+          the journey.
+        </p>
         <p className="issues">
           Some of the many issues I can help with include:
         </p>
@@ -32,19 +37,11 @@ export default () => (
             </li>
             <li>
               <Cross />
-              Burnout
-            </li>
-            <li>
-              <Cross />
               Relationship
             </li>
             <li>
               <Cross />
-              struggles
-            </li>
-            <li>
-              <Cross />
-              Unresolved
+              Self-esteem
             </li>
             <li>
               <Cross />
@@ -52,11 +49,23 @@ export default () => (
             </li>
             <li>
               <Cross />
-              Grief
+              Burnout
             </li>
             <li>
               <Cross />
-              Loneliness
+              Grief and Loss
+            </li>
+            <li>
+              <Cross />
+              Major life transitions
+            </li>
+            <li>
+              <Cross />
+              Chronic illness
+            </li>
+            <li>
+              <Cross />
+              Work issues
             </li>
           </ul>
         </div>

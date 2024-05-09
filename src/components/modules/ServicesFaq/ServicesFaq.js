@@ -17,19 +17,19 @@ const ServicesFaq = () => {
         <Faq
           title={'Couple Therapy'}
           content={
-            'Whether you’re a couple who is just starting out on your journey together or are trying to find your way back to a time when you felt more connected, I can help you understand yourselves and your relationship dynamics so you can create and sustain a healthy connection'
+            'Whether you’re a couple who is just starting out on your journey together or are trying to find your way back to a time when you felt more connected, I can help you understand yourselves and your relationship dynamics so you can create and sustain a healthy connection.'
           }
         />
         <Faq
           title={'Family Therapy'}
           content={
-            'From parenting to conflict, I do my best to help families with adolescents and adult children leave behind the same old arguments and begin to feel truly seen and heard by one another.'
+            'From parenting to conflict, I do my best to help families with adolescents or adult children leave behind the same old arguments and begin to feel truly seen and heard by one another.'
           }
         />
         <Faq
           title={'Discernment Counselling'}
           content={
-            'Some couples may be considering divorce but are not completely sure that’s the best path. Discernment Counseling is a way of helping couples where one person is “leaning out” of the relationship—and not sure that regular marriage counseling would help--and the other is“leaning in”—that is, interested in rebuilding the marriage. I can help these couples decide whether to try to restore the marriage to health, move toward divorce, or take a time out and decide later. We work together to help each person gain clarity and confidence about a direction, based on a deeper understanding of their relationship and its possibilities for the future.'
+            'Some couples may be considering divorce but are not completely sure that’s the best path. Discernment Counseling is a way of helping couples where one person is “leaning out” of the relationship—and not sure that regular couple therapy would help--and the other is“leaning in”—that is, interested in rebuilding the marriage. I can help these couples decide whether to try to restore the marriage to health, move toward divorce, or take a time out and decide later. We work together to help each person gain clarity and confidence about a direction, based on a deeper understanding of their relationship and its possibilities for the future.'
           }
         />
         <Faq
@@ -42,7 +42,7 @@ const ServicesFaq = () => {
         <Faq
           title={'Clinical Supervision'}
           content={
-            'I offer clinical supervision for qualifying Registered Psychotherapists and Registered Marriage and Family Therapists who need to satisfy their clinical hours with CRPO and CAMFT. I am also available to meet with more seasoned psychotherapists looking to invest in professional development'
+            'I offer clinical supervision for qualifying Registered Psychotherapists and Registered Marriage and Family Therapists who need to satisfy their clinical hours with CRPO and CAMFT. I am also available to meet with more seasoned psychotherapists looking to invest in professional development.'
           }
         />
       </InnerContainer>

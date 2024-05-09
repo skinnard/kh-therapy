@@ -16,12 +16,13 @@ export default () => (
         your official receipt, payment will be reimbursed by your insurance
         provider.
       </p>
-
       <p>
-        I strongly believe that finances should not be a barrier to support.
-        While I don’t have a formal sliding scale, I am always open to
-        discussing a fee adjustment based on financial need. Please let me know
-        if this applies to you and I’ll do my best to accommodate.
+        <i>
+          I strongly believe that finances should not be a barrier to support.
+          While I don’t have a formal sliding scale, I am always open to
+          discussing a fee adjustment based on financial need. Please let me
+          know if this applies to you and I’ll do my best to accommodate.
+        </i>
       </p>
     </InnerContainer>
   </section>

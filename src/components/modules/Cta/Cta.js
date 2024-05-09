@@ -10,12 +10,11 @@ export default () => (
     <InnerContainer size={'large'}>
       <div className="contentWrapper">
         <div className="formOutline"></div>
-        <h2 className="title">When you're ready, I'm here.</h2>
+        <h2 className="title">When you&rsquo;re ready, I&rsquo;m here.</h2>
         <p className="bodyText">
-          Deciding to make that first contact with a therapist can be an
-          intimidating and often overwhelming prospect. When you’re ready to
-          reach out, I’ll do my best to help you feel as comfortable as
-          possible.
+          Feel free to contact me by phone, email, or by clicking the link
+          below. I&rsquo;ll get back to you as soon as possible to discuss
+          availability and next steps.
         </p>
         <Button
           btnText={'Connect'}

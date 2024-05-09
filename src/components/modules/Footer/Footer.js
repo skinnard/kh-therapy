@@ -46,9 +46,15 @@ function Footer() {
               </Link>
               <Link
                 className="link text-white hover:text-white mb-4"
+                to="/rates-availability"
+              >
+                Rates &amp; Availability
+              </Link>
+              <Link
+                className="link text-white hover:text-white mb-4"
                 to="/contact"
               >
-                Contact
+                Connect
               </Link>
               <Link
                 className="link text-white hover:text-white mb-4"

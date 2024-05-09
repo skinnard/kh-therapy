@@ -49,7 +49,7 @@ function Button({
     )
   } else {
     button = (
-      <Link className="button" to={link} style={btnStyle}>
+      <Link className="button" to={link} style={btnStyle} target={target}>
         {btnText}
         <Arrow arrowColor={arrowColor} arrowPadding={arrowPadding} />
       </Link>

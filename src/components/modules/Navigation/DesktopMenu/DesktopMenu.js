@@ -5,6 +5,9 @@ import './desktopMenu.scss'
 function DesktopMenu() {
   return (
     <div className="flex desktopMenu">
+      <Link className="pl-[50px] font-normal uppercase" to="/">
+        Welcome
+      </Link>
       <Link className="pl-[50px] font-normal uppercase" to="/about">
         About Me
       </Link>
@@ -18,7 +21,7 @@ function DesktopMenu() {
         Rates &amp; Availability
       </Link>
       <Link className="pl-[50px] font-normal uppercase" to="/contact">
-        Contact
+        Connect
       </Link>
     </div>
   )

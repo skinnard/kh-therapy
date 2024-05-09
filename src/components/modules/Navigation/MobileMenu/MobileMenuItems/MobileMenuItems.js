@@ -11,6 +11,9 @@ function MobileMenuItems() {
   return (
     <div id="mobile-menu-items" className="mobileMenuItems">
       <div className="items-wrapper">
+        <Link className="pl-[50px] font-normal uppercase" to="/">
+          Welcome
+        </Link>
         <Link className="pl-[50px] font-normal uppercase" to="/about">
           About Me
         </Link>
@@ -27,7 +30,7 @@ function MobileMenuItems() {
           FAQ
         </Link> */}
         <Link className="pl-[50px] font-normal uppercase" to="/contact">
-          Contact
+          Connect
         </Link>
       </div>
     </div>

@@ -10,6 +10,11 @@ export default () => (
       <div className="flex columns">
         <div className="flex-item text-center column">
           <h1 className="title">Contact</h1>
+          <p className="subtitle">
+            My warm and welcoming office is located at 3425 Harvester Road,
+            Suite 213, with convenient access to the highway and plenty of free
+            parking.
+          </p>
           <div className="infoWrapper">
             <table>
               <tr>
@@ -25,7 +30,6 @@ export default () => (
                     <br />
                     Burlington, ON&nbsp;L7N&nbsp;3M7
                   </a>
-                  <p className="instructions">Some stuff here</p>
                 </td>
               </tr>
               <tr>
@@ -70,6 +74,7 @@ export default () => (
                 arrowColor={'blue'}
                 arrowPadding={'10px'}
                 link={'https://maps.app.goo.gl/dNE3XmvbdjtTncHs8'}
+                target={'_blank'}
               />
             </div>
           </div>

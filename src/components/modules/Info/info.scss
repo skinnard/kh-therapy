@@ -2,7 +2,7 @@
   margin: 0 auto;
 
   .rings {
-    margin: 0 auto;
+    margin: 30px auto;
   }
 
   .text {
@@ -20,6 +20,7 @@
     .issues-list {
       li {
         display: flex;
+        justify-content: center;
 
         svg {
           width: 15px;
