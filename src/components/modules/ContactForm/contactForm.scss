@@ -1,6 +1,10 @@
 @import '../../../styles/style.scss';
 
 .contactForm {
+ background: url('/images/services-bg.svg');
+  background-size: cover;
+  background-position: top center;
+
   .title {
     text-align: center;
     margin-bottom: 60px;
