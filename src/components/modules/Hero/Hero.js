@@ -10,7 +10,7 @@ export default () => (
       <div className="flex columns">
         <div className="flex-item text-center column">
           <h1 className="text-5xl leading-tight">
-            Nurture your<br></br>emotional health
+            Compassionate and&nbsp;supportive psychotherapy
           </h1>
           <p class="subtitle">Compassionate and supportive psychotherapy </p>
           <Button
