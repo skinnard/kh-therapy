@@ -25,7 +25,7 @@ export default () => (
           <div className="imgWrapper">
             <img
               className="img"
-              src={'/images/kristen.png'}
+              src={'/images/TCSpring2024-394-Edit-min.jpg'}
               alt="Kristen Hodges"
             />
             <div className="imgBg"></div>

@@ -28,9 +28,10 @@ export default () => (
         <div className="column text-center imgWrapper column">
           <img
             className="img"
-            src={'/images/leaf-and-books.png'}
-            alt="A stack of books"
+            src={'/images/TCSpring2024-425-Edit-2-min.jpg'}
+            alt="Kristen Hodges"
           />
+          <div className="imgBg"></div>
         </div>
       </div>
       {/* <Arrow /> */}
