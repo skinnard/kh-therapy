@@ -15,6 +15,11 @@
     align-items: center;
     flex-wrap: wrap;
     margin: 150px 0;
+    gap: 150px;
+
+    @include mq(custom, max, 1040) {
+      gap: 50px;
+    }
 
     .column {
       padding: 0;
@@ -41,6 +46,8 @@
         width: 100%;
         max-width: 450px;
         border-radius: 100px 0 100px 0;
+        background: red;
+        background-position: 25% 75%;
       }
 
       .imgBg {
@@ -57,14 +64,26 @@
           transform: translate(5px, -5px);
         }
       }
+
+      &.content-wrapper {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+      }
     }
 
     .imgWrapper {
       position: relative;
 
-      @include mq(custom, max, 800) {
-        display: none;
+      @include mq(custom, max, 1040) {
+        width: 100%;
+        display: flex;
+        justify-content: center;
       }
+
+      // @include mq(custom, max, 800) {
+      //   display: none;
+      // }
     }
   }
 }

@@ -53,6 +53,7 @@
         color: $blue;
         @include font-size(14);
         resize: vertical;
+        background: transparent;
 
         &::placeholder {
           color: #8eacc5;

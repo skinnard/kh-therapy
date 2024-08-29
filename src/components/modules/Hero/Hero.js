@@ -8,7 +8,7 @@ export default () => (
   <section id="hero" className="heroWrapper">
     <InnerContainer>
       <div className="flex columns">
-        <div className="flex-item text-center column">
+        <div className="flex-item text-center column content-wrapper">
           <h1 className="text-5xl leading-tight">
             Compassionate and&nbsp;supportive psychotherapy
           </h1>

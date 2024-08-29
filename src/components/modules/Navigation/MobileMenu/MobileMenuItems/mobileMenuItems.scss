@@ -19,11 +19,12 @@
     justify-content: center;
     align-items: center;
     height: 100%;
+    gap: 20px;
 
-    .item {
+    a {
       font-family: $title-font;
       text-transform: capitalize;
-      @include font-size(32);
+      @include font-size(24);
       margin-bottom: 20px;
       color: $blue;
 
