@@ -6,7 +6,6 @@
   background-size: cover;
   background-position: bottom center;
   margin-bottom: 100px;
-  // border: 2px solid red;
 
   @include mq(custom, max, 650) {
     margin-bottom: 0;
