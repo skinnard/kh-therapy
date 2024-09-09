@@ -4,7 +4,6 @@
   display: flex;
 
   @include mq(custom, max, 1000) {
-    border: 2px solid green;
     display: none;
   }
 

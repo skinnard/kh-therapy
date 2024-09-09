@@ -3,9 +3,13 @@ body {
     height: 100%;
     overflow: hidden;
   }
-  
+
   .main-layout {
     border: 20px solid white;
+
+    @include mq(custom, max, 800) {
+      border: 10px solid white;
+    }
   }
 }
 
