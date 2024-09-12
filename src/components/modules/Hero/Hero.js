@@ -12,7 +12,7 @@ export default () => (
           <h1 className="text-5xl leading-tight">
             Compassionate and&nbsp;supportive psychotherapy
           </h1>
-          <p className="subtitle">Compassionate and supportive psychotherapy </p>
+          {/* <p className="subtitle">Compassionate and supportive psychotherapy </p> */}
           <Button
             btnText={'Connect'}
             link={'/contact'}

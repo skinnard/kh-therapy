@@ -36,6 +36,7 @@
 
     .textWrapper {
       padding-left: 60px;
+      max-width: 80%;
 
       @include mq(custom, max, 800) {
         padding-left: 0;
