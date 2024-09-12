@@ -13,8 +13,6 @@ class Navigation extends Component {
 
   componentDidMount() {
     document.addEventListener('scroll', () => {
-      // const backgroundcolor = window.scrollY < 100 ? "red" : "blue";
-
       if (window.scrollY < 80) {
         this.setState({ navBackground: null })
       } else {

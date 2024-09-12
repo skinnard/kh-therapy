@@ -12,7 +12,7 @@ export default () => (
         <div className="contentWrapper">
           <div className="shape"></div>
           <div className="textWrapper">
-            <p className="subTitle">Psychotherapy Services</p>
+            <p className="subTitle">No matter what your need is</p>
             <p>
               Depending on your needs, I provide psychotherapy services that
               help you slow down on the stuck places in your life so you can

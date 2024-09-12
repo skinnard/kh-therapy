@@ -17,7 +17,7 @@ export default () => (
 
             <p>
               <strong>
-                60 minute therapy or supervision session: $165.00+HST
+                60 minute therapy or supervision session: $175
               </strong>
             </p>
 

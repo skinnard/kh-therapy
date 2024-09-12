@@ -7,7 +7,7 @@ const ServicesFaq = () => {
   return (
     <div className="sectionPadding-sm servicesFaq">
       <InnerContainer size={'medium'}>
-        <h2 class="title">Therapy</h2>
+        <h2 className="title">Therapy</h2>
         <Faq
           title={'Individual Therapy'}
           content={
@@ -38,7 +38,7 @@ const ServicesFaq = () => {
             'It’s not always easy to meet with me in person and video therapy is a convenient and effective way to overcome barriers to in-person therapy.  Whether you choose to meet exclusively by video or through a combination of in-person and video, we can find an arrangement that meets your need for flexibility.'
           }
         />
-        <h2 class="title">Supervision</h2>
+        <h2 className="title">Supervision</h2>
         <Faq
           title={'Clinical Supervision'}
           content={

@@ -8,7 +8,7 @@ import RightArrow from '../../../svg/arrow-right-blue.svg'
 export default () => (
   <section id="about-info" className="aboutInfoWrapper">
     <InnerContainer>
-      <div class="creds">
+      <div className="creds">
         <h3 className="text-center title">Credentials</h3>
         {/* <Arrow /> */}
         <div className="flex columns">
@@ -16,7 +16,7 @@ export default () => (
             I am a Registered Psychotherapist with the College of Registered
             Psychotherapists of Ontario (CRPO), a Registered Marriage and Family
             Therapist with the Canadian Association for Marriage and Family
-            Therapy (CAMFT), and a qualified Supervisor.
+            Therapy (CACFT), and a qualified Supervisor.
           </p>
           <p>
             I hold a Masters degree in Counselling and an Honours degree in
@@ -52,7 +52,7 @@ export default () => (
         <div className="column right">
           <div className="infoSection">
             <p className="sectionTitle">Relationships</p>
-            <ul class="relationships-list">
+            <ul className="relationships-list">
               <li>
                 <strong>Relationship Enrichment:</strong> For couples wanting to
                 move toward more loving and satisfying relationships, I support

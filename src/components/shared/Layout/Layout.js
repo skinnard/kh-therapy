@@ -11,7 +11,7 @@ class Template extends React.Component {
     }
 
     return (
-      <div class="main-layout">
+      <div className="main-layout">
         {children}
       </div>
     )
