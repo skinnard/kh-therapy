@@ -14,9 +14,6 @@ class RootIndex extends React.Component {
     return (
       <Layout>
         <Container>
-          <Helmet>
-            <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9C5z1tWlsDJcpSu8QFqF8graVtsb255Q"></script>
-          </Helmet>
           <Navigation />
           <Hero />
           <Info />
