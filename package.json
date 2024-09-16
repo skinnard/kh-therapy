@@ -19,6 +19,7 @@
     "gatsby-source-prismic-graphql": "^3.6.2",
     "gatsby-transformer-remark": "^6.10.0",
     "gatsby-transformer-sharp": "^5.10.0",
+    "google-map-react": "^2.2.1",
     "hamburgers": "^1.2.1",
     "lodash": "^4.17.11",
     "normalize.css": "^8.0.1",

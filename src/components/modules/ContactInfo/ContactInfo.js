@@ -1,7 +1,6 @@
 import React from 'react'
 import './contactInfo.scss'
 import InnerContainer from '../../shared/InnerContainer/InnerContainer'
-import Arrow from '../../../svg/long-arrow.svg'
 import Button from '../../shared/Button/Button'
 
 export default () => (
@@ -12,8 +11,8 @@ export default () => (
           <h1 className="title">Contact</h1>
           <p className="subtitle">
             My warm and welcoming office is located at 3425 Harvester Road,
-            Suite 213, with convenient access to the highway and plenty of free
-            parking.
+            Suite 213, with convenient access to the highway and plenty of
+            free&nbsp;parking.
           </p>
           <div className="infoWrapper">
             <table>
@@ -53,17 +52,6 @@ export default () => (
                 </td>
               </tr>
             </table>
-
-            {/* <div className="left}>
-              <p className="address">Address:</p>
-              <p className="phone">Phone:</p>
-              <p className="email">Email:</p>
-            </div>
-            <div className="right}>
-              <p className="address">123 Awesome St. Hamilton, ON</p>
-              <p className="phone">123-456-7890</p>
-              <p className="email">kristen@hodges.com</p>
-            </div> */}
             <div className="btnWrapper">
               <Button
                 btnText={'Get Directions'}
