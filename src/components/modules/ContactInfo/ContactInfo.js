@@ -71,12 +71,14 @@ export default () => (
         <div className="mapWrapper column">
           <div className="map">
             <div className="mapBg"></div>
-            <iframe
-              src="https://snazzymaps.com/embed/641499"
-              width="100%"
-              height="400px"
-              style={{ border: 'none' }}
-            ></iframe>
+            <div class="img-wrapper">
+              <a
+                href="https://maps.app.goo.gl/dNE3XmvbdjtTncHs8"
+                target="_blank"
+              >
+                <img className="img" src={'/images/map-img.png'} alt="Map" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
