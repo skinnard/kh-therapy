@@ -72,7 +72,7 @@ export default () => (
           <div className="map">
             <div className="mapBg"></div>
             <iframe
-              src="https://snazzymaps.com/embed/235252"
+              src="https://snazzymaps.com/embed/641499"
               width="100%"
               height="400px"
               style={{ border: 'none' }}
