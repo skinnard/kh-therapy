@@ -51,6 +51,20 @@ export default () => (
                   </a>
                 </td>
               </tr>
+              <tr>
+                <td className="left" valign="top">
+                  For current clients looking to book a session:
+                </td>
+                <td className="right" valign="top">
+                  <iframe
+                    frameborder="0"
+                    height="28"
+                    scrolling="no"
+                    src="https://khodges.janeapp.com/embed/book_online"
+                    width="177"
+                  ></iframe>
+                </td>
+              </tr>
             </table>
             <div className="btnWrapper">
               <Button
