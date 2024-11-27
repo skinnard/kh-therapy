@@ -51,7 +51,7 @@ export default () => (
                   </a>
                 </td>
               </tr>
-              <tr>
+              {/* <tr>
                 <td className="left" valign="top">
                   For current clients looking to book a session:
                 </td>
@@ -64,7 +64,7 @@ export default () => (
                     width="177"
                   ></iframe>
                 </td>
-              </tr>
+              </tr> */}
             </table>
             <div className="btnWrapper">
               <Button
