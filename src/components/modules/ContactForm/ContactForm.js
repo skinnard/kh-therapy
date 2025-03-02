@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { navigate } from "gatsby"
 import './contactForm.scss'
 import '../../../styles/style.scss'
 import InnerContainer from '../../shared/InnerContainer/InnerContainer'
@@ -28,7 +29,16 @@ class ContactForm extends Component {
 
   handleSubmit(event) {
     event.preventDefault()
-    console.log(this.state)
+    const myForm = event.target
+    const formData = new FormData(myForm)
+
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => navigate('/thank-you/'))
+      .catch((error) => alert(error))
   }
 
   render() {
@@ -37,12 +47,13 @@ class ContactForm extends Component {
         <InnerContainer size={'small'}>
           <h3 className="title">Contact Kristen</h3>
           <div className="formWrapper">
-            {/* <div className="formOutline"></div> */}
             <form
               id="contact-form"
               className="form"
               onSubmit={this.handleSubmit.bind(this)}
-              method="POST"
+              data-netlify="true"
+              name="contactForm"
+              method="post"
             >
               <div className="leftCol">
                 <div className="form-group">

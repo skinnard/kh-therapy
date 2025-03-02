@@ -85,7 +85,7 @@ export default () => (
         <div className="mapWrapper column">
           <div className="map">
             <div className="mapBg"></div>
-            <div class="img-wrapper">
+            <div className="img-wrapper">
               <a
                 href="https://maps.app.goo.gl/dNE3XmvbdjtTncHs8"
                 target="_blank"
