@@ -97,7 +97,7 @@ class ContactForm extends Component {
                 </div>
 
                 <Button
-                  btnText={'Get Directions'}
+                  btnText={'Submit'}
                   borderColor={'#0F4C81'}
                   textColor={'#0F4C81'}
                   backgroundColor={'#ffffff'}
