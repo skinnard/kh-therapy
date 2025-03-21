@@ -11,10 +11,15 @@
   padding: 0 20px;
   min-height: 650px;
   width: 100%;
-  background: rgb(249,246,236);
-background: linear-gradient(360deg, rgba(249,246,236,1) 0%, rgba(255,248,224,1) 100%);
+  background: rgb(249, 246, 236);
+  background: linear-gradient(
+    360deg,
+    rgba(249, 246, 236, 1) 0%,
+    rgba(255, 248, 224, 1) 100%
+  );
 
   .columns {
+    display: flex;
     align-items: center;
     flex-wrap: nowrap;
     margin: 150px 0;
@@ -22,19 +27,36 @@ background: linear-gradient(360deg, rgba(249,246,236,1) 0%, rgba(255,248,224,1) 
 
     @include mq(custom, max, 1040) {
       gap: 50px;
+      flex-wrap: wrap;
     }
 
     .column {
       padding: 0;
       width: 50%;
 
-      @include mq(custom, max, 800) {
+      @include mq(custom, max, 1040) {
         width: 100%;
       }
 
       h1 {
         margin-bottom: 40px;
         text-align: right;
+
+        @include mq(custom, max, 1040) {
+          text-align: center;
+        }
+
+        @include mq(custom, max, 867) {
+          font-size: 3rem;
+        }
+
+        @include mq(custom, max, 867) {
+          font-size: 2.5rem;
+        }
+
+        @include mq(custom, max, 400) {
+          font-size: 2rem;
+        }
       }
 
       .subtitle {
@@ -51,9 +73,14 @@ background: linear-gradient(360deg, rgba(249,246,236,1) 0%, rgba(255,248,224,1) 
       .btnWrapper {
         text-align: right;
 
+        @include mq(custom, max, 1040) {
+          text-align: center;
+        }
+
         .button {
           padding: 15px 50px;
           font-size: 20px;
+          background: #ffffff;
         }
       }
 
@@ -107,6 +134,7 @@ background: linear-gradient(360deg, rgba(249,246,236,1) 0%, rgba(255,248,224,1) 
         width: 100%;
         height: 100%;
         top: -60px;
+        max-width: 500px;
       }
     }
   }
