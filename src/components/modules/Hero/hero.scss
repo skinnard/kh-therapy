@@ -10,30 +10,15 @@
   justify-content: center;
   padding: 0 20px;
   min-height: 650px;
-  // width: 100vw;
-  // height: 100vh;
-  background: linear-gradient(334deg, #6b97f7, #7525e2, #f7137e);
-  background-size: 180% 180%;
-  animation: gradient-animation 6s ease infinite;
-
-  
-  @keyframes gradient-animation {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
+  width: 100%;
+  background: rgb(249,246,236);
+background: linear-gradient(360deg, rgba(249,246,236,1) 0%, rgba(255,248,224,1) 100%);
 
   .columns {
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin: 150px 0;
-    gap: 150px;
+    gap: 70px;
 
     @include mq(custom, max, 1040) {
       gap: 50px;
@@ -49,6 +34,7 @@
 
       h1 {
         margin-bottom: 40px;
+        text-align: right;
       }
 
       .subtitle {
@@ -62,13 +48,18 @@
         max-width: 400px;
       }
 
+      .btnWrapper {
+        text-align: right;
+      }
+
       .img {
         position: relative;
         z-index: 2;
         width: 100%;
-        max-width: 450px;
+        max-width: 500px;
         border-radius: 100px 0 100px 0;
         background-position: 25% 75%;
+        // margin: 0 auto;
       }
 
       .imgBg {
@@ -87,19 +78,30 @@
       }
 
       &.content-wrapper {
-        text-align: center;
+        width: 50%;
+        text-align: flex-end;
         display: flex;
         flex-direction: column;
+        justify-content: flex-end;
       }
     }
 
     .imgWrapper {
       position: relative;
+      width: 50%;
 
       @include mq(custom, max, 1040) {
         width: 100%;
         display: flex;
         justify-content: center;
+      }
+
+      .blob {
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        top: -60px;
       }
     }
   }

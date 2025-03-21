@@ -7,26 +7,20 @@ import Hero from '../components/modules/Hero/Hero'
 import Info from '../components/modules/Info/Info'
 import Cta from '../components/modules/Cta/Cta'
 import Footer from '../components/modules/Footer/Footer'
-// import ComingSoon from '../components/modules/ComingSoon/ComingSoon'
+import ComingSoon from "../components/modules/ComingSoon/ComingSoon"
 
 class RootIndex extends React.Component {
   render() {
     return (
-      <>
-        <Helmet>
-          <script src="/three.r134.min.js" />
-          <script src="/vanta.fog.min.js" />
-        </Helmet>
-        <Layout>
-          <Container>
-            <Navigation />
-            <Hero />
-            <Info />
-            <Cta />
-            <Footer />
-          </Container>
-        </Layout>
-      </>
+      <Layout>
+        <Container>
+          <Navigation />
+          <Hero />
+          <Info />
+          <Cta />
+          <Footer />
+        </Container>
+      </Layout>
     )
   }
 }
