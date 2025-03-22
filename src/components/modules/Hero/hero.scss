@@ -121,6 +121,9 @@
     .imgWrapper {
       position: relative;
       width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
       @include mq(custom, max, 1040) {
         width: 100%;
