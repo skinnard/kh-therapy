@@ -28,10 +28,10 @@ export default () => (
         <div className="column text-center imgWrapper column relative">
           <img
             className="img"
-            src={'/images/hero-illustration.png'}
+            src={'/images/hero-illustration.svg'}
             alt="Kristen Hodges"
           />
-          <div className='blob'>
+          {/* <div className='blob'>
             <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
               <path
                 fill="#ffffff"
@@ -39,7 +39,7 @@ export default () => (
                 transform="translate(100 100)"
               />
             </svg>
-          </div>
+          </div> */}
           {/*<div className="imgBg"></div> */}
         </div>
       </div>
