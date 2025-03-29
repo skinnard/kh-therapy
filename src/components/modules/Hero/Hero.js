@@ -28,7 +28,7 @@ export default () => (
         <div className="column text-center imgWrapper column relative">
           <img
             className="img"
-            src={'/images/hero-2.png'}
+            src={'/images/hero-illustration.png'}
             alt="Kristen Hodges"
           />
         </div>
