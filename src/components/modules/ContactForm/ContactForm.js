@@ -52,16 +52,28 @@ class ContactForm extends Component {
               className="form"
               onSubmit={this.handleSubmit.bind(this)}
               data-netlify="true"
+              data-netlify-honeypot="bot-field"
               name="contactForm"
               method="post"
             >
+              {/* Required by Netlify to attribute this AJAX submission to the form */}
+              <input type="hidden" name="form-name" value="contactForm" />
+              {/* Honeypot field for spam bots; hidden from humans */}
+              <p hidden>
+                <label>
+                  Don’t fill this out: <input name="bot-field" />
+                </label>
+              </p>
+
               <div className="leftCol">
                 <div className="form-group">
                   {/* <label htmlFor="name">Name</label> */}
                   <input
                     type="text"
+                    name="name"
                     className="form-control"
                     placeholder="Name"
+                    required
                   />
                 </div>
               </div>
@@ -71,9 +83,11 @@ class ContactForm extends Component {
                   {/* <label htmlFor="exampleInputEmail1">Email address</label> */}
                   <input
                     type="email"
+                    name="email"
                     className="form-control"
                     aria-describedby="emailHelp"
                     placeholder="Email"
+                    required
                   />
                 </div>
               </div>
@@ -83,6 +97,7 @@ class ContactForm extends Component {
                   {/* <label htmlFor="name">Name</label> */}
                   <input
                     type="text"
+                    name="subject"
                     className="form-control"
                     placeholder="Subject"
                   />
@@ -90,9 +105,11 @@ class ContactForm extends Component {
 
                 <div className="form-group">
                   <textarea
+                    name="message"
                     className="form-control"
                     rows="5"
                     placeholder="Message"
+                    required
                   ></textarea>
                 </div>
 
