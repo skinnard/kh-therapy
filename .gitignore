@@ -64,8 +64,8 @@ public
 .cache
 
 # secrets
-.contentful.json
 .env*
 !.env.example
 
-DS_Store
+# macOS
+.DS_Store
