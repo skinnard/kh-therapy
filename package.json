@@ -5,7 +5,7 @@
   "private": true,
   "license": "UNLICENSED",
   "engines": {
-    "node": ">=20"
+    "node": ">=22"
   },
   "dependencies": {
     "gatsby-plugin-google-fonts": "^1.0.1",

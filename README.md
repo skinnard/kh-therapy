@@ -15,7 +15,7 @@ by [Netlify Forms](https://docs.netlify.com/manage/forms/setup/).
 
 ## Local development
 
-Requires Node 20+ (see [`.nvmrc`](.nvmrc)).
+Requires Node 22+ (see [`.nvmrc`](.nvmrc)).
 
 ```bash
 yarn install      # install dependencies
